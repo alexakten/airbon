@@ -32,6 +32,7 @@ export default function Landing() {
           </p>
         </div>
 
+        {/* Steps (hidden on smaller than lg*/}
         <div className="text-orange hidden pt-24 lg:block">
           <div className="grid grid-cols-4 gap-24">
             <div className="col-span-1">
@@ -76,6 +77,7 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Steps (hidden on larger than lg)*/}
       <section className="pb-40">
         <div className="text-orange pt-24 lg:hidden">
           <div className="grid grid-cols-1 gap-24">
