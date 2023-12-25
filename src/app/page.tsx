@@ -27,7 +27,7 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
-            Airbon helps landowners in South America monitor and measure their
+            Airbon helps landowners in South America monitor and measure
             forests to create high quality tech-verified carbon credits.
           </p>
         </div>
@@ -78,8 +78,8 @@ export default function Landing() {
       </section>
 
       {/* Steps (hidden on larger than lg)*/}
-      <section className="pb-40">
-        <div className="text-orange pt-24 lg:hidden">
+      <section className="pb-40 lg:pb-0 lg:hidden">
+        <div className="text-orange pt-24 ">
           <div className="grid grid-cols-1 gap-24">
             <div className="col-span-1">
               <p>1</p>
