@@ -3,12 +3,12 @@ import Navbar from "./components/Navbar";
 export default function Landing() {
   return (
     <main>
-      <section className="bg-darkgreen flex h-screen flex-col justify-between p-8">
+      <section className="bg-darkgreen flex h-screen flex-col justify-between p-2 sm:p-8">
         <Navbar></Navbar>
 
         <div className="text-orange flex flex-col gap-4 lg:flex-row lg:gap-0">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
-            <h1 className="text-5xl lg:text-8xl">
+            <h1 className="text-4xl lg:text-8xl">
               Restore the balance of our ecosystem with carbon credits.
             </h1>
             <div className="hidden gap-4 sm:flex lg:flex-row">
