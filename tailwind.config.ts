@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        deepgreen: "#0D1B1A",
         darkgreen: "#172421",
-        lightgreen: "#39574D",
+        lightgreen: "#24483E",
         orange: "#D99256",
       },
       backgroundImage: {

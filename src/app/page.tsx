@@ -16,13 +16,13 @@ export default function Landing() {
             </h1>
             <div className="flex gap-4 lg:flex-row">
               <button
-                className="bg-orange text-darkgreen rounded-full px-4 py-3 sm:px-8"
+                className="border-orange text-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
                 type="button"
               >
                 For landowners →
               </button>
               <button
-                className="bg-lightgreen text-orange rounded-full px-4 py-3 sm:px-8"
+                className="border-orange text-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
                 type="button"
               >
                 For investors →
