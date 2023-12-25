@@ -32,7 +32,7 @@ export default function Landing() {
           </p>
         </div>
 
-        {/* Steps (hidden on smaller than lg*/}
+        {/* Steps on desktop*/}
         <div className="text-orange hidden pt-24 lg:block">
           <div className="grid grid-cols-4 gap-24">
             <div className="col-span-1">
@@ -77,10 +77,10 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Steps (hidden on larger than lg)*/}
+      {/* Steps on mobile*/}
       <section className="pb-40 lg:pb-0 lg:hidden">
         <div className="text-orange pt-24 ">
-          <div className="grid grid-cols-1 gap-24">
+          <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
               <p>1</p>
               <h2 className="pt-8 text-2xl">Measure</h2>
