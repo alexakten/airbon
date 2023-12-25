@@ -11,15 +11,15 @@ export default function Landing() {
             <h1 className="text-4xl lg:text-8xl">
               Restore the balance of our ecosystem with carbon credits.
             </h1>
-            <div className="hidden gap-4 sm:flex lg:flex-row">
+            <div className="gap-4 flex lg:flex-row">
               <button
-                className="bg-orange text-darkgreen rounded-full px-8 py-3"
+                className="bg-orange text-darkgreen rounded-full px-4 sm:px-8 py-3"
                 type="button"
               >
                 For landowners →
               </button>
               <button
-                className="bg-lightgreen text-orange rounded-full px-8 py-3"
+                className="bg-lightgreen text-orange rounded-full px-4 sm:px-8 py-3"
                 type="button"
               >
                 For investors →
