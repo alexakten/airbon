@@ -3,10 +3,13 @@ import Navbar from "./components/Navbar";
 export default function Landing() {
   return (
     <main>
-      <section className="bg-darkgreen relative flex flex-col p-2 sm:p-8" style={{height: "100svh"}}>
+      <section
+        className="bg-darkgreen relative flex flex-col p-2 sm:p-8"
+        style={{ height: "100svh" }}
+      >
         <Navbar></Navbar>
 
-        <div className="text-orange flex flex-col gap-4 pt-40 lg:flex-row lg:gap-0">
+        <div className="text-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
             <h1 className="text-4xl lg:text-8xl">
               Restore the balance of our ecosystem with carbon credits.
