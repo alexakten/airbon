@@ -39,7 +39,7 @@ export default function Landing() {
         <div className="hidden pt-24 lg:block">
           <div className="grid grid-cols-4 gap-24">
             <div className="col-span-1">
-              <p>[ 1 ]</p>
+              <p>1</p>
               <h2 className="pt-8 text-2xl">Measure</h2>
               <p className="pt-3">
                 We measure the size and impact of your forest using satellite
@@ -48,7 +48,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>[ 2 ]</p>
+              <p>2</p>
               <h2 className="pt-8 text-2xl">Verify</h2>
               <p className="pt-3">
                 Credits are verified by independent third parties all around the
@@ -57,7 +57,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>[ 3 ]</p>
+              <p>3</p>
               <h2 className="pt-8 text-2xl">Market</h2>
               <p className="pt-3">
                 Use our platform to market your projects to buyers worldwide.
@@ -65,7 +65,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>[ 4 ]</p>
+              <p>4</p>
               <h2 className="pt-8 text-2xl">Sell</h2>
               <p className="pt-3">
                 We facilitate the sale of your credits and help you find trusted

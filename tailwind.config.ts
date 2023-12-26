@@ -12,6 +12,7 @@ const config: Config = {
         deepgreen: "#0D1B1A",
         darkgreen: "#172421",
         lightgreen: "#24483E",
+        bluegray: "#D9E1DE",
         orange: "#D99256",
       },
       backgroundImage: {

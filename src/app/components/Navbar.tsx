@@ -40,6 +40,21 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <ul className="hidden items-center gap-10 sm:flex">
+        <li>
+          <a href="#" className="">
+            Log in
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className="bg-lightgreen text-bluegray rounded-full px-4 py-3"
+          >
+            Sign up
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
