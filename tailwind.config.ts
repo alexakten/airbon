@@ -15,6 +15,15 @@ const config: Config = {
         bluegray: "#D9E1DE",
         orange: "#D99256",
       },
+      fontSize: {
+        base: "0.9375rem",
+        "2xl": "1.375rem",
+        "7xl": "5.12rem"
+      },
+      borderWidth: {
+        DEFAULT: '0.5px',  // Sets the default border width
+
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

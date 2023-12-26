@@ -2,16 +2,16 @@ import Navbar from "./components/Navbar";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen px-2 sm:px-8">
+    <main className="bg-darkgreen px-2 text-base sm:px-8">
       <section
-        className="text-orange relative flex flex-col py-6"
+        className="text-orange relative flex flex-col py-6 "
         style={{ height: "100svh" }}
       >
         <Navbar></Navbar>
 
         <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
               Restore the balance of our ecosystem with carbon credits.
             </h1>
             <div className="flex gap-4 lg:flex-row">
@@ -36,13 +36,13 @@ export default function Landing() {
         </div>
 
         {/* Steps on desktop*/}
-        <div className="hidden pt-24 lg:block">
+        <div className="hidden pt-16 lg:block">
           <div className="grid grid-cols-4 gap-24">
             <div className="col-span-1">
               <p className="text-sm">1</p>
               <h2 className="pt-6 text-2xl">Measure</h2>
               <p className="pt-3">
-                We measure the size and impact of your forest using satellite
+                Measure the size and impact of your forest using satellite
                 imagery and AI.
               </p>
             </div>
