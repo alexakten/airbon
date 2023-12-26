@@ -12,7 +12,7 @@ export default function Landing() {
         <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Restore the balance of our ecosystem with carbon credits.
+              Restore the balance of our ecosystems with carbon credits.
             </h1>
             <div className="flex gap-4 lg:flex-row">
               <button
