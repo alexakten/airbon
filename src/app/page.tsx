@@ -2,24 +2,27 @@ import Navbar from "./components/Navbar";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen p-2 sm:p-8">
-      <section className="relative flex flex-col" style={{ height: "100svh" }}>
+    <main className="bg-darkgreen px-2 sm:px-8">
+      <section
+        className="text-orange relative flex flex-col py-6"
+        style={{ height: "100svh" }}
+      >
         <Navbar></Navbar>
 
-        <div className="text-orange border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
+        <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
-            <h1 className="text-4xl lg:text-8xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl">
               Restore the balance of our ecosystem with carbon credits.
             </h1>
             <div className="flex gap-4 lg:flex-row">
               <button
-                className="border-orange text-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+                className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
                 type="button"
               >
                 For landowners →
               </button>
               <button
-                className="border-orange text-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+                className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
                 type="button"
               >
                 For investors →
@@ -27,16 +30,16 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
-            Airbon helps landowners in South America monitor and measure
-            forests to create high quality tech-verified carbon credits.
+            Airbon helps landowners in South America monitor and measure forests
+            to create high quality tech-verified carbon credits.
           </p>
         </div>
 
         {/* Steps on desktop*/}
-        <div className="text-orange hidden pt-24 lg:block">
+        <div className="hidden pt-24 lg:block">
           <div className="grid grid-cols-4 gap-24">
             <div className="col-span-1">
-              <p>1</p>
+              <p>[ 1 ]</p>
               <h2 className="pt-8 text-2xl">Measure</h2>
               <p className="pt-3">
                 We measure the size and impact of your forest using satellite
@@ -45,7 +48,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>2</p>
+              <p>[ 2 ]</p>
               <h2 className="pt-8 text-2xl">Verify</h2>
               <p className="pt-3">
                 Credits are verified by independent third parties all around the
@@ -54,7 +57,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>3</p>
+              <p>[ 3 ]</p>
               <h2 className="pt-8 text-2xl">Market</h2>
               <p className="pt-3">
                 Use our platform to market your projects to buyers worldwide.
@@ -62,7 +65,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>4</p>
+              <p>[ 4 ]</p>
               <h2 className="pt-8 text-2xl">Sell</h2>
               <p className="pt-3">
                 We facilitate the sale of your credits and help you find trusted
@@ -72,17 +75,18 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="hidden">
-          <p className="text-orange">Scroll to learn more ↓</p>
+        <div className="absolute bottom-6 hidden w-full justify-between lg:flex">
+          <p>Scroll to learn more ↓</p>
+          <p>© 2023</p>
         </div>
       </section>
 
       {/* Steps on mobile*/}
-      <section className="pb-40 lg:pb-0 lg:hidden">
+      <section className="pb-40 lg:hidden lg:pb-0">
         <div className="text-orange pt-24 ">
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
-              <p>1</p>
+              <p>[ 1 ]</p>
               <h2 className="pt-8 text-2xl">Measure</h2>
               <p className="pt-3">
                 We measure the size and impact of your forest using satellite
@@ -91,7 +95,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>2</p>
+              <p>[ 2 ]</p>
               <h2 className="pt-8 text-2xl">Verify</h2>
               <p className="pt-3">
                 Credits are verified by independent third parties all around the
@@ -100,7 +104,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>3</p>
+              <p>[ 3 ]</p>
               <h2 className="pt-8 text-2xl">Market</h2>
               <p className="pt-3">
                 Use our platform to market your projects to buyers worldwide.
@@ -108,7 +112,7 @@ export default function Landing() {
             </div>
 
             <div className="col-span-1">
-              <p>4</p>
+              <p>[ 4 ]</p>
               <h2 className="pt-8 text-2xl">Sell</h2>
               <p className="pt-3">
                 We facilitate the sale of your credits and help you find trusted
