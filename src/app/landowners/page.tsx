@@ -19,14 +19,9 @@ export default function Landing() {
                 className="border-frostwhite hover:bg-frostwhite hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
                 type="button"
               >
-                For landowners →
+                Start project →
               </button>
-              <button
-                className="border-frostwhite hover:bg-frostwhite hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
-                type="button"
-              >
-                For investors →
-              </button>
+              
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">

@@ -9,7 +9,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoColor }) => {
   const colorMap = {
     frostwhite: "#D5C9C4",
     orange: "#D99256",
-    deeporange: "#954013"
+    deeporange: "#954013",
   };
 
   const fillColor = colorMap[logoColor] || "#D99256"; // Default to orange if color not found
@@ -39,12 +39,12 @@ const Navbar: React.FC<NavbarProps> = ({ logoColor }) => {
       <ul className="hidden items-center gap-10 sm:flex">
         <li>
           <a href="#" className="hover:underline">
-            Services
+            Landowners
           </a>
         </li>
         <li>
           <a href="#" className="hover:underline">
-            About us
+            Investors
           </a>
         </li>
         <li>
