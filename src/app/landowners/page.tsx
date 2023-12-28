@@ -1,33 +1,32 @@
-import Navbar from "./components/Navbar";
-import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen px-2 text-base sm:px-8">
+    <main className="bg-deeporange px-2 text-base sm:px-8">
       <section
-        className="text-orange relative flex flex-col py-6 "
+        className="text-frostwhite relative flex flex-col py-6 "
         style={{ height: "100svh" }}
       >
-        <Navbar logoColor="orange"></Navbar>
+        <Navbar logoColor="frostwhite"></Navbar>
 
-        <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
+        <div className="border-frostwhite flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Restore the balance of our ecosystems with carbon credits.
+              Generate income from your land with carbon credits.
             </h1>
             <div className="flex gap-4 lg:flex-row">
-              <Link
-                href="/landowners"
-                className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+              <button
+                className="border-frostwhite hover:bg-frostwhite hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+                type="button"
               >
                 For landowners →
-              </Link>
-              <Link
-                href="/investors"
-                className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+              </button>
+              <button
+                className="border-frostwhite hover:bg-frostwhite hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+                type="button"
               >
                 For investors →
-              </Link>
+              </button>
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
@@ -84,7 +83,7 @@ export default function Landing() {
 
       {/* Steps on mobile*/}
       <section className="pb-40 lg:hidden lg:pb-0">
-        <div className="text-orange pt-24 ">
+        <div className="text-frostwhite pt-24 ">
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
               <p className="text-sm">1</p>

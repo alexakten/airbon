@@ -1,10 +1,23 @@
 import React from "react";
+import Link from "next/link";
 
-const Navbar = () => {
+interface NavbarProps {
+  logoColor: "frostwhite" | "orange" | "deeporange";
+}
+
+const Navbar: React.FC<NavbarProps> = ({ logoColor }) => {
+  const colorMap = {
+    frostwhite: "#D5C9C4",
+    orange: "#D99256",
+    deeporange: "#954013"
+  };
+
+  const fillColor = colorMap[logoColor] || "#D99256"; // Default to orange if color not found
+
   return (
-    <nav className="text-orange flex items-center justify-between">
+    <nav className="flex items-center justify-between">
       <div>
-        <a href="#" title="Logo">
+        <Link href={"/"}>
           <svg
             width="120"
             height="34"
@@ -14,14 +27,14 @@ const Navbar = () => {
           >
             <path
               d="M59.8083 27H57.0247L54.9113 21.072H45.2976L43.1841 27H40.4005L47.4368 7.41178H52.772L59.8083 27ZM50.1173 7.51487L46.1223 18.7523H54.0865L50.1173 7.51487ZM63.7463 10.8139H61.0143V7.41178H63.7463V10.8139ZM63.6432 27H61.1174V13.1851H63.6432V27ZM69.4142 13.1851V16.1492C70.0327 14.2161 71.3988 12.9016 73.9504 12.9016V15.4017H73.1772C70.6513 15.4017 69.4142 16.2007 69.4142 18.675V27H66.8883V13.1851H69.4142ZM83.1271 12.9016C86.452 12.9016 89.0036 15.8399 89.0036 20.0926C89.0036 24.3453 86.4777 27.2835 83.1271 27.2835C81.0652 27.2835 79.1064 25.969 78.2558 23.9844V27H75.73V7.41178H78.2558V16.5358C78.9002 14.68 80.5497 12.9016 83.1271 12.9016ZM82.3024 25.4278C84.9313 25.4278 86.4262 23.3401 86.4262 20.0926C86.4262 16.8451 84.9313 14.7574 82.3024 14.7574C79.6734 14.7574 78.1527 16.8451 78.1527 20.0926C78.1527 23.3401 79.6734 25.4278 82.3024 25.4278ZM97.2434 27.2835C93.1453 27.2835 90.5164 24.3711 90.5164 20.0926C90.5164 15.8141 93.1453 12.9016 97.2434 12.9016C101.341 12.9016 103.945 15.8141 103.945 20.0926C103.945 24.3711 101.341 27.2835 97.2434 27.2835ZM97.2434 25.4278C99.8724 25.4278 101.367 23.3401 101.367 20.0926C101.367 16.8451 99.8724 14.7574 97.2434 14.7574C94.6145 14.7574 93.0938 16.8451 93.0938 20.0926C93.0938 23.3401 94.6145 25.4278 97.2434 25.4278ZM113.181 12.9016C116.3 12.9016 117.975 15.2986 117.975 18.3915V18.443V27H115.449V18.8296V18.7781C115.449 15.9687 114.161 14.7574 112.15 14.7574C110.14 14.7574 108.851 15.9945 108.851 18.8296V27H106.326V13.1851H108.851V15.9945C109.47 14.3708 110.81 12.9016 113.181 12.9016Z"
-              fill="#D99256"
+              fill={fillColor}
             />
             <path
               d="M3.07696 1.74609V7.91113H21.9234L2.63657 21.3528C0.982706 22.503 0 24.391 0 26.412C0 29.8143 2.75196 32.5713 6.14816 32.5713H24.6157V26.4062H6.16547L24.6157 13.5425V26.4062H30.7696V1.74609H3.07696Z"
-              fill="#D99256"
+              fill={fillColor}
             />
           </svg>
-        </a>
+        </Link>
       </div>
       <ul className="hidden items-center gap-10 sm:flex">
         <li>
@@ -30,24 +43,24 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-        <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline">
             About us
           </a>
         </li>
         <li>
-        <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline">
             Blog
           </a>
         </li>
         <li>
-        <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline">
             Contact
           </a>
         </li>
       </ul>
       <ul className="hidden items-center gap-10 sm:flex">
         <li>
-        <a href="#" className="hover:underline">
+          <a href="#" className="hover:underline">
             Log in
           </a>
         </li>

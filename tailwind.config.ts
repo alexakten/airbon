@@ -13,16 +13,19 @@ const config: Config = {
         darkgreen: "#172421",
         lightgreen: "#24483E",
         bluegray: "#D9E1DE",
+        deeporange: "#954013",
         orange: "#D99256",
+        lightorange: "#F2BD8B",
+        frostwhite: "#D5C9C4",
+        icewhite: "#D9E1DE",
       },
       fontSize: {
         base: "0.9375rem",
         "2xl": "1.375rem",
-        "7xl": "5.12rem"
+        "7xl": "5.12rem",
       },
-      borderWidth: {
-        DEFAULT: '0.5px',  // Sets the default border width
-
+      borderWidth: {
+        DEFAULT: "0.5px", // Sets the default border width
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
