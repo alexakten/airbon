@@ -30,7 +30,7 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
-            Airbon helps landowners in South America monitor and measure forests
+            Airbon helps landowners in Brazil measure and monitor their forests
             to create high quality tech-verified carbon credits.
           </p>
         </div>
