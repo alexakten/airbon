@@ -36,6 +36,11 @@ const Navbar = () => {
         </li>
         <li>
         <a href="#" className="hover:underline">
+            Blog
+          </a>
+        </li>
+        <li>
+        <a href="#" className="hover:underline">
             Contact
           </a>
         </li>
