@@ -78,7 +78,7 @@ export default function Landing() {
 
         <div className="hidden w-full justify-between pt-24 lg:flex">
           <p>Scroll to learn more ↓</p>
-          <p>© 2023</p>
+          <p>© 2024</p>
         </div>
       </section>
 

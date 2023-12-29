@@ -70,7 +70,7 @@ export default function Landing() {
 
         <div className="absolute bottom-6 hidden w-full justify-between lg:flex">
           <p>Scroll to learn more ↓</p>
-          <p>© 2023</p>
+          <p>© 2024</p>
         </div>
       </section>
 
