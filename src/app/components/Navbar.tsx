@@ -38,14 +38,14 @@ const Navbar: React.FC<NavbarProps> = ({ logoColor }) => {
       </div>
       <ul className="hidden items-center gap-10 sm:flex">
         <li>
-          <a href="#" className="hover:underline">
+          <Link href="/landowners" className="hover:underline">
             Landowners
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:underline">
+          <Link href="/investors" className="hover:underline">
             Investors
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#" className="hover:underline">
