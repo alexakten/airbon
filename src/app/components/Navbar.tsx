@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoColor }) => {
         <li>
           <a
             href="#"
-            className="bg-lightgreen hover:bg-deepgreen text-bluegray rounded-full px-4 py-3"
+            className="bg-deepgreen hover:bg-lightgreen text-bluegray rounded-full px-4 py-3"
           >
             Sign up
           </a>
