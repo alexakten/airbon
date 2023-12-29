@@ -124,7 +124,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="text-orange bg-deepgreen relative flex flex-col items-center px-2 py-40 sm:px-8 ">
+      {/* <section className="text-orange bg-deepgreen relative flex flex-col items-center px-2 py-40 sm:px-8 ">
         <div className="grid h-full w-full grid-cols-2">
           <div className="col-span-1 flex h-full w-full max-w-lg flex-col items-start justify-center">
             <h2 className="text-6xl">It&apos;s time to heal our planet.</h2>
@@ -136,7 +136,7 @@ export default function Landing() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
