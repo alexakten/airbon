@@ -8,7 +8,7 @@ export default function Landing() {
         className="text-orange relative flex flex-col px-2 py-6 sm:px-8"
         style={{ height: "100svh" }}
       >
-        <Navbar logoColor="orange"></Navbar>
+        <Navbar navColor="orange"></Navbar>
 
         <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">

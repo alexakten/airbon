@@ -7,7 +7,7 @@ export default function Landing() {
         className="text-frostwhite relative flex flex-col py-6 "
         style={{ height: "100svh" }}
       >
-        <Navbar logoColor="frostwhite"></Navbar>
+        <Navbar navColor="frostwhite"></Navbar>
 
         <div className="border-frostwhite flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
