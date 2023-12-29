@@ -21,7 +21,6 @@ export default function Landing() {
               >
                 Buy credits →
               </button>
-             
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
@@ -35,19 +34,18 @@ export default function Landing() {
           <div className="grid grid-cols-4 gap-24">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-6 text-2xl">Measure</h2>
+              <h2 className="pt-6 text-2xl">Support</h2>
               <p className="pt-3">
-                Measure the size and impact of your forest using satellite
-                imagery and AI.
+                Use our platform to market your projects to buyers worldwide.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">2</p>
-              <h2 className="pt-6 text-2xl">Verify</h2>
+              <h2 className="pt-6 text-2xl">Protect</h2>
               <p className="pt-3">
-                Credits are verified by independent third parties all around the
-                globe.
+                We facilitate the sale of your credits and help you find trusted
+                buyers.
               </p>
             </div>
 
@@ -61,7 +59,7 @@ export default function Landing() {
 
             <div className="col-span-1">
               <p className="text-sm">4</p>
-              <h2 className="pt-6 text-2xl">Sell</h2>
+              <h2 className="pt-6 text-2xl">Inspire</h2>
               <p className="pt-3">
                 We facilitate the sale of your credits and help you find trusted
                 buyers.

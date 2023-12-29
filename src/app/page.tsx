@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen px-2 text-base sm:px-8">
+    <main className="bg-darkgreen text-base">
       <section
-        className="text-orange relative flex flex-col py-6 "
+        className="text-orange relative flex flex-col px-2 py-6 sm:px-8"
         style={{ height: "100svh" }}
       >
         <Navbar logoColor="orange"></Navbar>
@@ -76,14 +76,14 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="absolute bottom-6 hidden w-full justify-between lg:flex">
+        <div className="hidden w-full justify-between pt-24 lg:flex">
           <p>Scroll to learn more ↓</p>
           <p>© 2023</p>
         </div>
       </section>
 
       {/* Steps on mobile*/}
-      <section className="pb-40 lg:hidden lg:pb-0">
+      <section className="px-2 pb-40 sm:px-8 lg:hidden lg:pb-0">
         <div className="text-orange pt-24 ">
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
@@ -120,6 +120,20 @@ export default function Landing() {
                 buyers.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-orange bg-deepgreen relative flex flex-col items-center px-2 py-40 sm:px-8 ">
+        <div className="grid h-full w-full grid-cols-2">
+          <div className="col-span-1 flex h-full w-full max-w-lg flex-col items-start justify-center">
+            <h2 className="text-6xl">It&apos;s time to heal our planet.</h2>
+            <p className="pt-6">
+              It&apos;s time to heal our planet with carbon removal. By applying
+              biochar to soils we permanently remove CO2 for 1000+ years from
+              the atmosphere. This supports people and food systems to prosper.
+              A win-win for the people and the planet.
+            </p>
           </div>
         </div>
       </section>

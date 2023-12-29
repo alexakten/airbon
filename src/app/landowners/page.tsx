@@ -21,7 +21,6 @@ export default function Landing() {
               >
                 Start project →
               </button>
-              
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
