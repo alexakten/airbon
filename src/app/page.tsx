@@ -13,7 +13,7 @@ export default function Landing() {
         <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Restore the balance of our ecosystems with carbon credits.
+              Restore the balance of our ecosystems with carbon offsets.
             </h1>
             <div className="flex gap-4 lg:flex-row">
               <Link
@@ -32,7 +32,7 @@ export default function Landing() {
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
             Airbon helps landowners in Brazil measure and monitor their forests
-            to create high quality tech-verified carbon credits.
+            to create high quality tech-verified carbon offsets.
           </p>
         </div>
 
