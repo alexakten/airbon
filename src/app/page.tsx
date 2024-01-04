@@ -76,7 +76,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="hidden w-full justify-between pt-24 lg:flex">
+        <div className="absolute bottom-6 hidden w-full justify-between lg:flex">
           <p>Scroll to learn more ↓</p>
           <p>© 2024</p>
         </div>
