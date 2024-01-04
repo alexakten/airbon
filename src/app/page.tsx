@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen text-base">
+    <main className="bg-darkgreen sm:px:8 px-2 text-base">
       <section
-        className="text-orange relative flex flex-col px-2 py-6 sm:px-8"
+        className="text-orange relative flex flex-col py-6"
         style={{ height: "100svh" }}
       >
         <Navbar navColor="orange"></Navbar>
