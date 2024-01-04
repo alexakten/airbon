@@ -83,7 +83,7 @@ export default function Landing() {
       </section>
 
       {/* Steps on mobile*/}
-      <section className="px-2 pb-40 sm:px-8 lg:hidden lg:pb-0">
+      <section className="pb-40 lg:hidden lg:pb-0">
         <div className="text-orange pt-24 ">
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
