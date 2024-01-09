@@ -38,8 +38,8 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
       </div>
       <ul className="hidden items-center gap-10 sm:flex">
         <li>
-          <Link href="/landowners" className="hover:underline">
-            Landowners
+          <Link href="/farmers" className="hover:underline">
+            Farmers
           </Link>
         </li>
         <li>

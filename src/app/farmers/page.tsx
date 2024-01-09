@@ -31,30 +31,31 @@ export default function Landing() {
 
         {/* Steps on desktop*/}
         <div className="hidden pt-16 lg:block">
-          <div className="grid grid-cols-4 gap-24">
+          <div className="grid grid-cols-4 gap-20">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-6 text-2xl">Measure</h2>
+              <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                Measure the size and impact of your forest using satellite
-                imagery and AI.
+                We help farmers get started with carbon farming practices that
+                generate credits.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">2</p>
-              <h2 className="pt-6 text-2xl">Verify</h2>
+              <h2 className="pt-6 text-2xl">Measure</h2>
               <p className="pt-3">
-                Credits are verified by independent third parties all around the
-                globe.
+                We measure and verify impact using satellite imagery, IoT
+                devices and AI.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">3</p>
-              <h2 className="pt-6 text-2xl">Market</h2>
+              <h2 className="pt-6 text-2xl">Analyze</h2>
               <p className="pt-3">
-                Use our platform to market your projects to buyers worldwide.
+                Our digital platform allows for analysis and reporting of carbon
+                sequestration.
               </p>
             </div>
 
@@ -62,8 +63,8 @@ export default function Landing() {
               <p className="text-sm">4</p>
               <h2 className="pt-6 text-2xl">Sell</h2>
               <p className="pt-3">
-                We facilitate the sale of your credits and help you find trusted
-                buyers.
+                We connect farmers with climate conscious businesses going
+                net-zero.
               </p>
             </div>
           </div>
@@ -81,27 +82,28 @@ export default function Landing() {
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-6 text-2xl">Measure</h2>
+              <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                We measure the size and impact of your forest using satellite
-                imagery and AI.
+                We help farmers get started with carbon farming practices that
+                generate credits.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">2</p>
-              <h2 className="pt-6 text-2xl">Verify</h2>
+              <h2 className="pt-6 text-2xl">Measure</h2>
               <p className="pt-3">
-                Credits are verified by independent third parties all around the
-                globe.
+                We measure and verify impact using satellite imagery, IoT
+                devices and AI.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">3</p>
-              <h2 className="pt-6 text-2xl">Market</h2>
+              <h2 className="pt-6 text-2xl">Analyze</h2>
               <p className="pt-3">
-                Use our platform to market your projects to buyers worldwide.
+                Our digital platform allows for analysis and reporting of carbon
+                sequestration.
               </p>
             </div>
 
@@ -109,8 +111,8 @@ export default function Landing() {
               <p className="text-sm">4</p>
               <h2 className="pt-6 text-2xl">Sell</h2>
               <p className="pt-3">
-                We facilitate the sale of your credits and help you find trusted
-                buyers.
+                We connect farmers with climate conscious businesses going
+                net-zero.
               </p>
             </div>
           </div>

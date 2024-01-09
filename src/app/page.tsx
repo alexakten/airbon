@@ -13,14 +13,14 @@ export default function Landing() {
         <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Restore the balance of our ecosystems with carbon offsets.
+              Restore the balance of our ecosystems with carbon credits.
             </h1>
             <div className="flex gap-4 lg:flex-row">
               <Link
-                href="/landowners"
+                href="/farmers"
                 className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
               >
-                For landowners →
+                For farmers →
               </Link>
               <Link
                 href="/investors"
@@ -31,37 +31,38 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg sm:static sm:flex lg:text-2xl">
-            Airbon helps landowners in Brazil measure and monitor their forests
-            to create high quality tech-verified carbon offsets.
+            Airbon helps farmers in Brazil adopt sustainable carbon farming
+            practices to create high quality tech-verified carbon credits.
           </p>
         </div>
 
         {/* Steps on desktop*/}
         <div className="hidden pt-16 lg:block">
-          <div className="grid grid-cols-4 gap-24">
+          <div className="grid grid-cols-4 gap-20">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-6 text-2xl">Measure</h2>
+              <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                Measure the size and impact of your forest using satellite
-                imagery and AI.
+                We help farmers get started with carbon farming practices that
+                generate credits.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">2</p>
-              <h2 className="pt-6 text-2xl">Verify</h2>
+              <h2 className="pt-6 text-2xl">Measure</h2>
               <p className="pt-3">
-                Credits are verified by independent third parties all around the
-                globe.
+                We measure and verify impact using satellite imagery, IoT
+                devices and AI.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">3</p>
-              <h2 className="pt-6 text-2xl">Market</h2>
+              <h2 className="pt-6 text-2xl">Analyze</h2>
               <p className="pt-3">
-                Use our platform to market your projects to buyers worldwide.
+                Our digital platform allows for analysis and reporting of carbon
+                sequestration.
               </p>
             </div>
 
@@ -69,8 +70,8 @@ export default function Landing() {
               <p className="text-sm">4</p>
               <h2 className="pt-6 text-2xl">Sell</h2>
               <p className="pt-3">
-                We facilitate the sale of your credits and help you find trusted
-                buyers.
+                We connect farmers with climate conscious businesses going
+                net-zero.
               </p>
             </div>
           </div>
@@ -84,31 +85,32 @@ export default function Landing() {
 
       {/* Steps on mobile*/}
       <section className="pb-40 lg:hidden lg:pb-0">
-        <div className="text-orange pt-24 ">
+        <div className="text-frostwhite pt-24 ">
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-6 text-2xl">Measure</h2>
+              <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                We measure the size and impact of your forest using satellite
-                imagery and AI.
+                We help farmers get started with carbon farming practices that
+                generate credits.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">2</p>
-              <h2 className="pt-6 text-2xl">Verify</h2>
+              <h2 className="pt-6 text-2xl">Measure</h2>
               <p className="pt-3">
-                Credits are verified by independent third parties all around the
-                globe.
+                We measure and verify impact using satellite imagery, IoT
+                devices and AI.
               </p>
             </div>
 
             <div className="col-span-1">
               <p className="text-sm">3</p>
-              <h2 className="pt-6 text-2xl">Market</h2>
+              <h2 className="pt-6 text-2xl">Analyze</h2>
               <p className="pt-3">
-                Use our platform to market your projects to buyers worldwide.
+                Our digital platform allows for analysis and reporting of carbon
+                sequestration.
               </p>
             </div>
 
@@ -116,8 +118,8 @@ export default function Landing() {
               <p className="text-sm">4</p>
               <h2 className="pt-6 text-2xl">Sell</h2>
               <p className="pt-3">
-                We facilitate the sale of your credits and help you find trusted
-                buyers.
+                We connect farmers with climate conscious businesses going
+                net-zero.
               </p>
             </div>
           </div>
