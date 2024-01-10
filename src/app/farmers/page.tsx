@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 
 export default function Landing() {
   return (
-    <main className="bg-deeporange px-2 text-base sm:px-8">
+    <main className="bg-deeporange text-frostwhite px-2 text-base sm:px-8">
       <section
-        className="text-frostwhite relative flex flex-col py-6 "
+        className="relative flex flex-col py-6 "
         style={{ height: "100svh" }}
       >
         <Navbar navColor="frostwhite"></Navbar>
