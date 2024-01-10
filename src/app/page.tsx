@@ -77,7 +77,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="absolute bottom-6 hidden w-full justify-between lg:flex">
+        <div className="absolute  bottom-6 hidden w-full justify-between lg:flex">
           <p>v1.0 launching soon</p>
           <p>© 2024</p>
         </div>
@@ -85,7 +85,7 @@ export default function Landing() {
 
       {/* Steps on mobile*/}
       <section className="pb-40 lg:hidden lg:pb-0">
-        <div className="text-frostwhite pt-24 ">
+        <div className="pt-24 ">
           <div className="grid grid-cols-1 gap-12">
             <div className="col-span-1">
               <p className="text-sm">1</p>
