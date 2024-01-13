@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 export default function Landing() {
   return (
-    <main className="bg-deeporange text-frostwhite px-2 text-base sm:px-8 xl:text-lg">
+    <main className="bg-deeporange text-frostwhite px-2 text-base sm:px-8 2xl:text-lg">
       <section
         className="relative flex flex-col py-6 "
         style={{ height: "100svh" }}
@@ -10,8 +10,8 @@ export default function Landing() {
         <Navbar navColor="frostwhite"></Navbar>
 
         <div className="border-frostwhite flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
-          <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 xl:max-w-7xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl">
+          <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl">
               Generate income and protect your land with carbon offsets.
             </h1>
             <div className="flex gap-4 lg:flex-row">
@@ -31,7 +31,7 @@ export default function Landing() {
 
         {/* Steps on desktop*/}
         <div className="hidden pt-16 lg:block">
-          <div className="grid grid-cols-4 gap-20">
+          <div className="grid grid-cols-4 gap-20 ">
             <div className="col-span-1">
               <p className="text-sm">1</p>
               <h2 className="pt-6 text-2xl">Educate</h2>
