@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen text-orange px-2 text-base sm:px-8">
+    <main className="bg-darkgreen text-orange px-2 text-base xl:text-lg sm:px-8">
       <section
         className="relative flex flex-col py-6"
         style={{ height: "100svh" }}
@@ -11,8 +11,8 @@ export default function Landing() {
         <Navbar navColor="orange"></Navbar>
 
         <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
-          <div className="flex max-w-6xl flex-col gap-4 lg:gap-14">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+          <div className="flex max-w-6xl xl:max-w-7xl flex-col gap-4 lg:gap-14">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl">
               Restore the balance of our ecosystems with carbon credits.
             </h1>
             <div className="flex gap-4 lg:flex-row">
