@@ -41,8 +41,8 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 w-full max-w-lg  items-end justify-end text-lg lg:static lg:flex lg:text-2xl">
-            Airbon helps farmers in Brazil adopt carbon farming
-            practices that create high quality tech-verified carbon credits.
+            Airbon helps farmers in Brazil adopt carbon farming practices to
+            create high quality tech-verified carbon credits.
           </p>
         </div>
 
