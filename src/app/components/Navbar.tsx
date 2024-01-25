@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 interface NavbarProps {
-  navColor: "frostwhite" | "orange" | "deeporange";
+  navColor: "frostwhite" | "orange" | "deeporange" | "offblack";
 }
 
 const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
@@ -10,6 +10,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
     frostwhite: "#D5C9C4",
     orange: "#D99256",
     deeporange: "#954013",
+    offblack: "#151515"
   };
 
   const fillColor = colorMap[navColor] || "#D99256"; // Default to orange if color not found
@@ -67,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
         <li>
           <a
             href="#"
-            className="hover:bg-lightgreen text-deepgreen rounded-full px-4 py-3"
+            className="hover:bg-lightgreen text-lightgray rounded-full px-4 py-3"
             style={{ backgroundColor: fillColor }}
           >
             Sign up

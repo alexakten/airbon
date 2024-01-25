@@ -12,7 +12,7 @@ export default function Landing() {
         <div className="border-frostwhite flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl">
-              Generate income and protect your land with carbon offsets.
+              Increase income and boost soil fertility with regenerative farming.
             </h1>
             <div className="flex gap-4 lg:flex-row">
               <button
@@ -36,8 +36,7 @@ export default function Landing() {
               <p className="text-sm">1</p>
               <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                We help farmers get started with carbon farming practices that
-                generate credits.
+              We help farmers get started with carbon farming to generate credits.
               </p>
             </div>
 

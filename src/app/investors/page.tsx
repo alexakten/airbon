@@ -36,8 +36,7 @@ export default function Landing() {
               <p className="text-sm">1</p>
               <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                We help farmers get started with carbon farming practices that
-                generate credits.
+              We help farmers get started with carbon farming to generate credits.
               </p>
             </div>
 

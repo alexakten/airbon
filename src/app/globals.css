@@ -21,3 +21,62 @@
 body {
   font-family: 'Neue Haas Grotesk', sans-serif;
 }
+
+
+@keyframes blobAnimation {
+  0%, 100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 58% 42% 55% 45% / 55% 48% 52% 45%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67% / 55% 60% 40% 45%;
+  }
+  75% {
+    border-radius: 75% 25% 28% 72% / 70% 43% 57% 30%;
+  }
+}
+
+.blob {
+  width: 2rem; /* or any other size */
+  height: 2rem;
+  background-color: black;
+  animation: blobAnimation 4s infinite;
+}
+
+.pulsating-ring {
+  position: relative;
+  width: 0.5rem;  /* w-2 */
+  height: 0.5rem; /* h-2 */
+  background-color: #22c55e; /* bg-green-400 */
+  border-radius: 50%; /* rounded-full */
+}
+
+.pulsating-ring::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 197, 94, 0.5); /* Slightly transparent green */
+  border-radius: 50%;
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.7;
+  }
+}

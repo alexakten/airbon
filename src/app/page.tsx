@@ -3,28 +3,38 @@ import Link from "next/link";
 
 export default function Landing() {
   return (
-    <main className="bg-darkgreen text-orange px-2 text-base sm:px-8 2xl:text-lg">
+    <main className="bg-lightgray px-2 text-base text-offblack sm:px-8 2xl:text-lg">
       <section
         className="relative flex flex-col py-6"
         style={{ height: "100svh" }}
       >
-        <Navbar navColor="orange"></Navbar>
+        <Navbar navColor="offblack"></Navbar>
 
-        <div className="border-orange flex flex-col gap-4 pt-24 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
+        <div className="flex flex-col gap-4 border-offblack pt-20 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl">
-              Restore the balance of our ecosystems with carbon credits.
-            </h1>
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2 px-2 py-2 pl-2">
+                <span className="relative flex h-3 w-3">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex h-3 w-3 rounded-full bg-green-400"></span>
+                </span>
+                <p className="text-sm">v.01 launching soon</p>
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl">
+                Restore the balance of our ecosystems with carbon credits.
+              </h1>
+            </div>
+
             <div className="flex gap-4 lg:flex-row">
               <Link
                 href="/farmers"
-                className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-darkgreen sm:px-8"
               >
                 For farmers →
               </Link>
               <Link
                 href="/investors"
-                className="border-orange hover:bg-orange hover:text-darkgreen rounded-full border px-4 py-3 sm:px-8"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-darkgreen sm:px-8"
               >
                 For investors →
               </Link>
@@ -43,8 +53,8 @@ export default function Landing() {
               <p className="text-sm">1</p>
               <h2 className="pt-6 text-2xl">Educate</h2>
               <p className="pt-3">
-                We help farmers get started with carbon farming practices that
-                generate credits.
+                We help farmers get started with carbon farming to generate
+                credits.
               </p>
             </div>
 
@@ -75,11 +85,6 @@ export default function Landing() {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="absolute  bottom-6 hidden w-full justify-between lg:flex">
-          <p>v1.0 launching soon</p>
-          <p>© 2024</p>
         </div>
       </section>
 
@@ -126,7 +131,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* <section className="text-orange bg-deepgreen relative flex flex-col items-center px-2 py-40 sm:px-8 ">
+      {/* <section className="text-offblack bg-deepgreen relative flex flex-col items-center px-2 py-40 sm:px-8 ">
         <div className="grid h-full w-full grid-cols-2">
           <div className="col-span-1 flex h-full w-full max-w-lg flex-col items-start justify-center">
             <h2 className="text-6xl">It&apos;s time to heal our planet.</h2>
