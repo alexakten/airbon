@@ -19,7 +19,7 @@ export default function Landing() {
                 </span>
                 <p className="text-sm">v.01 launching soon</p>
               </div>
-              <h1 className="text-[clamp(32px,5.5vw,84px)] leading-[1]">
+              <h1 className="text-[clamp(32px,5.5vw,84px)] leading-[1.05]">
                 Increase income and boost soil fertility with regenerative
                 farming.
               </h1>
