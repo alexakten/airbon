@@ -46,7 +46,7 @@ export default function Landing() {
           </p>
         </div>
 
-        {/* Steps on desktop*/}
+        {/* -------------------------Steps on desktop----------------------------- */}
         <div className="hidden pt-16 lg:block">
           <div className="grid grid-cols-4 gap-20">
             <div className="col-span-1">
@@ -88,7 +88,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Steps on mobile*/}
+      {/* -------------------------Steps on mobile-------------------------------- */}
       <section className="pb-40 lg:hidden lg:pb-0">
         <div className="pt-24 ">
           <div className="grid grid-cols-1 gap-12">
@@ -130,20 +130,6 @@ export default function Landing() {
           </div>
         </div>
       </section>
-
-      {/* <section className="text-offblack bg-deepgreen relative flex flex-col items-center px-2 py-40 sm:px-8 ">
-        <div className="grid h-full w-full grid-cols-2">
-          <div className="col-span-1 flex h-full w-full max-w-lg flex-col items-start justify-center">
-            <h2 className="text-6xl">It&apos;s time to heal our planet.</h2>
-            <p className="pt-6">
-              It&apos;s time to heal our planet with carbon removal. By applying
-              biochar to soils we permanently remove CO2 for 1000+ years from
-              the atmosphere. This supports people and food systems to prosper.
-              A win-win for the people and the planet.
-            </p>
-          </div>
-        </div>
-      </section> */}
     </main>
   );
 }

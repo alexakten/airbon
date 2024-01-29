@@ -2,18 +2,15 @@ import React from "react";
 import Link from "next/link";
 
 interface NavbarProps {
-  navColor: "frostwhite" | "orange" | "deeporange" | "offblack";
+  navColor: "offblack";
 }
 
 const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   const colorMap = {
-    frostwhite: "#D5C9C4",
-    orange: "#D99256",
-    deeporange: "#954013",
-    offblack: "#151515"
+    offblack: "#151515",
   };
 
-  const fillColor = colorMap[navColor] || "#D99256"; // Default to orange if color not found
+  const fillColor = colorMap[navColor] || "#151515"; // Default to orange if color not found
 
   return (
     <nav className="flex items-center justify-between">
@@ -68,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
         <li>
           <a
             href="#"
-            className="hover:bg-lightgreen text-lightgray rounded-full px-4 py-3"
+            className="rounded-full px-4 py-3 text-lightgray hover:bg-lightgreen"
             style={{ backgroundColor: fillColor }}
           >
             Sign up
