@@ -20,7 +20,7 @@ export default function Landing() {
                 </span>
                 <p className="text-sm">v.01 launching soon</p>
               </div>
-              <h1 className="leading-[1] text-[clamp(32px,4vw,84px)]">
+              <h1 className="leading-[1] text-[clamp(32px,5.5vw,84px)]">
                 Restore the balance of our ecosystems with carbon credits.
               </h1>
             </div>
