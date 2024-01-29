@@ -5,7 +5,7 @@ export default function Landing() {
   return (
     <main className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <section
-        className="relative max-w-8xl flex flex-col py-6"
+        className="relative flex max-w-8xl flex-col py-6"
         style={{ height: "100svh" }}
       >
         <Navbar navColor="offblack"></Navbar>
@@ -20,7 +20,7 @@ export default function Landing() {
                 </span>
                 <p className="text-sm">v.01 launching soon</p>
               </div>
-              <h1 className="leading-[1.05] text-[clamp(32px,5.5vw,84px)]">
+              <h1 className="text-[clamp(32px,5.5vw,84px)] leading-[1.05]">
                 Restore the balance of our ecosystems with carbon credits.
               </h1>
             </div>
