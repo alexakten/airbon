@@ -28,13 +28,13 @@ export default function Landing() {
             <div className="flex gap-4 lg:flex-row">
               <Link
                 href="/farmers"
-                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-lightgray sm:px-8"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
               >
                 For farmers →
               </Link>
               <Link
                 href="/investors"
-                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-lightgray sm:px-8"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
               >
                 For investors →
               </Link>
