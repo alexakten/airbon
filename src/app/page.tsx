@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Landing() {
   return (
-    <main className="bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+    <main className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <section
-        className="relative flex flex-col py-6"
+        className="relative max-w-8xl flex flex-col py-6"
         style={{ height: "100svh" }}
       >
         <Navbar navColor="offblack"></Navbar>
@@ -20,7 +20,7 @@ export default function Landing() {
                 </span>
                 <p className="text-sm">v.01 launching soon</p>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl">
+              <h1 className="leading-[1] text-[clamp(32px,4vw,84px)]">
                 Restore the balance of our ecosystems with carbon credits.
               </h1>
             </div>
@@ -28,13 +28,13 @@ export default function Landing() {
             <div className="flex gap-4 lg:flex-row">
               <Link
                 href="/farmers"
-                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-darkgreen sm:px-8"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-lightgray sm:px-8"
               >
                 For farmers →
               </Link>
               <Link
                 href="/investors"
-                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-darkgreen sm:px-8"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-offblack hover:text-lightgray sm:px-8"
               >
                 For investors →
               </Link>

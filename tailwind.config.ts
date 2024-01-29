@@ -26,6 +26,9 @@ const config: Config = {
         "2xl": "1.375rem",
         "7xl": "5.12rem",
       },
+      maxWidth: {
+        "8xl": "1440px",
+      },
       borderWidth: {
         DEFAULT: "0.5px", // Sets the default border width
       },
