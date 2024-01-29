@@ -18,7 +18,7 @@ const config: Config = {
         lightorange: "#F2BD8B",
         frostwhite: "#D5C9C4",
         icewhite: "#D9E1DE",
-        lightgray: "#E7E7E7",
+        lightgray: "#EEEEEE",
         offblack: "#151515"
       },
       fontSize: {
