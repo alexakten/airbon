@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   const fillColor = colorMap[navColor] || "#151515"; // Default to orange if color not found
 
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="flex w-full items-center justify-between">
       <div>
         <Link href={"/"}>
           <svg
@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </svg>
         </Link>
       </div>
-      <ul className="hidden items-center gap-10 sm:flex">
+      <ul className="hidden items-center gap-8 sm:flex">
         <li>
           <Link href="/farmers" className="hover:underline">
             Farmers
@@ -45,18 +45,18 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
             Investors
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link href="#" className="hover:underline">
-            Blog
+            Projects
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link href="#" className="hover:underline">
             Contact
           </Link>
         </li>
       </ul>
-      <ul className="hidden items-center gap-10 sm:flex">
+      {/* <ul className="hidden items-center gap-10 sm:flex">
         <li>
           <a href="#" className="hover:underline">
             Log in
@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
             Sign up
           </a>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };
