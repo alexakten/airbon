@@ -54,7 +54,7 @@ export default function Landing() {
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-20">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-4 text-2xl">Educate</h2>
+              <h2 className="pt-4 text-2xl">Enable</h2>
               <p className="pt-2">
                 We help farmers get started with carbon farming to generate
                 credits.
@@ -97,7 +97,7 @@ export default function Landing() {
           <div className="grid w-full grid-cols-1 gap-12 sm:grid-cols-2">
             <div className="col-span-1">
               <p className="text-sm">1</p>
-              <h2 className="pt-4 text-2xl">Educate</h2>
+              <h2 className="pt-4 text-2xl">Enable</h2>
               <p className="pt-2">
                 We help farmers get started with carbon farming to generate
                 credits.
@@ -135,7 +135,7 @@ export default function Landing() {
       </section>
 
       <section className="w-full max-w-8xl py-8">
-        <h2 className="pb-8 text-5xl">Discover projects</h2>
+        <h2 className="pb-8 text-3xl sm:text-5xl">Discover projects</h2>
         <div className="hidden lg:block ">
           <ProjectGrid cards={8} />
         </div>
