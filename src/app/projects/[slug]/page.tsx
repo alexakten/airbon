@@ -19,7 +19,7 @@ export default function ProjectPage() {
     return <div>Project not found</div>;
   }
   return (
-    <main className="flex flex-col items-center bg-lightgray py-6 px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+    <main className="flex flex-col items-center bg-lightgray px-3 py-6 text-base text-offblack sm:px-8 2xl:text-lg">
       <Navbar navColor="offblack" />
 
       <section
