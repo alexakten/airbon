@@ -1,9 +1,15 @@
 const ProjectData = [
   {
     projectID: "1",
-    projectName: "Project",
+    projectName: "Amazon Rainforest",
     projectDescription: "Description",
     projectLocation: "Location",
-    slug: "slug"
+    projectWebsite: "URL",
+    projectVerifier: "Verifier",
+    projectContact: "Contact",
+    projectLink: "Link",
+    slug: "amazon-rainforest",
   },
 ];
+
+export default ProjectData;
