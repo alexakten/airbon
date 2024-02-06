@@ -19,23 +19,22 @@ export default function ProjectPage() {
     return <div>Project not found</div>;
   }
   return (
-    <main className="flex flex-col items-center bg-lightgray px-3 py-6 text-base text-offblack sm:px-8 2xl:text-lg">
+    <main className="flex flex-col items-center bg-lightgray h-full px-3 py-6 text-base text-offblack sm:px-8 2xl:text-lg">
       <Navbar navColor="offblack" />
 
       <section
-        className="relative flex w-full max-w-8xl flex-col justify-center py-36"
-        style={{ height: "100svh" }}
+        className="relative flex w-full max-w-8xl flex-col justify-center pt-16"
       >
         <h1 className="mb-4 text-4xl">{project.projectName}</h1>
-        <div className="grid h-auto grid-cols-1 gap-4 md:h-screen md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
-          <div className="col-span-2 row-span-2 h-56 rounded-lg border border-black bg-gray-200 md:h-auto"></div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+          <div className="col-span-2 row-span-2 min-h-56 rounded-lg border border-black bg-gray-200 "></div>
           <div className="col-span-2 row-span-1 rounded-lg border border-black">
             <div className="p-4">
               <p className="text-medium mb-4 text-xl">Background</p>
               <p>{project.projectDescription}</p>
             </div>
           </div>
-          <div className="col-span-2 rounded-lg border border-black bg-gray-200 p-4 md:col-span-1"></div>
+          <div className="col-span-2 min-h-56 rounded-lg border border-black bg-gray-200 p-4 md:col-span-1"></div>
           <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
             <p className="text-medium mb-4 text-xl">Invest in project</p>
             <div className="flex justify-between border-b border-t border-gray-400 py-2">
