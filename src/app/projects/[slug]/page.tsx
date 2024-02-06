@@ -27,7 +27,7 @@ export default function ProjectPage() {
         style={{ height: "100svh" }}
       >
         <h1 className="mb-4 text-4xl">{project.projectName}</h1>
-        <div className="grid h-auto grid-cols-1 gap-4 md:h-screen md:grid-cols-4 md:grid-rows-2">
+        <div className="grid h-auto grid-cols-1 gap-4 md:h-screen md: grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
           <div className="col-span-2 row-span-2 h-56 rounded-lg border border-black bg-gray-200 md:h-auto"></div>
           <div className="col-span-2 row-span-1 rounded-lg border border-black">
             <div className="p-4">
@@ -35,36 +35,33 @@ export default function ProjectPage() {
               <p>{project.projectDescription}</p>
             </div>
           </div>
-          <div className="col-span-2 md:col-span-1 rounded-lg border border-black bg-gray-200 p-4"></div>
-          <div className="col-span-2 md:col-span-1 rounded-lg border border-black p-4">
-            <div className="flex h-full flex-col justify-between">
-              <div>
-                <p className="text-medium pb-4 text-xl">Invest in project</p>
-                <div className="flex justify-between border-b border-t border-gray-400 py-2">
-                  Website
-                  <span className="font-normal opacity-50">
-                    {project.projectWebsite}
-                  </span>
-                </div>
-                <div className="flex justify-between border-b border-t border-gray-400 py-2">
-                  Verifier
-                  <span className="font-normal opacity-50">
-                    {project.projectVerifier}
-                  </span>
-                </div>
-                <div className="flex justify-between border-b border-t border-gray-400 py-2">
-                  Contact
-                  <span className="font-normal opacity-50">
-                    {project.projectContact}
-                  </span>
-                </div>
-              </div>
-              <div className="flex w-full justify-end">
-                <button className="transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
-                  Visit website
-                  <span className={inter.className}> -&gt;</span>
-                </button>
-              </div>
+          <div className="col-span-2 rounded-lg border border-black bg-gray-200 p-4 md:col-span-1"></div>
+          <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
+            <p className="text-medium mb-4 text-xl">Invest in project</p>
+            <div className="flex justify-between border-b border-t border-gray-400 py-2">
+              Website
+              <span className="font-normal opacity-50">
+                {project.projectWebsite}
+              </span>
+            </div>
+            <div className="flex justify-between border-b border-t border-gray-400 py-2">
+              Verifier
+              <span className="font-normal opacity-50">
+                {project.projectVerifier}
+              </span>
+            </div>
+            <div className="flex justify-between border-b border-t border-gray-400 py-2">
+              Contact
+              <span className="font-normal opacity-50">
+                {project.projectContact}
+              </span>
+            </div>
+
+            <div className="flex w-full justify-end">
+              <button className="mt-4 transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
+                Visit website
+                <span className={inter.className}> -&gt;</span>
+              </button>
             </div>
           </div>
         </div>
