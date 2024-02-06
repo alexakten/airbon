@@ -135,7 +135,7 @@ export default function Landing() {
       </section>
 
       <section className="w-full max-w-8xl py-8">
-        <h2 className="pb-8 text-3xl sm:text-5xl">Discover projects</h2>
+        <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
         <div className="hidden lg:block ">
           <ProjectGrid cards={8} />
         </div>
