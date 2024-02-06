@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   const fillColor = colorMap[navColor] || "#151515"; // Default to orange if color not found
 
   return (
-    <nav className="flex z-20 max-w-8xl px-3 sm:px-8 z-100 py-5 bg-lightgray fixed top-0 w-full bg- items-center justify-between">
+    <nav className="flex bg-lightgray w-full items-center justify-between">
       <div>
         <Link href={"/"}>
           <svg

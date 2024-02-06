@@ -19,7 +19,7 @@ export default function ProjectPage() {
     return <div>Project not found</div>;
   }
   return (
-    <main className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+    <main className="flex flex-col items-center bg-lightgray py-6 px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <Navbar navColor="offblack" />
 
       <section
@@ -27,7 +27,7 @@ export default function ProjectPage() {
         style={{ height: "100svh" }}
       >
         <h1 className="mb-4 text-4xl">{project.projectName}</h1>
-        <div className="grid h-auto grid-cols-1 gap-4 md:h-screen md: grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+        <div className="grid h-auto grid-cols-1 gap-4 md:h-screen md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
           <div className="col-span-2 row-span-2 h-56 rounded-lg border border-black bg-gray-200 md:h-auto"></div>
           <div className="col-span-2 row-span-1 rounded-lg border border-black">
             <div className="p-4">
