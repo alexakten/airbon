@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 
 interface NavbarProps {
@@ -12,9 +14,15 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
 
   const fillColor = colorMap[navColor] || "#151515"; // Default to orange if color not found
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="flex z-50 absolute max-w-8xl top-0 py-6 w-full items-center justify-between">
-      <div>
+    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-center justify-between py-6">
+      <div className="h-full w-full">
         <Link href={"/"}>
           <svg
             width="120"
@@ -56,22 +64,60 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </Link>
         </li>
       </ul>
-      {/* <ul className="hidden items-center gap-10 sm:flex">
-        <li>
-          <a href="#" className="hover:underline">
-            Log in
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="rounded-full px-4 py-3 text-lightgray hover:bg-lightgreen"
-            style={{ backgroundColor: fillColor }}
-          >
-            Sign up
-          </a>
-        </li>
-      </ul> */}
+      <div className="sm:hidden">
+        <div
+          className={`absolute -right-5 top-0 h-56 w-full transform bg-lightgray transition-transform duration-300 ease-out ${
+            isOpen ? "-translate-x-5" : "translate-x-full"
+          } sm:hidden`}
+        >
+          <ul className="flex h-full gap-2 flex-col items-center justify-center">
+            <li>
+              <Link href="/farmers" className="hover:underline">
+                Farmers
+              </Link>
+            </li>
+            <li>
+              <Link href="/investors" className="hover:underline">
+                Investors
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects" className="hover:underline">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:underline">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <button
+          onClick={handleClick}
+          className="z-50 flex flex-col items-center justify-center"
+        >
+          <span
+            className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
+              isOpen
+                ? "translate-y-1 rotate-45 transform"
+                : "-translate-y-0.5 transform"
+            }`}
+          ></span>
+          <span
+            className={`my-0.5 block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></span>
+          <span
+            className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
+              isOpen
+                ? "-translate-y-1 -rotate-45 transform"
+                : "translate-y-0.5 transform"
+            }`}
+          ></span>
+        </button>
+      </div>
     </nav>
   );
 };
