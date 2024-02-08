@@ -10,8 +10,8 @@ export default function Landing() {
     <main className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <Navbar navColor="offblack" />
       <section
-        className="relative flex max-w-8xl flex-col items-center"
-        style={{ height: "100svh" }}
+        className="relative flex max-w-8xl min-h-[800px] flex-col items-center"
+        // style={{ height: "100svh" }}
       >
         <div className="flex flex-col gap-4 border-offblack pt-20 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
@@ -134,7 +134,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="w-full max-w-8xl py-8">
+      <section className="w-full max-w-8xl py-24">
         <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
         <div className="hidden lg:block ">
           <ProjectGrid cards={8} />
