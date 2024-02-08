@@ -3,13 +3,24 @@ import ProjectData from "../ProjectData"; // Ensure this is the correct path to 
 
 interface ProjectGridProps {
   cards: number;
+  currentProjectID?: string; // This prop is optional
 }
 
-const ProjectGrid: React.FC<ProjectGridProps> = ({ cards }) => {
+const ProjectGrid: React.FC<ProjectGridProps> = ({
+  cards,
+  currentProjectID,
+}) => {
+  const projectsToShow = ProjectData.filter(
+    (project) => !currentProjectID || project.projectID !== currentProjectID,
+  );
+
   return (
-    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6`}>
-      {ProjectData.slice(0, cards).map((project, index) => (
-        <ProjectCard key={index} project={project} />
+    <div
+      className={`grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`}
+    >
+      {projectsToShow.slice(0, cards).map((project, index) => (
+        // Assuming you pass necessary project data to ProjectCard
+        <ProjectCard key={project.projectID} project={project} />
       ))}
     </div>
   );

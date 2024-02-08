@@ -6,6 +6,7 @@ import ProjectData from "@/app/ProjectData";
 import Navbar from "@/app/components/Navbar";
 import { Inter } from "next/font/google";
 import Image from "next/image";
+import ProjectGrid from "@/app/components/ProjectGrid";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,16 +55,14 @@ export default function ProjectPage() {
               <p>{project.projectDescription}</p>
             </div>
           </div>
-          <div className="col-span-2 min-h-56 rounded-lg border border-black bg-gray-200 md:col-span-1">
+          <div className="col-span-2 min-h-56 overflow-hidden rounded-lg border border-black bg-gray-200 md:col-span-1">
             <iframe
               width="100%"
               height="100%"
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen
-              src={`https://www.google.com/maps/embed/v1/place?key=${
-                process.env.GOOGLE_MAPS_API_KEY
-              }&q=${encodeURIComponent(project.projectLocation)}`}
+              src={project.projectMapLink}
             ></iframe>
           </div>
           <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
@@ -99,6 +98,22 @@ export default function ProjectPage() {
               </button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full max-w-8xl py-36">
+        <h2 className="pb-8 text-3xl sm:text-4xl">Discover more projects</h2>
+        <div className="hidden lg:block ">
+        <ProjectGrid cards={8} currentProjectID={project.projectID} />
+
+        </div>
+        <div className="hidden sm:block lg:hidden">
+        <ProjectGrid cards={6} currentProjectID={project.projectID} />
+
+        </div>
+        <div className="block sm:hidden">
+        <ProjectGrid cards={4} currentProjectID={project.projectID} />
+
         </div>
       </section>
     </main>

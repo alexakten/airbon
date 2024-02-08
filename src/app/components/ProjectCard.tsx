@@ -11,6 +11,7 @@ type Project = {
   projectImage: string;
   projectDescription: string;
   projectLocation: string;
+  projectMapLink: string;
   projectWebsite: string;
   projectVerifier: string;
   projectContact: string;

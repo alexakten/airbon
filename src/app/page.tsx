@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Landing() {
   return (
     <main className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+      <Navbar navColor="offblack" />
       <section
-        className="relative flex max-w-8xl flex-col items-center py-6"
+        className="relative flex max-w-8xl flex-col items-center"
         style={{ height: "100svh" }}
       >
-        <Navbar navColor="offblack" />
         <div className="flex flex-col gap-4 border-offblack pt-20 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
             <div className="flex flex-col gap-3">
@@ -44,8 +44,8 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 flex w-full items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
-            Airbon helps farmers adopt carbon farming practices to
-            create high quality tech-verified carbon credits.
+            Airbon helps farmers adopt carbon farming practices to create high
+            quality tech-verified carbon credits.
           </p>
         </div>
 
