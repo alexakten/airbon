@@ -26,96 +26,95 @@ export default function ProjectPage() {
     );
   }
   return (
-    <main className="flex h-full flex-col items-center bg-lightgray px-3 py-6 text-base text-offblack sm:px-8 2xl:text-lg">
-      <Navbar navColor="offblack" />
-      <section className="relative flex w-full max-w-8xl flex-col justify-center pt-16">
-        <div className="mb-8">
-          <Link href="/projects">
-            <button className="transform transition-transform duration-200 ease-in-out hover:-translate-x-1">
-              {" "}
-              <span className={inter.className}> &lt;- </span>
-              Back to Projects
-            </button>
-          </Link>
-        </div>
-
-        <h1 className="mb-4 text-3xl sm:text-4xl">{project.projectName}</h1>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
-          <div className="relative overflow-hidden col-span-2 row-span-2 min-h-56 rounded-lg border border-black bg-gray-200 ">
-            <Image
-              src={project.projectImage}
-              alt={project.projectName}
-              layout="fill"
-              objectFit="cover"
-            ></Image>
-          </div>
-          <div className="col-span-2 row-span-1 rounded-lg border border-black">
-            <div className="p-4">
-              <p className="text-medium mb-4 text-xl">Background</p>
-              <p>{project.projectDescription}</p>
-            </div>
-          </div>
-          <div className="col-span-2 min-h-56 overflow-hidden rounded-lg border border-black bg-gray-200 md:col-span-1">
-            <iframe
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              src={project.projectMapLink}
-            ></iframe>
-          </div>
-          <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
-            <p className="text-medium mb-4 text-xl">Invest in project</p>
-            <div className="flex justify-between border-b border-t border-gray-400 py-2">
-              Website
-              <span className="font-normal opacity-50">
-                {project.projectWebsite}
-              </span>
-            </div>
-            <div className="flex justify-between border-b border-t border-gray-400 py-2">
-              Verifier
-              <span className="font-normal opacity-50">
-                {project.projectVerifier}
-              </span>
-            </div>
-            <div className="flex justify-between border-b border-t border-gray-400 py-2">
-              Contact
-              <span className="font-normal opacity-50">
-                <a
-                  href={`mailto:${project.projectContact}`}
-                  className="email-link"
-                >
-                  Email
-                </a>
-              </span>
-            </div>
-
-            <div className="flex w-full justify-end">
-              <button className="mt-4 transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
-                Visit website
-                <span className={inter.className}> -&gt;</span>
+    <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+      <div className="relative flex max-w-8xl flex-col items-center">
+        <Navbar navColor="offblack" />
+        <section className="relative flex w-full max-w-8xl flex-col justify-center pt-32">
+          <div className="mb-8">
+            <Link href="/projects">
+              <button className="transform transition-transform duration-200 ease-in-out hover:-translate-x-1">
+                {" "}
+                <span className={inter.className}> &lt;- </span>
+                Back to Projects
               </button>
+            </Link>
+          </div>
+
+          <h1 className="mb-4 text-3xl sm:text-4xl">{project.projectName}</h1>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+            <div className="relative col-span-2 row-span-2 min-h-56 overflow-hidden rounded-lg border border-black bg-gray-200 ">
+              <Image
+                src={project.projectImage}
+                alt={project.projectName}
+                layout="fill"
+                objectFit="cover"
+              ></Image>
+            </div>
+            <div className="col-span-2 row-span-1 rounded-lg border border-black">
+              <div className="p-4">
+                <p className="text-medium mb-4 text-xl">Background</p>
+                <p>{project.projectDescription}</p>
+              </div>
+            </div>
+            <div className="col-span-2 min-h-56 overflow-hidden rounded-lg border border-black bg-gray-200 md:col-span-1">
+              <iframe
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                src={project.projectMapLink}
+              ></iframe>
+            </div>
+            <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
+              <p className="text-medium mb-4 text-xl">Invest in project</p>
+              <div className="flex justify-between border-b border-t border-gray-400 py-2">
+                Website
+                <span className="font-normal opacity-50">
+                  {project.projectWebsite}
+                </span>
+              </div>
+              <div className="flex justify-between border-b border-t border-gray-400 py-2">
+                Verifier
+                <span className="font-normal opacity-50">
+                  {project.projectVerifier}
+                </span>
+              </div>
+              <div className="flex justify-between border-b border-t border-gray-400 py-2">
+                Contact
+                <span className="font-normal opacity-50">
+                  <a
+                    href={`mailto:${project.projectContact}`}
+                    className="email-link"
+                  >
+                    Email
+                  </a>
+                </span>
+              </div>
+
+              <div className="flex w-full justify-end">
+                <button className="mt-4 transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
+                  Visit website
+                  <span className={inter.className}> -&gt;</span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="w-full max-w-8xl py-36">
-        <h2 className="pb-8 text-3xl sm:text-4xl">Discover more projects</h2>
-        <div className="hidden lg:block ">
-        <ProjectGrid cards={8} currentProjectID={project.projectID} />
-
-        </div>
-        <div className="hidden sm:block lg:hidden">
-        <ProjectGrid cards={6} currentProjectID={project.projectID} />
-
-        </div>
-        <div className="block sm:hidden">
-        <ProjectGrid cards={4} currentProjectID={project.projectID} />
-
-        </div>
-      </section>
+        <section className="w-full max-w-8xl py-36">
+          <h2 className="pb-8 text-3xl sm:text-4xl">Discover more projects</h2>
+          <div className="hidden lg:block ">
+            <ProjectGrid cards={8} currentProjectID={project.projectID} />
+          </div>
+          <div className="hidden sm:block lg:hidden">
+            <ProjectGrid cards={6} currentProjectID={project.projectID} />
+          </div>
+          <div className="block sm:hidden">
+            <ProjectGrid cards={4} currentProjectID={project.projectID} />
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

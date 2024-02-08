@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 export default function ProjectsPage() {
   return (
     <section className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
-      <div className="relative flex h-[100svh] max-w-8xl flex-col items-center sm:h-auto">
+      <div className="relative flex max-w-8xl flex-col items-center">
         <Navbar navColor="offblack" />
 
         <div className="max-w-8xl pt-32">
