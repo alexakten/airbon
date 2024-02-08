@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -7,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 type Project = {
   projectID: string;
   projectName: string;
+  projectImage: string;
   projectDescription: string;
   projectLocation: string;
   projectWebsite: string;
@@ -23,12 +25,21 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="grid h-[400px] w-full grid-rows-2 overflow-hidden rounded-xl border border-black">
-      <div className="row-span-1 bg-gray-300"></div>
+      <div className="relative row-span-1 bg-gray-300">
+        <Image
+          src={project.projectImage}
+          alt={project.projectName}
+          layout="fill"
+          objectFit="cover"
+        ></Image>
+      </div>
       <div className="row-span-1 flex flex-col p-4">
         <p className="text-sm opacity-50">{project.projectLocation}</p>
         <h3 className="pt-4 text-2xl">{project.projectName}</h3>
         <p className="pt-1 text-base opacity-75">
-          {project.projectDescription}
+          {project.projectDescription.length > 70
+            ? `${project.projectDescription.slice(0, 70)}...`
+            : project.projectDescription}
         </p>
         <div className="flex h-full items-end justify-end">
           <Link href={`/projects/${project.slug}`}>

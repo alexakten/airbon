@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:underline">
+          <Link href="/projects" className="hover:underline">
             Projects
           </Link>
         </li>
