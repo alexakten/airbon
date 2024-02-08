@@ -66,7 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
       </ul>
       <div className="sm:hidden">
         <div
-          className={`absolute -right-5 text-lg top-0 h-96 w-full transform bg-lightgray transition-transform duration-300 ease-out ${
+          className={`absolute -right-5 text-lg top-0 h-screen w-full transform bg-lightgray transition-transform duration-300 ease-out ${
             isOpen ? "-translate-x-5" : "translate-x-full"
           } sm:hidden`}
         >
