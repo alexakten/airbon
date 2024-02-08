@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
 
   return (
     <nav className="absolute top-0 z-20 flex w-full max-w-8xl items-center justify-between py-6">
-      <div className="h-full z-50 w-full">
+      <div className="z-50 h-full w-full">
         <Link href={"/"}>
           <svg
             width="120"
@@ -50,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
         </li>
         <li>
           <Link href="/investors" className="hover:underline">
-            Investors
+            Buyers
           </Link>
         </li>
         <li>
@@ -66,11 +66,11 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
       </ul>
       <div className="sm:hidden">
         <div
-          className={`absolute -right-5 text-2xl top-0 h-screen w-full transform bg-lightgray transition-transform duration-300 ease-out ${
+          className={`absolute -right-5 top-0 h-screen w-full transform bg-lightgray text-2xl transition-transform duration-300 ease-out ${
             isOpen ? "-translate-x-5" : "translate-x-full"
           } sm:hidden`}
         >
-          <ul className="flex h-full gap-2 flex-col items-center justify-center">
+          <ul className="flex h-full flex-col items-center justify-center gap-2">
             <li>
               <Link href="/farmers" className="hover:underline">
                 Farmers
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
             </li>
             <li>
               <Link href="/investors" className="hover:underline">
-                Investors
+                Buyers
               </Link>
             </li>
             <li>

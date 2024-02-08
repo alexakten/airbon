@@ -39,7 +39,7 @@ export default function Landing() {
                 href="/investors"
                 className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
               >
-                For investors <span className={inter.className}>-&gt;</span>
+                For buyers <span className={inter.className}>-&gt;</span>
               </Link>
             </div>
           </div>
