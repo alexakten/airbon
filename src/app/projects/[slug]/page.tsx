@@ -41,7 +41,7 @@ export default function ProjectPage() {
 
         <h1 className="mb-4 text-3xl sm:text-4xl">{project.projectName}</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
-          <div className="relative col-span-2 row-span-2 min-h-56 rounded-lg border border-black bg-gray-200 ">
+          <div className="relative overflow-hidden col-span-2 row-span-2 min-h-56 rounded-lg border border-black bg-gray-200 ">
             <Image
               src={project.projectImage}
               alt={project.projectName}
