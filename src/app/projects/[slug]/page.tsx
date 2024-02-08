@@ -54,7 +54,7 @@ export default function ProjectPage() {
               <p>{project.projectDescription}</p>
             </div>
           </div>
-          <div className="col-span-2 min-h-56 rounded-lg border border-black bg-gray-200 p-4 md:col-span-1">
+          <div className="col-span-2 min-h-56 rounded-lg border border-black bg-gray-200 md:col-span-1">
             <iframe
               width="100%"
               height="100%"
