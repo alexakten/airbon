@@ -7,11 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Landing() {
   return (
-    <main className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
-      <Navbar navColor="offblack" />
+    <main className="flex relative flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+      
       <section
-        className="relative flex max-w-8xl h-[100svh] sm:h-auto flex-col items-center"
+        className="flex relative max-w-8xl h-[100svh] sm:h-auto flex-col items-center"
       >
+        <Navbar navColor="offblack" />
         <div className="flex flex-col gap-4 border-offblack pt-32 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
             <div className="flex flex-col gap-3">

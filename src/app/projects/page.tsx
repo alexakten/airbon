@@ -3,21 +3,23 @@ import Navbar from "../components/Navbar";
 
 export default function ProjectsPage() {
   return (
-    <section className="flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
-      <Navbar navColor="offblack"></Navbar>
+    <section className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+      <div className="relative flex h-[100svh] max-w-8xl flex-col items-center sm:h-auto">
+        <Navbar navColor="offblack" />
 
-      <section className="w-full max-w-8xl pt-32">
-        <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
-        <div className="hidden lg:block ">
-          <ProjectGrid cards={8} />
+        <div className="max-w-8xl pt-32">
+          <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
+          <div className="hidden lg:block ">
+            <ProjectGrid cards={8} />
+          </div>
+          <div className="hidden sm:block lg:hidden">
+            <ProjectGrid cards={6} />
+          </div>
+          <div className="block sm:hidden">
+            <ProjectGrid cards={4} />
+          </div>
         </div>
-        <div className="hidden sm:block lg:hidden">
-          <ProjectGrid cards={6} />
-        </div>
-        <div className="block sm:hidden">
-          <ProjectGrid cards={4} />
-        </div>
-      </section>
+      </div>
     </section>
   );
 }
