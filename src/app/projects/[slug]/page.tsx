@@ -33,7 +33,7 @@ export default function ProjectPage() {
           <Link href="/projects">
             <button className="transform transition-transform duration-200 ease-in-out hover:-translate-x-1">
               {" "}
-              <span className={inter.className}> {"<"}- </span>
+              <span className={inter.className}> &lt;- </span>
               Back to Projects
             </button>
           </Link>
