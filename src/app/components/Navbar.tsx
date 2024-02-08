@@ -21,8 +21,8 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   };
 
   return (
-    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-center justify-between py-6">
-      <div className="h-full w-full">
+    <nav className="absolute top-0 z-20 flex w-full max-w-8xl items-center justify-between py-6">
+      <div className="h-full z-50 w-full">
         <Link href={"/"}>
           <svg
             width="120"
@@ -95,7 +95,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
         </div>
         <button
           onClick={handleClick}
-          className="z-50 flex flex-col items-center justify-center"
+          className="z-40 flex flex-col items-center justify-center"
         >
           <span
             className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
