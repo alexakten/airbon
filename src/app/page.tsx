@@ -11,9 +11,8 @@ export default function Landing() {
       <Navbar navColor="offblack" />
       <section
         className="relative flex max-w-8xl h-[100svh] sm:h-auto flex-col items-center"
-        // style={{ height: "100svh" }}
       >
-        <div className="flex flex-col gap-4 border-offblack pt-20 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
+        <div className="flex flex-col gap-4 border-offblack pt-32 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 px-2 py-2 pl-2">
