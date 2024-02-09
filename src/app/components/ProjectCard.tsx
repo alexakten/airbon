@@ -25,7 +25,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="grid h-[400px] w-full grid-rows-2 overflow-hidden rounded-xl border border-black">
+    <div className="grid min-h-[400px] w-full grid-rows-2 overflow-hidden rounded-xl border border-black">
       <div className="relative row-span-1 bg-gray-300">
         <Image
           src={project.projectImage}
