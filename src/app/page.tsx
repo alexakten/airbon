@@ -43,7 +43,7 @@ export default function Landing() {
               </Link>
             </div>
           </div>
-          <p className="absolute bottom-4 flex w-full items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
+          <p className="absolute bottom-4 max-w-lg flex w-full items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
             Airbon helps farmers adopt carbon farming practices to create high
             quality tech-verified carbon credits.
           </p>
