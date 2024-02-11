@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   };
 
   return (
-    <nav className="absolute top-0 z-20 flex w-full max-w-8xl items-center justify-between py-6">
+    <nav className="absolute top-0 z-20 flex overflow-hidden w-full max-w-8xl items-center justify-between py-6">
       <div className="z-50 h-full w-full">
         <Link href={"/"}>
           <svg
