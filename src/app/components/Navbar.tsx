@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import Link from "next/link";
 
 interface NavbarProps {
@@ -16,16 +16,26 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const useLockBodyScroll = (open: boolean) => {
+    useLayoutEffect(() => {
+      // Original body overflow value to restore after unlocking
+      const originalStyle = window.getComputedStyle(document.body).overflow;  
+      if (open) {
+        // Lock
+        document.body.style.overflow = 'hidden';
+      } 
+      return () => {
+        // Revert back to the original style
+        document.body.style.overflow = originalStyle;
+      };
+    }, [open]); // Only re-run the effect if open changes
+  };
+
+  useLockBodyScroll(isOpen);
+
+
   const handleClick = () => {
     setIsOpen(!isOpen);
-    // Toggle body scroll lock
-    if (!isOpen) {
-      // When the menu is about to open, disable scrolling on the body
-      document.body.style.overflow = "hidden";
-    } else {
-      // When the menu is about to close, re-enable scrolling on the body
-      document.body.style.overflow = "auto";
-    }
   };
 
   return (
