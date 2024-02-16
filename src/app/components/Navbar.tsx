@@ -98,7 +98,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
       </button>
       <div className="sm:hidden">
         <div
-          className={`fixed inset-0 z-10 h-screen w-full transform bg-red-300 text-2xl transition-transform duration-300 ease-out ${
+          className={`fixed inset-0 z-10 h-screen w-full transform bg-lightgray text-2xl transition-transform duration-300 ease-out ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } sm:hidden`}
         >
