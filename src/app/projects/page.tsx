@@ -12,12 +12,6 @@ export default function ProjectsPage() {
           <div className="hidden lg:block ">
             <ProjectGrid cards={8} />
           </div>
-          <div className="hidden sm:block lg:hidden">
-            <ProjectGrid cards={6} />
-          </div>
-          <div className="block sm:hidden">
-            <ProjectGrid cards={4} />
-          </div>
         </div>
       </div>
     </section>
