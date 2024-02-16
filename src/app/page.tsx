@@ -7,11 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Landing() {
   return (
-    <main className="flex relative flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
-      
-      <section
-        className="flex relative max-w-8xl h-[100svh] sm:h-auto flex-col items-center"
-      >
+    <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
+      <section className="relative flex h-[100svh] max-w-8xl flex-col items-center sm:h-auto">
         <Navbar navColor="offblack" />
         <div className="flex flex-col gap-4 border-offblack pt-32 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
@@ -43,7 +40,7 @@ export default function Landing() {
               </Link>
             </div>
           </div>
-          <p className="absolute bottom-4 max-w-lg flex w-full items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
+          <p className="absolute bottom-4 flex w-full max-w-lg items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
             Airbon helps farmers adopt carbon farming practices to create high
             quality tech-verified carbon credits.
           </p>
