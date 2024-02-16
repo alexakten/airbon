@@ -19,11 +19,11 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   const useLockBodyScroll = (open: boolean) => {
     useLayoutEffect(() => {
       // Original body overflow value to restore after unlocking
-      const originalStyle = window.getComputedStyle(document.body).overflow;  
+      const originalStyle = window.getComputedStyle(document.body).overflow;
       if (open) {
         // Lock
-        document.body.style.overflow = 'hidden';
-      } 
+        document.body.style.overflow = "hidden";
+      }
       return () => {
         // Revert back to the original style
         document.body.style.overflow = originalStyle;
@@ -32,7 +32,6 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   };
 
   useLockBodyScroll(isOpen);
-
 
   const handleClick = () => {
     setIsOpen(!isOpen);
