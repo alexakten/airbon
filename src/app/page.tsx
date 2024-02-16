@@ -89,8 +89,8 @@ export default function Landing() {
       </section>
 
       {/* -------------------------Steps on mobile-------------------------------- */}
-      <section className="w-full pb-40 sm:hidden lg:pb-0">
-        <div className="flex justify-start pt-24 ">
+      <section className="w-full py-24 sm:hidden lg:pb-0">
+        <div className="flex justify-start">
           <div className="grid w-full grid-cols-1 gap-12 sm:grid-cols-2">
             <div className="col-span-1">
               <p className="text-sm">1</p>
@@ -131,17 +131,9 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="w-full max-w-8xl py-24">
+      <section className="w-full max-w-8xl py-12 sm:py-40">
         <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
-        <div className="hidden lg:block ">
-          <ProjectGrid cards={8} />
-        </div>
-        <div className="hidden sm:block lg:hidden">
-          <ProjectGrid cards={6} />
-        </div>
-        <div className="block sm:hidden">
-          <ProjectGrid cards={4} />
-        </div>
+        <ProjectGrid cards={8} />
       </section>
     </main>
   );
