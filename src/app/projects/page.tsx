@@ -9,7 +9,7 @@ export default function ProjectsPage() {
 
         <div className="max-w-8xl pt-32 pb-32">
           <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
-          <div className="hidden lg:block ">
+          <div className="block">
             <ProjectGrid cards={8} />
           </div>
         </div>
