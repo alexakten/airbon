@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
       </ul>
       <button
         onClick={handleClick}
-        className="absolute right-3 top-9 z-50 flex flex-col sm:hidden"
+        className="absolute right-2 top-9 z-50 flex flex-col sm:hidden"
       >
         <span
           className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
