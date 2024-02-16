@@ -52,23 +52,32 @@ export default function ProjectPage() {
             </div>
             <div className="col-span-2 row-span-1 rounded-lg border border-black">
               <div className="p-4">
-                <p className="text-medium mb-4 text-xl">Background</p>
+                <p className="mb-4 text-xl">Description</p>
                 <p>{project.projectDescription}</p>
               </div>
             </div>
-            <div className="col-span-2 min-h-56 overflow-hidden rounded-lg border border-black bg-gray-200 md:col-span-1">
-              <iframe
+            <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
+              <p className="mb-4 text-xl">Benefits</p>
+              <p>{project.projectBenefits}</p>
+              {/* <iframe
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 loading="lazy"
                 allowFullScreen
                 src={project.projectMapLink}
-              ></iframe>
+              ></iframe> */}
             </div>
-            <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
-              <p className="text-medium mb-4 text-xl">Invest in project</p>
-              <div className="flex justify-between border-b border-t border-gray-400 py-2">
+            <div className="col-span-2 flex flex-col justify-between rounded-lg border border-black p-4 md:col-span-1">
+              <div>
+                <p className="text-medium mb-4 text-xl">Get started</p>
+                <p>
+                  If you want to get started with this carbon farming technique,
+                  reach out to us.
+                </p>
+              </div>
+
+              {/* <div className="flex justify-between border-b border-t border-gray-400 py-2">
                 Website
                 <span className="font-normal opacity-50">
                   {project.projectWebsite}
@@ -90,11 +99,11 @@ export default function ProjectPage() {
                     Email
                   </a>
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex w-full justify-end">
                 <button className="mt-4 transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
-                  Visit website
+                  Contact us
                   <span className={inter.className}> -&gt;</span>
                 </button>
               </div>
