@@ -18,11 +18,19 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
 
   const handleClick = () => {
     setIsOpen(!isOpen);
+    // Toggle body scroll lock
+    if (!isOpen) {
+      // When the menu is about to open, disable scrolling on the body
+      document.body.style.overflow = "hidden";
+    } else {
+      // When the menu is about to close, re-enable scrolling on the body
+      document.body.style.overflow = "auto";
+    }
   };
 
   return (
-    <nav className="absolute top-0 z-20 flex w-full max-w-8xl items-center justify-between overflow-hidden py-6">
-      <div className="z-50 h-full w-full">
+    <nav className="absolute top-0 flex w-full max-w-8xl items-start justify-between overflow-hidden py-6">
+      <div className="z-50 h-full">
         <Link href={"/"}>
           <svg
             width="120"
@@ -64,13 +72,37 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </Link>
         </li>
       </ul>
+      <button
+        onClick={handleClick}
+        className="absolute right-3 top-9 z-50 flex flex-col sm:hidden"
+      >
+        <span
+          className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
+            isOpen
+              ? "translate-y-1 rotate-45 transform"
+              : "-translate-y-0.5 transform"
+          }`}
+        ></span>
+        <span
+          className={`my-0.5 block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
+            isOpen ? "opacity-0" : "opacity-100"
+          }`}
+        ></span>
+        <span
+          className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
+            isOpen
+              ? "-translate-y-1 -rotate-45 transform"
+              : "translate-y-0.5 transform"
+          }`}
+        ></span>
+      </button>
       <div className="sm:hidden">
         <div
-          className={`absolute -right-5 top-0 h-screen w-full transform bg-lightgray text-2xl transition-transform duration-300 ease-out ${
-            isOpen ? "-translate-x-5" : "translate-x-full"
+          className={`fixed inset-0 z-10 h-screen w-full transform bg-red-300 text-2xl transition-transform duration-300 ease-out ${
+            isOpen ? "translate-x-0" : "translate-x-full"
           } sm:hidden`}
         >
-          <ul className="flex h-full flex-col items-center justify-center gap-2">
+          <ul className="z-50 flex h-full flex-col items-center justify-center gap-2">
             <li>
               <Link href="/farmers" className="hover:underline">
                 Farmers
@@ -93,30 +125,6 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
             </li>
           </ul>
         </div>
-        <button
-          onClick={handleClick}
-          className="z-40 flex flex-col items-center justify-center"
-        >
-          <span
-            className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
-              isOpen
-                ? "translate-y-1 rotate-45 transform"
-                : "-translate-y-0.5 transform"
-            }`}
-          ></span>
-          <span
-            className={`my-0.5 block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
-              isOpen ? "opacity-0" : "opacity-100"
-            }`}
-          ></span>
-          <span
-            className={`block h-0.5 w-6 rounded-sm bg-black transition-all duration-300 ease-out ${
-              isOpen
-                ? "-translate-y-1 -rotate-45 transform"
-                : "translate-y-0.5 transform"
-            }`}
-          ></span>
-        </button>
       </div>
     </nav>
   );
