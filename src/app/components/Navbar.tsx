@@ -128,7 +128,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:underline">
+              <Link href="mailto:alex.akten@outlook.com" className="hover:underline">
                 Contact
               </Link>
             </li>

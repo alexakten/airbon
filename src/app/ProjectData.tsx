@@ -2,7 +2,7 @@ const ProjectData = [
   {
     projectID: "1",
     projectName: "Agroforestry",
-    projectImage: "/images/project_1.avif",
+    projectImage: "/images/agroforestry.avif",
     projectDescription:
       "Agroforestry is a land use management system in which combinations of trees or shrubs are grown around or among crops or pastureland. Agroforestry combines agricultural and forestry technologies to create more diverse, productive, profitable, healthy, and sustainable land-use systems. There are many benefits to agroforestry such as increasing farm profitability. In addition, agroforestry helps to preserve and protect natural resources such as controlling soil erosions, creating habitat for the wildlife, and managing animal waste. Benefits also include increased biodiversity, improved soil structure and health, reduced erosion, and carbon sequestration.",
     projectBenefits:
@@ -12,7 +12,7 @@ const ProjectData = [
   {
     projectID: "2",
     projectName: "Cover Cropping",
-    projectImage: "/images/project_2.avif",
+    projectImage: "/images/cover_cropping.avif",
     projectDescription:
       "Cover cropping involves growing plants specifically for the benefit of the soil rather than the crop yield. These plants improve soil health by preventing erosion, enhancing soil structure, increasing organic matter, and fixing atmospheric nitrogen in the soil. Cover crops, such as legumes, grasses, and other green plants, are planted during off-seasons when the soil would otherwise be bare.",
     projectBenefits:
@@ -22,7 +22,7 @@ const ProjectData = [
   {
     projectID: "3",
     projectName: "No-Till Farming",
-    projectImage: "/images/project_3.avif",
+    projectImage: "/images/no_till.avif",
     projectDescription:
       "No-till farming is a way of growing crops without disturbing the soil through tillage. This method minimizes soil erosion, improves water absorption, and increases soil carbon storage. It also reduces the carbon footprint of farming operations by decreasing the need for fuel and labor associated with traditional tilling.",
     projectBenefits:
@@ -58,7 +58,7 @@ const ProjectData = [
   {
     projectID: "7",
     projectName: "Silvopasture",
-    projectImage: "/images/project_7.avif",
+    projectImage: "/images/silvopasture.avif",
     projectDescription: "Silvopasture is the practice of integrating trees, pasture, and livestock grazing in a mutually beneficial system. It combines forestry and grazing in a way that enhances biodiversity, improves animal welfare, and increases carbon sequestration. Trees provide shade and shelter for livestock, improve pasture resilience, and contribute to a diversified income stream through timber or fruit production.",
     projectBenefits: "Enhances biodiversity; improves animal welfare; increases carbon sequestration; provides shade and shelter for livestock; contributes to diversified farm income.",
     slug: "Silvopasture",
