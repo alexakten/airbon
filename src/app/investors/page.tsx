@@ -21,7 +21,7 @@ export default function InvestorsPage() {
                 <p className="text-sm">v.01 launching soon</p>
               </div>
               <h1 className="text-[clamp(32px,5.5vw,84px)] leading-[1.05]">
-                Go net zero and support farmers with carbon
+                Go net zero and support farmers with carbon credits.
               </h1>
             </div>
 
