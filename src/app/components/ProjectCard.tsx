@@ -33,11 +33,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="row-span-1 flex flex-col p-4">
           {/* <p className="text-sm opacity-50">{project.projectLocation}</p> */}
           <h3 className="text-2xl">{project.projectName}</h3>
-          <p className="pt-1 text-base opacity-75">
-            {project.projectDescription.length > 70
-              ? `${project.projectDescription.slice(0, 100)}...`
-              : project.projectDescription}
+          <p
+            className="line-clamp-3 h-full leading-normal pt-1 text-base opacity-75"
+          >
+            {project.projectDescription}
           </p>
+
           <div className="flex h-full items-end justify-end">
             <button className="transform transition-transform duration-200 ease-in-out hover:translate-x-1">
               {" "}
