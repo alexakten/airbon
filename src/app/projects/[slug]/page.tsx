@@ -102,10 +102,12 @@ export default function ProjectPage() {
               </div> */}
 
               <div className="flex w-full justify-end">
-                <button className="mt-4 transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
-                  Contact us
-                  <span className={inter.className}> -&gt;</span>
-                </button>
+                <Link href="mailto:alex.akten@outlook.com">
+                  <button className="mt-4 transform rounded-full bg-black px-3 py-1 font-normal text-white transition-transform duration-200 ease-in-out hover:translate-x-1">
+                    Contact us
+                    <span className={inter.className}> -&gt;</span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
