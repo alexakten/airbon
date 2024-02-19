@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   };
 
   return (
-    <nav className="absolute z-50 top-0 flex w-full max-w-8xl items-start justify-between overflow-hidden py-6">
+    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-start justify-between overflow-hidden py-6">
       <div className="z-50 h-full">
         <Link href={"/"}>
           <svg
@@ -76,7 +76,10 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:underline">
+          <Link
+            href="mailto:alex.akten@outlook.com"
+            className="hover:underline"
+          >
             Contact
           </Link>
         </li>
@@ -128,7 +131,10 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
               </Link>
             </li>
             <li>
-              <Link href="mailto:alex.akten@outlook.com" className="hover:underline">
+              <Link
+                href="mailto:alex.akten@outlook.com"
+                className="hover:underline"
+              >
                 Contact
               </Link>
             </li>
