@@ -52,13 +52,13 @@ export default function ProjectPage() {
             </div>
             <div className="col-span-2 row-span-1 rounded-lg border border-black">
               <div className="p-4">
-                <p className="mb-4 text-xl">Description</p>
-                <p>{project.projectDescription}</p>
+                <p className="mb-4 text-xl ">Description</p>
+                <p className="opacity-75">{project.projectDescription}</p>
               </div>
             </div>
             <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
               <p className="mb-4 text-xl">Benefits</p>
-              <p>{project.projectBenefits}</p>
+              <p className="opacity-75">{project.projectBenefits}</p>
               {/* <iframe
                 width="100%"
                 height="100%"
@@ -71,7 +71,7 @@ export default function ProjectPage() {
             <div className="col-span-2 flex flex-col justify-between rounded-lg border border-black p-4 md:col-span-1">
               <div>
                 <p className="text-medium mb-4 text-xl">Get started</p>
-                <p>
+                <p className="opacity-75">
                   If you want to get started with this carbon farming technique,
                   reach out to us.
                 </p>
