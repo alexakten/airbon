@@ -21,7 +21,7 @@ export default function Landing() {
                 <p className="text-sm">v.01 launching soon</p>
               </div>
               <h1 className="text-[clamp(32px,5.5vw,84px)] leading-[1.05]">
-                Restore the balance of our ecosystems with carbon credits.
+                Restore the balance of our ecosystems with carbon farming.
               </h1>
             </div>
 
