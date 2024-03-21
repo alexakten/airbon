@@ -5,6 +5,33 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const steps = [
+  {
+    number: "1",
+    title: "Connect",
+    description:
+      "Get matched with local experts depending on specific needs.",
+  },
+  {
+    number: "2",
+    title: "Implement",
+    description:
+      "Get a  tailored regenerative agriculture plan for your farm.",
+  },
+  {
+    number: "3",
+    title: "Measure",
+    description:
+      "Monitor soil health and carbon sequestration with our tools.",
+  },
+  {
+    number: "4",
+    title: "Sell",
+    description:
+      "Create and sell carbon credits for your sustainability efforts.",
+  },
+];
+
 export default function Landing() {
   return (
     <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
@@ -41,48 +68,21 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 flex w-full max-w-lg items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
-            Airbon connects farmers to local regenerative farming experts to improve soil health and reduce greenhouse gas emissions.
+            Airbon connects farmers to local regenerative farming experts to
+            improve soil health and reduce greenhouse gas emissions.
           </p>
         </div>
 
         {/* -------------------------Steps on desktop----------------------------- */}
         <div className="hidden pt-16 sm:block">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-20">
-            <div className="col-span-1">
-              <p className="text-sm">1</p>
-              <h2 className="pt-4 text-2xl">Enable</h2>
-              <p className="pt-2">
-                We help farmers get started with carbon farming to generate
-                credits.
-              </p>
-            </div>
-
-            <div className="col-span-1">
-              <p className="text-sm">2</p>
-              <h2 className="pt-4 text-2xl">Measure</h2>
-              <p className="pt-2">
-                We measure and verify impact using satellite imagery, IoT
-                devices and AI.
-              </p>
-            </div>
-
-            <div className="col-span-1">
-              <p className="text-sm">3</p>
-              <h2 className="pt-4 text-2xl">Analyze</h2>
-              <p className="pt-2">
-                Our digital platform allows for analysis and reporting of carbon
-                sequestration.
-              </p>
-            </div>
-
-            <div className="col-span-1">
-              <p className="text-sm">4</p>
-              <h2 className="pt-4 text-2xl">Sell</h2>
-              <p className="pt-2">
-                We connect farmers with climate conscious businesses going
-                net-zero.
-              </p>
-            </div>
+            {steps.map((step, index) => (
+              <div key={index} className="col-span-1">
+                <p className="text-sm">{step.number}</p>
+                <h2 className="pt-4 text-2xl">{step.title}</h2>
+                <p className="pt-2">{step.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -91,41 +91,13 @@ export default function Landing() {
       <section className="w-full py-24 sm:hidden lg:pb-0">
         <div className="flex justify-start">
           <div className="grid w-full grid-cols-1 gap-12 sm:grid-cols-2">
-            <div className="col-span-1">
-              <p className="text-sm">1</p>
-              <h2 className="pt-4 text-2xl">Enable</h2>
-              <p className="pt-2">
-                We help farmers get started with carbon farming to generate
-                credits.
-              </p>
-            </div>
-
-            <div className="col-span-1">
-              <p className="text-sm">2</p>
-              <h2 className="pt-4 text-2xl">Measure</h2>
-              <p className="pt-2">
-                We measure and verify impact using satellite imagery, IoT
-                devices and AI.
-              </p>
-            </div>
-
-            <div className="col-span-1">
-              <p className="text-sm">3</p>
-              <h2 className="pt-4 text-2xl">Analyze</h2>
-              <p className="pt-2">
-                Our digital platform allows for analysis and reporting of carbon
-                sequestration.
-              </p>
-            </div>
-
-            <div className="col-span-1">
-              <p className="text-sm">4</p>
-              <h2 className="pt-4 text-2xl">Sell</h2>
-              <p className="pt-2">
-                We connect farmers with climate conscious businesses going
-                net-zero.
-              </p>
-            </div>
+            {steps.map((step, index) => (
+              <div key={index} className="col-span-1">
+                <p className="text-sm">{step.number}</p>
+                <h2 className="pt-4 text-2xl">{step.title}</h2>
+                <p className="pt-2">{step.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
