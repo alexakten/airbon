@@ -21,7 +21,7 @@ export default function Landing() {
                 <p className="text-sm">v.01 launching soon</p>
               </div>
               <h1 className="text-[clamp(32px,5.5vw,84px)] leading-[1.05]">
-                Restore the balance of our ecosystems with carbon farming.
+                Restore the balance of our ecosystems with regenerative farming.
               </h1>
             </div>
 
@@ -41,8 +41,7 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 flex w-full max-w-lg items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
-            Airbon helps farmers adopt carbon farming practices to create high
-            quality tech-verified carbon credits.
+            Airbon connects farmers to local regenerative farming experts to improve soil health and reduce greenhouse gas emissions.
           </p>
         </div>
 
