@@ -26,9 +26,9 @@ const steps = [
   },
   {
     number: "4",
-    title: "Sell",
+    title: "Monetize",
     description:
-      "Generate and sell carbon credits for your sustainability efforts.",
+      "Get rewarded for your sustainability efforts.",
   },
 ];
 
