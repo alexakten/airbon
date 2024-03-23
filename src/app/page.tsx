@@ -28,7 +28,7 @@ const steps = [
     number: "4",
     title: "Monetize",
     description:
-      "Get rewarded for your sustainability efforts.",
+      "Get rewarded for your sustainability efforts. It's a win-win.",
   },
 ];
 
