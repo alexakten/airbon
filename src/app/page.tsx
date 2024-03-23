@@ -69,7 +69,7 @@ export default function Landing() {
           </div>
           <p className="absolute bottom-4 flex w-full max-w-lg items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
             Airbon connects farmers to local regenerative agriculture experts to
-            improve soil health and restore the balance of our planet.
+            improve soil health, reduce emissions, and rebalance our planet.
           </p>
         </div>
 
