@@ -10,13 +10,13 @@ const steps = [
     number: "1",
     title: "Connect",
     description:
-      "Get matched with local experts depending on specific needs.",
+      "Get matched with local experts depending on farming needs.",
   },
   {
     number: "2",
     title: "Implement",
     description:
-      "Get a  tailored regenerative agriculture plan for your farm.",
+      "Get a customized regenerative agriculture plan for your farm.",
   },
   {
     number: "3",
@@ -28,7 +28,7 @@ const steps = [
     number: "4",
     title: "Sell",
     description:
-      "Create and sell carbon credits for your sustainability efforts.",
+      "Generate and sell carbon credits for your sustainability efforts.",
   },
 ];
 
@@ -68,8 +68,8 @@ export default function Landing() {
             </div>
           </div>
           <p className="absolute bottom-4 flex w-full max-w-lg items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
-            Airbon connects farmers to local regenerative farming experts to
-            improve soil health and reduce greenhouse gas emissions.
+            Airbon connects farmers to local regenerative agriculture experts to
+            improve soil health and restore the balance of our planet.
           </p>
         </div>
 
