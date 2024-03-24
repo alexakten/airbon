@@ -62,7 +62,7 @@ export default function Landing() {
                 href="/farmers"
                 className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
               >
-                Explore farmers <span className={inter.className}>-&gt;</span>
+                Discover farmers <span className={inter.className}>-&gt;</span>
               </Link>
             </div>
           </div>
