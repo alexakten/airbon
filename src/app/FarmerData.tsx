@@ -33,9 +33,9 @@ const FarmerData = [
   },
   {
     FarmerID: "F005",
-    FarmerName: "Anna Ivanova",
+    FarmerName: "Anna Andersson",
     FarmerImage: "/images/farmers/farm-5.avif",
-    FarmerLocation: "Moscow, Russia",
+    FarmerLocation: "Stockholm, Sweden",
     FarmerSize: 65, // in hectares
     slug: "anna-ivanova",
   },
