@@ -66,8 +66,8 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </Link>
         </li>
         <li>
-          <Link href="/investors" className="hover:underline">
-            Buyers
+          <Link href="/education" className="hover:underline">
+            Learn
           </Link>
         </li>
         <li>

@@ -2,15 +2,15 @@ import Navbar from "./components/Navbar";
 import Link from "next/link";
 import ProjectGrid from "./components/ProjectGrid";
 import { Inter } from "next/font/google";
+import FarmerGrid from "./components/FarmerGrid";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const steps = [
   {
     number: "1",
-    title: "Connect",
-    description:
-      "Get matched with local experts depending on farming needs.",
+    title: "Learn",
+    description: "Connect with a community of experienced regenerative farmers.",
   },
   {
     number: "2",
@@ -21,14 +21,13 @@ const steps = [
   {
     number: "3",
     title: "Measure",
-    description:
-      "Monitor soil health and carbon sequestration with our tools.",
+    description: "Monitor soil health and carbon sequestration with our tools.",
   },
   {
     number: "4",
-    title: "Monetize",
+    title: "Share",
     description:
-      "Get rewarded for your sustainability efforts. It's a win-win.",
+      "Share your learnings with the community and keep improving your methods.",
   },
 ];
 
@@ -54,22 +53,24 @@ export default function Landing() {
 
             <div className="flex gap-4 lg:flex-row">
               <Link
+                href="/education"
+                className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
+              >
+                Go regenerative <span className={inter.className}>-&gt;</span>
+              </Link>
+              <Link
                 href="/farmers"
                 className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
               >
-                For farmers <span className={inter.className}>-&gt;</span>
-              </Link>
-              <Link
-                href="/investors"
-                className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
-              >
-                For buyers <span className={inter.className}>-&gt;</span>
+                Explore farmers <span className={inter.className}>-&gt;</span>
               </Link>
             </div>
           </div>
           <p className="absolute bottom-4 flex w-full max-w-lg items-end justify-end pt-4 text-lg sm:static sm:text-2xl">
-            Airbon connects farmers to local regenerative agriculture experts to
-            improve soil health, reduce emissions, and rebalance our planet.
+            Airbon is a community for regenerative farmers. Start implementing
+            regenerative practices and improve soil health on your farm today.
+            {/* Airbon connects farmers to local regenerative agriculture experts to
+            improve soil health, reduce emissions, and rebalance our planet. */}
           </p>
         </div>
 
@@ -102,8 +103,15 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="w-full max-w-8xl py-12 sm:py-40">
-        <h2 className="pb-8 text-3xl sm:text-4xl">Discover projects</h2>
+      <section className="w-full max-w-8xl py-12 sm:pt-40 pb-20">
+        <h2 className="pb-8 text-3xl sm:text-4xl">
+          Discover regenerative farmers
+        </h2>
+        <FarmerGrid cards={8} />
+      </section>
+
+      <section className="w-full max-w-8xl py-12 sm:py-20">
+        <h2 className="pb-8 text-3xl sm:text-4xl">Explore regenerative</h2>
         <ProjectGrid cards={8} />
       </section>
     </main>
