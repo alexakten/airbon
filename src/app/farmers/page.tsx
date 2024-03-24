@@ -13,7 +13,7 @@ export default function FarmersPage() {
         <div className="flex w-full flex-col items-center">
           <div className="w-full max-w-8xl pb-32 pt-32">
             <h2 className="pb-8 text-3xl sm:text-4xl">
-              Explore regenerative farmers
+              Discover regenerative farmers
             </h2>
             <div className="block">
               <FarmerGrid cards={8} />

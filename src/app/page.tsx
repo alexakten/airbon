@@ -53,7 +53,7 @@ export default function Landing() {
 
             <div className="flex gap-4 lg:flex-row">
               <Link
-                href="/education"
+                href="/projects"
                 className="rounded-full border border-offblack px-4 py-3 hover:bg-green-400 hover:text-offblack sm:px-8"
               >
                 Go regenerative <span className={inter.className}>-&gt;</span>
@@ -111,7 +111,7 @@ export default function Landing() {
       </section>
 
       <section className="w-full max-w-8xl py-12 sm:py-20">
-        <h2 className="pb-8 text-3xl sm:text-4xl">Explore regenerative</h2>
+        <h2 className="pb-8 text-3xl sm:text-4xl">Explore regenerative practices</h2>
         <ProjectGrid cards={8} />
       </section>
     </main>
