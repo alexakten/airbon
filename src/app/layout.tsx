@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Airbon",
-  description: "Carbon credits",
+  description: "Regenerative agriculture to rebalance our planet.",
 };
 
 export default function RootLayout({
