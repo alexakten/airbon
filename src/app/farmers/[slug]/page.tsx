@@ -28,7 +28,7 @@ export default function FarmerPage() {
   return (
     <main className="relative flex w-full flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <div className="relative flex w-full max-w-8xl flex-col items-center">
-        <Navbar navColor="offblack" />
+        <Navbar/>
         <section className="relative flex w-full max-w-8xl flex-col justify-center pt-32">
           <div className="mb-8">
             <Link href="/farmers">
