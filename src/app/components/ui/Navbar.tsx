@@ -3,17 +3,8 @@
 import React, { useState, useLayoutEffect } from "react";
 import Link from "next/link";
 
-interface NavbarProps {
-  navColor?: "darkgreen";
-}
-
-const Navbar: React.FC<NavbarProps> = ({ navColor = "darkgreen" }) => {
-  // Default to "darkgreen" if not provided
-  const colorMap = {
-    darkgreen: "#384238",
-  };
-
-  const fillColor = colorMap[navColor] || "#384238"; // Default to orange if color not found
+const Navbar: React.FC = () => {
+  const fillColor = "#384238"; // Directly set the fill color to dark green
 
   const [isOpen, setIsOpen] = useState(false);
 

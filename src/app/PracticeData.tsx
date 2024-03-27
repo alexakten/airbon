@@ -44,7 +44,7 @@ const PracticeData = [
     practiceName: "Rotational Grazing",
     practiceImage: "/images/regenerative-methods/practice_5.avif",
     practiceDescription:
-      "Rotational grazing involves moving livestock between pastures (or paddocks) to allow grass to recover before being grazed again. This technique mimics natural grazing patterns, promoting healthier grasslands and soil, improving water infiltration, and enhancing the soil's ability to sequester carbon. By optimizing the density and movement of livestock, soil compaction is minimized, and the distribution of manure is more evenly spread, providing natural fertilizer for the soil.",
+      "Rotational grazing involves moving livestock between pastures (or paddocks) to allow grass to recover before being grazed again. This technique mimics natural grazing patterns, promoting healthier grasslands and soil, improving water infiltration, and enhancing the soil's ability to sequester carbon.",
     practiceBenefits:
       "Promotes healthier grasslands; improves soil health and water infiltration; enhances carbon sequestration in soil; minimizes soil compaction; provides natural soil fertilization through even manure distribution.",
     slug: "Rotational-Grazing",
@@ -74,7 +74,7 @@ const PracticeData = [
     practiceName: "Nutrient Management",
     practiceImage: "/images/regenerative-methods/practice_8.avif",
     practiceDescription:
-      "Enhanced nutrient management involves optimizing the application of fertilizers and manure to match crop needs, reducing runoff, and minimizing greenhouse gas emissions. Precision agriculture tools are often used to tailor nutrient applications to specific parts of a field, enhancing efficiency and sustainability. This practice not only improves farm productivity but also significantly reduces the environmental impact of farming operations.",
+      "Enhanced nutrient management involves optimizing the application of fertilizers and manure to match crop needs, reducing runoff, and minimizing greenhouse gas emissions. Precision agriculture tools are often used to tailor nutrient applications to specific parts of a field, enhancing efficiency and sustainability. ",
     practiceBenefits:
       "Reduces fertilizer runoff and greenhouse gas emissions; improves farm productivity and sustainability; enhances soil health and crop yields through optimized nutrient application.",
     slug: "Enhanced-Nutrient-Management",

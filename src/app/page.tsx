@@ -63,13 +63,24 @@ export default function Landing() {
       </section>
 
       <section className="mt-36 w-full max-w-8xl">
-        <PracticeCarousel />
+        <ProjectCard
+          imageUrl="/images/regenerative_farmer.avif"
+          imageAlt="Regenerative farmer"
+          tagIcon=""
+          tagText="Regenerative farming"
+          subTitle="Regenerative farmers"
+          title="Build resilience"
+          description="Regenerative farmin is a holistic approach to farming that boosts soil health by augmenting organic matter, enriching microbial diversity, and improving water retention. This approach minimizes erosion, curtails the reliance on chemical inputs, and actively sequesters carbon."
+          buttonLink=""
+          buttonText="Get started"
+        />
       </section>
 
-      <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
+      <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
         <h2 className="text-6xl">Our services</h2>
         <p className="mt-4 max-w-xl text-lg">
-          We provide various tools to help farmers become regenerative depending on where they are on their journey
+          We provide various tools to help farmers become regenerative depending
+          on where they are on their journey
         </p>
         <div className="mt-16 grid grid-cols-4 gap-4">
           {services.map((service, index) => (
@@ -82,6 +93,10 @@ export default function Landing() {
             />
           ))}
         </div>
+      </section>
+
+      <section className="mt-36 w-full max-w-8xl">
+        <PracticeCarousel />
       </section>
     </main>
   );
