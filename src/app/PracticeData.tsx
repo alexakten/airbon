@@ -11,7 +11,7 @@ const PracticeData = [
   },
   {
     practiceID: "2",
-    practiceName: "Cover Cropping",
+    practiceName: "Cover Crops",
     practiceImage: "/images/regenerative-methods/practice_2.avif",
     practiceDescription:
       "Cover cropping involves growing plants specifically for the benefit of the soil rather than the crop yield. These plants improve soil health by preventing erosion, enhancing soil structure, increasing organic matter, and fixing atmospheric nitrogen in the soil. Cover crops, such as legumes, grasses, and other green plants, are planted during off-seasons when the soil would otherwise be bare.",

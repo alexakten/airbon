@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         darkgreen: "#384238",
         deepgreen: "#222822",
+        darkorange: "#D6730F",
+        deeporange: "#AD5B0A",
         bluegray: "#EFF5F1",
         lightgray: "#F9FCFA",
       },

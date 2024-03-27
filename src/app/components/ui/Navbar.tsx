@@ -7,7 +7,8 @@ interface NavbarProps {
   navColor?: "darkgreen";
 }
 
-const Navbar: React.FC<NavbarProps> = ({ navColor = "darkgreen" }) => {  // Default to "darkgreen" if not provided
+const Navbar: React.FC<NavbarProps> = ({ navColor = "darkgreen" }) => {
+  // Default to "darkgreen" if not provided
   const colorMap = {
     darkgreen: "#384238",
   };
@@ -38,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor = "darkgreen" }) => {  // Defa
   };
 
   return (
-    <nav className="absolute top-0 px-8 z-50 flex w-full max-w-8xl items-start justify-between overflow-hidden py-6">
+    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-start justify-between overflow-hidden px-8 py-6">
       <div className="z-50 h-full">
         <Link href={"/"}>
           <svg
@@ -59,23 +60,23 @@ const Navbar: React.FC<NavbarProps> = ({ navColor = "darkgreen" }) => {  // Defa
           </svg>
         </Link>
       </div>
-      <ul className="hidden items-center gap-8 sm:flex">
+      <ul className="hidden items-center gap-10 sm:flex">
         <li>
-          <Link href="/farmers" className="hover:underline">
-            Farmers
+          <Link href="/learn" className="hover:font-bold">
+            Start learning
           </Link>
         </li>
         <li>
-          <Link href="/practices" className="hover:underline">
-            Learn
+          <Link href="/practices" className="hover:font-bold">
+            Our tools
           </Link>
         </li>
         <li>
           <Link
             href="mailto:alex.akten@outlook.com"
-            className="hover:underline"
+            className="rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
           >
-            Contact
+            Join community!
           </Link>
         </li>
       </ul>

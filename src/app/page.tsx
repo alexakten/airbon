@@ -14,29 +14,25 @@ const services = [
   {
     icon: "farmer.svg",
     title: "Learn",
-    description:
-      "Learn about regenerative agriculture and its benefits",
+    description: "Learn about regenerative agriculture and its benefits",
     buttonText: "Start learning",
   },
   {
     icon: "field.svg",
     title: "Plan",
-    description:
-      "Get a custom regenerative agriculture plan for your farm",
+    description: "Get a custom regenerative agriculture plan for your farm",
     buttonText: "Get custom plan",
   },
   {
     icon: "house.svg",
     title: "Monitor",
-    description:
-      "Monitor your soil health and carbon sequestration",
+    description: "Monitor your soil health and carbon sequestration",
     buttonText: "Monitor soil",
   },
   {
     icon: "earth.svg",
-    title: "Connect",
-    description:
-      "Connect with a community of regenerative farmers.",
+    title: "Community",
+    description: "Join our community of regenerative farmers.",
     buttonText: "Join community",
   },
 ];
@@ -72,10 +68,8 @@ export default function Landing() {
 
       <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
         <h2 className="text-6xl">Our services</h2>
-        <p className="mt-4 max-w-2xl text-lg">
-          Become a regenerative farmer to improve soil health, boost
-          biodiversity, and sequester carbon. Join our community to build a
-          sustainable future for our planet.
+        <p className="mt-4 max-w-xl text-lg">
+          We provide various tools to help farmers become regenerative depending on where they are on their journey
         </p>
         <div className="mt-16 grid grid-cols-4 gap-4">
           {services.map((service, index) => (

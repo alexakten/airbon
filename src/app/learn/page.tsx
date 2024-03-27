@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function InvestorsPage() {
+export default function LearnPage() {
   return (
     <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <section className="relative flex h-[100svh] max-w-8xl flex-col items-center sm:h-auto">
