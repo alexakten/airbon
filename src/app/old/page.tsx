@@ -35,7 +35,7 @@ export default function Landing() {
   return (
     <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-offblack sm:px-8 2xl:text-lg">
       <section className="relative flex h-[100svh] max-w-8xl flex-col items-center sm:h-auto">
-        <Navbar navColor="offblack" />
+        <Navbar />
         <div className="flex flex-col gap-4 border-offblack pt-32 lg:flex-row lg:gap-0 lg:border-b lg:pb-12">
           <div className="flex max-w-6xl flex-col gap-4 lg:gap-14 2xl:max-w-7xl">
             <div className="flex flex-col gap-3">
