@@ -7,6 +7,7 @@ import PlanetIcon from "./components/assets/PlanetIcon";
 import ProjectCard from "./components/ui/ProjectCard";
 import PracticeCarousel from "./components/ui/PracticeCarousel";
 import ServiceCard from "./components/ui/ServiceCard";
+import WhyCard from "./components/ui/WhyCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,45 @@ const services = [
     title: "Community",
     description: "Join our community of regenerative farmers.",
     buttonText: "Join community",
+  },
+];
+
+const why = [
+  {
+    icon: "farmer.svg",
+    title: "Soil health",
+    description:
+      "Revitalize your land by enriching the soil with vital nutrients and organic matter fostering a vibrant, healthy soil ecosystem.",
+  },
+  {
+    icon: "field.svg",
+    title: "Resilience",
+    description:
+      "Create farming systems that withstand climate change and environmental challenges like and extreme weather. ",
+  },
+  {
+    icon: "house.svg",
+    title: "Carbon sequestration",
+    description:
+      "Capture atmospheric carbon dioxide and store it in the soil, aiding in climate change mitigation.",
+  },
+  {
+    icon: "earth.svg",
+    title: "Biodiversity",
+    description:
+      "Promote a diverse ecosystem of plants, animals, and microorganisms for ecological balance.",
+  },
+  {
+    icon: "farmer.svg",
+    title: "Economic benefits",
+    description:
+      "Improve long-term economic sustainability for farmers through reduced input costs and healthier soils.",
+  },
+  {
+    icon: "field.svg",
+    title: "Water conservation",
+    description:
+      "Improve soil structure to enhance water retention and reduce the need for irrigation.",
   },
 ];
 
@@ -97,6 +137,22 @@ export default function Landing() {
 
       <section className="mt-36 w-full max-w-8xl">
         <PracticeCarousel />
+      </section>
+
+      <section className="m-36 w-full max-w-8xl">
+        <h3 className="max-w-xl text-6xl">
+          The many benefits of regenerative farming
+        </h3>
+        <div className="mt-12 grid grid-cols-3 grid-rows-2 gap-4">
+          {why.map((item, index) => (
+            <WhyCard
+              key={index}
+              whyIcon={item.icon}
+              whyTitle={item.title}
+              whyDescription={item.description}
+            />
+          ))}
+        </div>
       </section>
     </main>
   );
