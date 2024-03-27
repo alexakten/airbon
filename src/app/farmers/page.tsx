@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import Link from "next/link";
-import FarmerGrid from "../components/FarmerGrid";
+import FarmerGrid from "../components/ui/FarmerGrid";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });

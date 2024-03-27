@@ -3,10 +3,10 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import FarmerData from "@/app/FarmerData"; // Adjust this path as needed
-import Navbar from "@/app/components/Navbar";
+import Navbar from "@/app/components/ui/Navbar";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import FarmerGrid from "@/app/components/FarmerGrid"; // Make sure you have a FarmerGrid component
+import FarmerGrid from "@/app/components/ui/FarmerGrid"; // Make sure you have a FarmerGrid component
 
 const inter = Inter({ subsets: ["latin"] });
 

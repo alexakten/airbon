@@ -9,28 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        deepgreen: "#0D1B1A",
-        darkgreen: "#131718",
-        lightgreen: "#24483E",
-        bluegray: "#D9E1DE",
-        deeporange: "#954013",
-        orange: "#D99256",
-        lightorange: "#F2BD8B",
-        frostwhite: "#D5C9C4",
-        icewhite: "#D9E1DE",
-        lightgray: "#EEEEEE",
-        offblack: "#151515"
+        darkgreen: "#384238",
+        deepgreen: "#222822",
+        bluegray: "#EFF5F1",
+        lightgray: "#F9FCFA",
       },
       fontSize: {
-        base: "0.9375rem",
-        "2xl": "1.375rem",
-        "7xl": "5.12rem",
+        base: "1rem",
+        "2xl": "1.5rem",
+        "7xl": "4.5rem",
       },
       maxWidth: {
         "8xl": "1440px",
       },
       borderWidth: {
-        DEFAULT: "0.5px", // Sets the default border width
+        DEFAULT: "1px", // Sets the default border width
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

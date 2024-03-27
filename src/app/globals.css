@@ -2,25 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
-  font-family: 'Neue Haas Grotesk';
-  src: url('/fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  font-family: 'Athletics';
+  src: url('/fonts/athletics/Athletics Regular.otf') format('truetype');
   font-display: swap;
-  font-weight: 400; /* normal */
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Neue Haas Grotesk';
-  src: url('/fonts/NHaasGroteskTXPro-65Md.ttf') format('truetype');
+  font-family: 'Athletics';
+  src: url('/fonts/athletics/Athletics Bold.otf') format('truetype');
   font-display: swap;
-  font-weight: 500; /* medium weight for example */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Athletics';
+  src: url('/fonts/athletics/Athletics Medium.otf') format('truetype');
+  font-display: swap;
+  font-weight: medium;
   font-style: normal;
 }
 
 body {
-  font-family: 'Neue Haas Grotesk', sans-serif;
-  background-color: #EEEEEE;
+  font-family: 'Athletics', sans-serif;
+  background-color: #F9FCFA;
 }
 
 

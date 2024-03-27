@@ -4,39 +4,39 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Define the Project type
-type Project = {
-  projectID: string;
-  projectName: string;
-  projectImage: string;
-  projectDescription: string;
-  projectBenefits: string;
+// Define the Practice type
+type Practice = {
+  practiceID: string;
+  practiceName: string;
+  practiceImage: string;
+  practiceDescription: string;
+  practiceBenefits: string;
   slug: string;
 };
 
-interface ProjectCardProps {
-  project: Project; // Add this prop to your component
+interface PracticeCardProps {
+  practice: Practice; // Add this prop to your component
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function PracticeCard({ practice }: PracticeCardProps) {
   return (
-    <Link href={`/projects/${project.slug}`}>
+    <Link href={`/practices/${practice.slug}`}>
       <div className="grid min-h-[400px] w-full grid-rows-2 overflow-hidden rounded-xl border border-black">
         <div className="relative row-span-1 bg-gray-300">
           <Image
-            src={project.projectImage}
-            alt={project.projectName}
+            src={practice.practiceImage}
+            alt={practice.practiceName}
             layout="fill"
             objectFit="cover"
           ></Image>
         </div>
         <div className="row-span-1 flex flex-col p-4">
-          {/* <p className="text-sm opacity-50">{project.projectLocation}</p> */}
-          <h3 className="text-2xl">{project.projectName}</h3>
+          {/* <p className="text-sm opacity-50">{practice.practiceLocation}</p> */}
+          <h3 className="text-2xl">{practice.practiceName}</h3>
           <p
             className="line-clamp-3 h-full leading-normal pt-1 text-base opacity-75"
           >
-            {project.projectDescription}
+            {practice.practiceDescription}
           </p>
 
           <div className="flex h-full items-end justify-end">

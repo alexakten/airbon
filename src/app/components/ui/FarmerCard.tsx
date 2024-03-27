@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Define the Project type
+// Define the Practice type
 type Farmer = {
   FarmerID: string;
   FarmerName: string;

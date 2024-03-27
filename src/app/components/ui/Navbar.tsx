@@ -4,15 +4,15 @@ import React, { useState, useLayoutEffect } from "react";
 import Link from "next/link";
 
 interface NavbarProps {
-  navColor: "offblack";
+  navColor?: "darkgreen";
 }
 
-const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
+const Navbar: React.FC<NavbarProps> = ({ navColor = "darkgreen" }) => {  // Default to "darkgreen" if not provided
   const colorMap = {
-    offblack: "#151515",
+    darkgreen: "#384238",
   };
 
-  const fillColor = colorMap[navColor] || "#151515"; // Default to orange if color not found
+  const fillColor = colorMap[navColor] || "#384238"; // Default to orange if color not found
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
   };
 
   return (
-    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-start justify-between overflow-hidden py-6">
+    <nav className="absolute top-0 px-8 z-50 flex w-full max-w-8xl items-start justify-between overflow-hidden py-6">
       <div className="z-50 h-full">
         <Link href={"/"}>
           <svg
@@ -66,7 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
           </Link>
         </li>
         <li>
-          <Link href="/projects" className="hover:underline">
+          <Link href="/practices" className="hover:underline">
             Learn
           </Link>
         </li>
@@ -121,8 +121,8 @@ const Navbar: React.FC<NavbarProps> = ({ navColor }) => {
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:underline">
-                Projects
+              <Link href="/practices" className="hover:underline">
+                Practices
               </Link>
             </li>
             <li>

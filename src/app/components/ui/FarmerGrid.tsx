@@ -1,5 +1,5 @@
 import FarmerCard from "./FarmerCard";
-import FarmerData from "../FarmerData"; // Adjust this path as needed
+import FarmerData from "../../FarmerData"; // Adjust this path as needed
 
 interface FarmerGridProps {
   cards: number;
