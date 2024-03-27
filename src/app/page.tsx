@@ -36,7 +36,7 @@ const services = [
     icon: "earth.svg",
     title: "Connect",
     description:
-      "Connect with a community of experienced farmers.",
+      "Connect with a community of regenerative farmers.",
     buttonText: "Join community",
   },
 ];
