@@ -34,7 +34,7 @@ const PracticeCarousel: React.FC = () => {
         buttonText="Go regenerative"
         buttonLink={`/practices/${slug}`} // Using the slug for the button link
         tagIcon="path/to/your/icon.jpg" // You can update this based on your data or remove if not needed
-        tagText={"Sustainable Practices"} // Provide a default text or remove if not applicable
+        tagText={"Sustainable practices"} // Provide a default text or remove if not applicable
         imageUrl={practiceImage}
         imageAlt={practiceName}
       />
