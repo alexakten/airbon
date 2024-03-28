@@ -10,7 +10,7 @@ type Farmer = {
   FarmerName: string;
   FarmerImage: string;
   FarmerLocation: string;
-  FarmerSize: number
+  FarmerSize: number;
 
   slug: string;
 };
@@ -22,8 +22,8 @@ interface FarmerCardProps {
 export default function FarmerCard({ farmer }: FarmerCardProps) {
   return (
     <Link href={`/farmers/${farmer.slug}`}>
-      <div className="group">
-        <div className="relative w-full overflow-hidden rounded-xl bg-gray-200 pt-[100%]">
+      <div className="group text-left">
+        <div className="relative w-full  overflow-hidden rounded-xl bg-gray-200 pt-[100%]">
           <Image
             src={farmer.FarmerImage}
             alt={farmer.FarmerName}

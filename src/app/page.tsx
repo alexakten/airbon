@@ -80,19 +80,17 @@ const why = [
 
 export default function Landing() {
   return (
-    <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-darkgreen sm:px-8 2xl:text-lg">
+    <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-darkgreen sm:px-10 2xl:text-lg">
       <Navbar />
 
       <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
         <div className="relative flex max-w-5xl flex-col items-center text-center">
-          <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tight">
+          <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tighter">
             Rebalance our planet <br className="hidden sm:block" /> with
             regenerative farming
           </h1>
-          <div className="absolute right-2 -top-[80px] sm:-right-12 sm:-top-24">
+          <div className="absolute -top-[80px] right-2 sm:-right-12 sm:-top-24">
             <div className="h-20 w-20 sm:h-36 sm:w-36">
-              {" "}
-              {/* 80px at base, 140px at 'sm' breakpoint */}
               <Image
                 src="/icons/planet.svg"
                 width={120}
@@ -150,10 +148,14 @@ export default function Landing() {
         <PracticeCarousel />
       </section>
 
-      <section className="m-36 w-full max-w-8xl">
-        <h3 className="max-w-xl text-4xl sm:text-6xl">
+      <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
+        <h2 className="max-w-xl text-4xl sm:text-6xl">
           The many benefits of regenerative farming
-        </h3>
+        </h2>
+        <p className="mt-4 max-w-md text-lg">
+          Here are some reasons why you should start with regenerative
+          agriculture today!
+        </p>
         <div className="mt-12 grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {why.map((item, index) => (
             <WhyCard
@@ -164,6 +166,20 @@ export default function Landing() {
             />
           ))}
         </div>
+      </section>
+
+      <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
+        <h2 className="text-4xl sm:text-6xl">Join the community!</h2>
+        <p className="mt-4 max-w-xl text-lg">
+          Connect with others already on their regenerative journey!
+        </p>
+        <Link
+          href="community"
+          className="mb-16 mt-4 rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
+        >
+          Join community!
+        </Link>
+        <FarmerGrid cards={8} />
       </section>
     </main>
   );

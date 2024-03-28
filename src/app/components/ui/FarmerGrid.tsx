@@ -13,7 +13,7 @@ const FarmerGrid: React.FC<FarmerGridProps> = ({ cards, currentFarmerID }) => {
 
   return (
     <div
-      className={`grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`}
+      className={`grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`}
     >
       {farmersToShow.slice(0, cards).map((farmer) => (
         <FarmerCard key={farmer.FarmerID} farmer={farmer} />
