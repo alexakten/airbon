@@ -1,67 +1,83 @@
 const FarmerData = [
   {
-    FarmerID: "F001",
-    FarmerName: "John Doe",
-    FarmerImage: "/images/farmers/farm-1.avif",
-    FarmerLocation: "Iowa, USA",
-    FarmerSize: 120, // in hectares
-    slug: "john-doe",
+    id: 1, // Changed from FarmerID to id
+    name: "John Doe", // Changed from FarmerName to name
+    image: "/images/farmers/farm-1.avif", // Consider if you need to adjust this for the map
+    location: "Iowa, USA", // Consider if you need to adjust this for the map
+    size: 120, // Consider if you need to adjust this for the map
+    slug: "john-doe", // Consider if you need to adjust this for the map
+    latitude: 41.878, // Extracted from Coordinates
+    longitude: -93.0977, // Extracted from Coordinates
   },
   {
-    FarmerID: "F002",
-    FarmerName: "Jane Smith",
-    FarmerImage: "/images/farmers/farm-2.avif",
-    FarmerLocation: "Alberta, Canada",
-    FarmerSize: 95, // in hectares
+    id: 2,
+    name: "Jane Smith",
+    image: "/images/farmers/farm-2.avif",
+    location: "Alberta, Canada",
+    size: 95,
     slug: "jane-smith",
+    latitude: 53.9333,
+    longitude: -116.5765,
   },
   {
-    FarmerID: "F003",
-    FarmerName: "Pedro Martinez",
-    FarmerImage: "/images/farmers/farm-3.avif",
-    FarmerLocation: "São Paulo, Brazil",
-    FarmerSize: 150, // in hectares
+    id: 3,
+    name: "Pedro Martinez",
+    image: "/images/farmers/farm-3.avif",
+    location: "São Paulo, Brazil",
+    size: 150,
     slug: "pedro-martinez",
+    latitude: -23.5505,
+    longitude: -46.6333,
   },
   {
-    FarmerID: "F004",
-    FarmerName: "Liu Wei",
-    FarmerImage: "/images/farmers/farm-4.avif",
-    FarmerLocation: "Shandong, China",
-    FarmerSize: 80, // in hectares
+    id: 4,
+    name: "Liu Wei",
+    image: "/images/farmers/farm-4.avif",
+    location: "Shandong, China",
+    size: 80,
     slug: "liu-wei",
+    latitude: 36.6685,
+    longitude: 116.9974,
   },
   {
-    FarmerID: "F005",
-    FarmerName: "Anna Andersson",
-    FarmerImage: "/images/farmers/farm-5.avif",
-    FarmerLocation: "Stockholm, Sweden",
-    FarmerSize: 65, // in hectares
+    id: 5,
+    name: "Anna Andersson",
+    image: "/images/farmers/farm-5.avif",
+    location: "Stockholm, Sweden",
+    size: 65,
     slug: "anna-ivanova",
+    latitude: 59.3293,
+    longitude: 18.0686,
   },
   {
-    FarmerID: "F006",
-    FarmerName: "Chris Johnson",
-    FarmerImage: "/images/farmers/farm-6.avif",
-    FarmerLocation: "Texas, USA",
-    FarmerSize: 200, // in hectares
+    id: 6,
+    name: "Chris Johnson",
+    image: "/images/farmers/farm-6.avif",
+    location: "Texas, USA",
+    size: 200,
     slug: "chris-johnson",
+    latitude: 31.9686,
+    longitude: -99.9018,
   },
   {
-    FarmerID: "F007",
-    FarmerName: "Emilia Rossi",
-    FarmerImage: "/images/farmers/farm-7.avif",
-    FarmerLocation: "Tuscany, Italy",
-    FarmerSize: 50, // in hectares
+    id: 7,
+    name: "Emilia Rossi",
+    image: "/images/farmers/farm-7.avif",
+    location: "Tuscany, Italy",
+    size: 50,
     slug: "emilia-rossi",
+    latitude: 43.7696,
+    longitude: 11.2558,
   },
   {
-    FarmerID: "F008",
-    FarmerName: "Kwame Nkrumah",
-    FarmerImage: "/images/farmers/farm-8.avif",
-    FarmerLocation: "Accra, Ghana",
-    FarmerSize: 110, // in hectares
+    id: 8,
+    name: "Kwame Nkrumah",
+    image: "/images/farmers/farm-8.avif",
+    location: "Accra, Ghana",
+    size: 110,
     slug: "kwame-nkrumah",
+    latitude: 5.6037,
+    longitude: -0.187,
   },
 ];
 

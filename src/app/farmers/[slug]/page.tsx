@@ -39,12 +39,12 @@ export default function FarmerPage() {
             </Link>
           </div>
 
-          <h1 className="mb-4 text-3xl sm:text-4xl">{farmer.FarmerName}</h1>
+          <h1 className="mb-4 text-3xl sm:text-4xl">{farmer.name}</h1>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
             <div className="relative col-span-2 row-span-2 min-h-56 overflow-hidden rounded-lg border border-black bg-gray-200">
               <Image
-                src={farmer.FarmerImage}
-                alt={farmer.FarmerName}
+                src={farmer.image}
+                alt={farmer.name}
                 layout="fill"
                 objectFit="cover"
               ></Image>
@@ -52,7 +52,7 @@ export default function FarmerPage() {
             <div className="col-span-2 row-span-1 rounded-lg border border-black">
               <div className="p-4">
                 <p className="mb-4 text-xl">Location</p>
-                <p className="opacity-75">{farmer.FarmerLocation}</p>
+                <p className="opacity-75">{farmer.location}</p>
               </div>
             </div>
             {/* Additional content about the farmer can go here, like a description, practices, etc. */}
@@ -77,13 +77,13 @@ export default function FarmerPage() {
           <h2 className="pb-8 text-3xl sm:text-4xl">Discover more farmers</h2>
           {/* Adjust the grid display as needed */}
           <div className="hidden lg:block ">
-            <FarmerGrid cards={8} currentFarmerID={farmer.FarmerID} />
+            <FarmerGrid cards={8} currentFarmerID={farmer.id} />
           </div>
           <div className="hidden sm:block lg:hidden">
-            <FarmerGrid cards={6} currentFarmerID={farmer.FarmerID} />
+            <FarmerGrid cards={6} currentFarmerID={farmer.id} />
           </div>
           <div className="block sm:hidden">
-            <FarmerGrid cards={4} currentFarmerID={farmer.FarmerID} />
+            <FarmerGrid cards={4} currentFarmerID={farmer.id} />
           </div>
         </section>
       </div>

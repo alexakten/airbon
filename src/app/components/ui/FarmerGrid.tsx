@@ -3,12 +3,12 @@ import FarmerData from "../../FarmerData"; // Adjust this path as needed
 
 interface FarmerGridProps {
   cards: number;
-  currentFarmerID?: string; // This prop is optional to filter out the current farmer if needed
+  currentFarmerID?: number; // This prop is optional to filter out the current farmer if needed
 }
 
 const FarmerGrid: React.FC<FarmerGridProps> = ({ cards, currentFarmerID }) => {
   const farmersToShow = FarmerData.filter(
-    (farmer) => !currentFarmerID || farmer.FarmerID !== currentFarmerID,
+    (farmer) => !currentFarmerID || farmer.id !== currentFarmerID,
   );
 
   return (
@@ -16,7 +16,7 @@ const FarmerGrid: React.FC<FarmerGridProps> = ({ cards, currentFarmerID }) => {
       className={`grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`}
     >
       {farmersToShow.slice(0, cards).map((farmer) => (
-        <FarmerCard key={farmer.FarmerID} farmer={farmer} />
+        <FarmerCard key={farmer.id} farmer={farmer} />
       ))}
     </div>
   );

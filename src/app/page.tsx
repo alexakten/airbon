@@ -9,6 +9,8 @@ import PracticeCarousel from "./components/ui/PracticeCarousel";
 import ServiceCard from "./components/ui/ServiceCard";
 import WhyCard from "./components/ui/WhyCard";
 import Image from "next/image";
+import FarmerMap from "./components/ui/FarmerMap";
+import FarmerData from "./FarmerData";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -153,8 +155,7 @@ export default function Landing() {
           The many benefits of regenerative farming
         </h2>
         <p className="mt-4 max-w-md text-lg">
-          Here are some reasons why you should start with regenerative
-          agriculture today!
+          Here&apos;s why you should start today!
         </p>
         <div className="mt-12 grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {why.map((item, index) => (
@@ -168,7 +169,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
+      <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
         <h2 className="text-4xl sm:text-6xl">Join the community!</h2>
         <p className="mt-4 max-w-xl text-lg">
           Connect with others already on their regenerative journey!
@@ -180,6 +181,20 @@ export default function Landing() {
           Join community!
         </Link>
         <FarmerGrid cards={8} />
+      </section>
+
+      <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
+        <h2 className="text-4xl sm:text-6xl">Discover farmers near you!</h2>
+        <p className="mt-4 max-w-xl text-lg">
+          Connect with others already on their regenerative journey!
+        </p>
+        <Link
+          href="community"
+          className="mb-16 mt-4 rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
+        >
+          Join community!
+        </Link>
+        <FarmerMap farmers={FarmerData} />
       </section>
     </main>
   );
