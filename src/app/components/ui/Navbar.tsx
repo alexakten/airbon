@@ -30,10 +30,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-start justify-between overflow-hidden px-10 py-8">
+    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-center justify-between overflow-hidden px-10 py-8">
       <div className="z-50 h-full">
         <Link href={"/"}>
-          <svg
+          <h2 className="font-bold tracking-tight text-3xl">Airbon</h2>
+          {/* <svg
             width="120"
             height="34"
             viewBox="0 0 120 34"
@@ -48,7 +49,7 @@ const Navbar: React.FC = () => {
               d="M3.07696 1.74609V7.91113H21.9234L2.63657 21.3528C0.982706 22.503 0 24.391 0 26.412C0 29.8143 2.75196 32.5713 6.14816 32.5713H24.6157V26.4062H6.16547L24.6157 13.5425V26.4062H30.7696V1.74609H3.07696Z"
               fill={fillColor}
             />
-          </svg>
+          </svg> */}
         </Link>
       </div>
       <ul className="hidden items-center gap-10 sm:flex">
