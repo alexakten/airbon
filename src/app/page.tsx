@@ -121,7 +121,7 @@ export default function Landing() {
           tagText="Regenerative farming"
           subTitle="Regenerative farmers"
           title="Build resilience"
-          description="Regenerative farmin is a holistic approach to farming that boosts soil health by augmenting organic matter, enriching microbial diversity, and improving water retention. This approach minimizes erosion, curtails the reliance on chemical inputs, and actively sequesters carbon."
+          description="Regenerative farming is a holistic approach to farming that boosts soil health by augmenting organic matter, enriching microbial diversity, and improving water retention. This approach minimizes erosion, curtails the reliance on chemical inputs, and actively sequesters carbon."
           buttonLink=""
           buttonText="Get started"
         />
@@ -184,7 +184,7 @@ export default function Landing() {
       </section>
 
       <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="text-4xl sm:text-6xl">Discover farmers near you!</h2>
+        <h2 className="text-4xl sm:text-6xl">Discover farmers near you</h2>
         <p className="mt-4 max-w-xl text-lg">
           Connect with others already on their regenerative journey!
         </p>

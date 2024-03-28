@@ -45,7 +45,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
       {farmers.map((farmer) => (
         <Marker key={farmer.id} position={[farmer.latitude, farmer.longitude]}>
           <Popup>
-            <div className="flex flex-col">
+            <div className="flex flex-col p-0">
               <h3 className="font-medium">{farmer.name}</h3>
               <div className="relative mt-2 h-36 w-56 overflow-hidden rounded-md bg-gray-200">
                 <Image
