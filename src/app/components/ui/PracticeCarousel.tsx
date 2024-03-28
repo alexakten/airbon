@@ -9,6 +9,15 @@ const inter = Inter({ subsets: ["latin"] });
 const PracticeCarousel: React.FC = () => {
   const [currentPracticeIndex, setCurrentPracticeIndex] = useState(0);
 
+  // Preload the first three practice images on component mount
+  useEffect(() => {
+    for (let i = 0; i < 3; i++) {
+      const image = new Image();
+      image.src = PracticeData[i].practiceImage;
+    }
+  }, []);
+
+  // Preload next two images when the current practice changes
   useEffect(() => {
     const nextIndex1 = (currentPracticeIndex + 1) % PracticeData.length;
     const nextIndex2 = (currentPracticeIndex + 2) % PracticeData.length;
