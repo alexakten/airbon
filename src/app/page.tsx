@@ -8,6 +8,7 @@ import ProjectCard from "./components/ui/ProjectCard";
 import PracticeCarousel from "./components/ui/PracticeCarousel";
 import ServiceCard from "./components/ui/ServiceCard";
 import WhyCard from "./components/ui/WhyCard";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -85,10 +86,21 @@ export default function Landing() {
       <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
         <div className="relative flex max-w-5xl flex-col items-center text-center">
           <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tight">
-            Rebalance our planet <br className="hidden sm:block"/> with regenerative farming
+            Rebalance our planet <br className="hidden sm:block" /> with
+            regenerative farming
           </h1>
-          <div className="absolute -right-0 -top-36 sm:-right-12 sm:-top-24">
-            <PlanetIcon />
+          <div className="absolute right-2 -top-[80px] sm:-right-12 sm:-top-24">
+            <div className="h-20 w-20 sm:h-36 sm:w-36">
+              {" "}
+              {/* 80px at base, 140px at 'sm' breakpoint */}
+              <Image
+                src="/icons/planet.svg"
+                width={120}
+                height={120}
+                alt="Planet icon"
+                layout="responsive"
+              />
+            </div>
           </div>
           <p className="mt-6 max-w-3xl text-xl">
             Become a regenerative farmer to improve soil health, boost
