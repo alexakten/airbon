@@ -84,11 +84,10 @@ export default function Landing() {
 
       <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
         <div className="relative flex max-w-5xl flex-col items-center text-center">
-          <h1 className="text-7xl font-medium leading-[1.05] tracking-tight">
-            Rebalance our planet <br />
-            with regenerative farming
+          <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tight">
+            Rebalance our planet <br className="hidden sm:block"/> with regenerative farming
           </h1>
-          <div className="absolute -right-12 -top-24">
+          <div className="absolute -right-0 -top-36 sm:-right-12 sm:-top-24">
             <PlanetIcon />
           </div>
           <p className="mt-6 max-w-3xl text-xl">
@@ -117,12 +116,12 @@ export default function Landing() {
       </section>
 
       <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="text-6xl">Our services</h2>
+        <h2 className="text-4xl sm:text-6xl">Our services</h2>
         <p className="mt-4 max-w-xl text-lg">
           We provide various tools to help farmers become regenerative depending
           on where they are on their journey
         </p>
-        <div className="mt-16 grid grid-cols-4 gap-4">
+        <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
@@ -140,10 +139,10 @@ export default function Landing() {
       </section>
 
       <section className="m-36 w-full max-w-8xl">
-        <h3 className="max-w-xl text-6xl">
+        <h3 className="max-w-xl text-4xl sm:text-6xl">
           The many benefits of regenerative farming
         </h3>
-        <div className="mt-12 grid grid-cols-3 grid-rows-2 gap-4">
+        <div className="mt-12 grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {why.map((item, index) => (
             <WhyCard
               key={index}
