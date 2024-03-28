@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard"; // Adjust the import path as necessary
 import PracticeData from "@/app/PracticeData";
 import { Inter } from "next/font/google";
@@ -8,6 +8,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 const PracticeCarousel: React.FC = () => {
   const [currentPracticeIndex, setCurrentPracticeIndex] = useState(0);
+
+    // Preload next and previous images
+    useEffect(() => {
+      const nextIndex = (currentPracticeIndex + 1) % PracticeData.length;
+      const prevIndex = (currentPracticeIndex - 1 + PracticeData.length) % PracticeData.length;
+  
+      new Image().src = PracticeData[nextIndex].practiceImage;
+      new Image().src = PracticeData[prevIndex].practiceImage;
+    }, [currentPracticeIndex]);
 
   const nextPractice = () => {
     setCurrentPracticeIndex(
