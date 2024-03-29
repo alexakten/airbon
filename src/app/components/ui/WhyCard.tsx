@@ -15,7 +15,7 @@ const WhyCard: React.FC<WhyCardProps> = ({
   const iconUrl = `/icons/${whyIcon}`;
 
   return (
-    <div className="flex h-[16rem] w-full flex-col items-start justify-between rounded-3xl bg-bluegray px-8 py-10">
+    <div className="flex h-[16rem] w-full flex-col text-left items-start justify-between rounded-3xl bg-bluegray px-8 py-8">
       <Image src={iconUrl} width="40" height="40" alt={whyTitle} />
 
       <div>

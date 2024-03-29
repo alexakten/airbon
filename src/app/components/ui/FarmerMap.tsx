@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Image from "next/image";
 import L from "leaflet";
@@ -25,6 +26,7 @@ interface Farmer {
   image: string;
   location: string;
   size: number;
+  slug: string;
 }
 
 interface FarmerMapProps {
@@ -36,6 +38,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
     <MapContainer
       center={[51.505, -0.09]}
       zoom={3}
+      scrollWheelZoom={false}
       style={{ height: "40rem", width: "100%", borderRadius: "1rem" }}
     >
       <TileLayer
@@ -46,7 +49,6 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
         <Marker key={farmer.id} position={[farmer.latitude, farmer.longitude]}>
           <Popup>
             <div className="flex flex-col p-0">
-              <h3 className="font-medium">{farmer.name}</h3>
               <div className="relative mt-2 h-36 w-56 overflow-hidden rounded-md bg-gray-200">
                 <Image
                   className="object-cover"
@@ -56,8 +58,20 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
                   objectFit="cover"
                 />
               </div>
-              <p>{farmer.location}</p>
-              <p>{farmer.size} hectares</p>
+              <div className="mt-2 flex items-end justify-between">
+                <div className="">
+                  <h3 className="font-semibold">{farmer.name}</h3>
+                  <h5 className="mt-1 opacity-50">{farmer.location}</h5>
+                  <h5 className="mt-1 opacity-50">{farmer.size} hectares</h5>
+                </div>
+                <div>
+                  <Link href={`/farmers/${farmer.slug}`}>
+                    <button className="rounded-md bg-darkgreen px-2 py-2 text-white hover:bg-deepgreen">
+                      See farm
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </Popup>
         </Marker>
