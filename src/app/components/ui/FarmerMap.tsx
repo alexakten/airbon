@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import Link from "next/link";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Image from "next/image";
@@ -34,10 +35,22 @@ interface FarmerMapProps {
 }
 
 const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
+  const [isBrowser, setIsBrowser] = useState(false);
+
+  // After the component mounts, update the state to indicate that 'window' is available
+  useEffect(() => {
+    setIsBrowser(typeof window !== "undefined");
+  }, []);
+
+  if (!isBrowser) {
+    return null;
+  }
+
   return (
     <MapContainer
       center={[51.505, -0.09]}
       zoom={3}
+      minZoom={2}
       scrollWheelZoom={false}
       style={{ height: "40rem", width: "100%", borderRadius: "1rem" }}
     >
@@ -58,11 +71,11 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
                   objectFit="cover"
                 />
               </div>
-              <div className="mt-2 flex items-end justify-between">
+              <div className="mt-3 flex items-end justify-between">
                 <div className="">
                   <h3 className="font-semibold">{farmer.name}</h3>
-                  <h5 className="mt-1 opacity-50">{farmer.location}</h5>
-                  <h5 className="mt-1 opacity-50">{farmer.size} hectares</h5>
+                  <h5 className="mt-0.5 opacity-50">{farmer.location}</h5>
+                  <h5 className="mt-0.5 opacity-50">{farmer.size} hectares</h5>
                 </div>
                 <div>
                   <Link href={`/farmers/${farmer.slug}`}>
