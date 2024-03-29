@@ -35,17 +35,6 @@ interface FarmerMapProps {
 }
 
 const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
-  const [isBrowser, setIsBrowser] = useState(false);
-
-  // After the component mounts, update the state to indicate that 'window' is available
-  useEffect(() => {
-    setIsBrowser(typeof window !== "undefined");
-  }, []);
-
-  if (!isBrowser) {
-    return null;
-  }
-
   return (
     <div></div>
     // <MapContainer
@@ -55,10 +44,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
     //   scrollWheelZoom={false}
     //   style={{ height: "40rem", width: "100%", borderRadius: "1rem" }}
     // >
-    //   <TileLayer
-    //     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    //     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    //   />
+    //   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
     //   {farmers.map((farmer) => (
     //     <Marker key={farmer.id} position={[farmer.latitude, farmer.longitude]}>
     //       <Popup>
