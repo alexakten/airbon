@@ -76,13 +76,13 @@ const Navbar: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href="/practices" className="hover:font-bold">
+          <Link href="/tools" className="hover:font-bold">
             Our tools
           </Link>
         </li>
         <li>
           <Link
-            href="mailto:alex.akten@outlook.com"
+            href="/community"
             className="rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
           >
             Join community!

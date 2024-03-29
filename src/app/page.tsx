@@ -184,7 +184,7 @@ export default function Landing() {
       </section>
 
       <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="text-4xl sm:text-6xl">Discover farmers near you</h2>
+        <h2 className="text-4xl sm:text-6xl">Discover farmers near you!</h2>
         <p className="mt-4 max-w-xl text-lg">
           Connect with others already on their regenerative journey!
         </p>
