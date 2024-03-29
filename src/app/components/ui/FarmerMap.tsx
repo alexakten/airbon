@@ -80,7 +80,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
                 </div>
                 <div>
                   <Link href={`/community/farmers/${farmer.slug}`}>
-                    <a className="rounded-md bg-darkgreen px-2 py-2 text-white hover:bg-deepgreen">See farm</a>
+                    <button className="rounded-md bg-darkgreen px-2 py-2 text-white hover:bg-deepgreen">See farm</button>
                   </Link>
                 </div>
               </div>
