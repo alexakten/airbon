@@ -31,10 +31,10 @@ export default function FarmerPage() {
         <Navbar />
         <section className="relative flex w-full max-w-8xl flex-col justify-center pt-32">
           <div className="mb-8">
-            <Link href="/farmers">
+            <Link href="/community">
               <button className="transform transition-transform duration-200 ease-in-out hover:-translate-x-1">
                 <span className={inter.className}> &lt;- </span>
-                Back to Farmers
+                Back to community
               </button>
             </Link>
           </div>

@@ -10,24 +10,24 @@ const PracticeCarousel: React.FC = () => {
   const [currentPracticeIndex, setCurrentPracticeIndex] = useState(0);
 
   // Preload the first three practice images on component mount
-  // useEffect(() => {
-  //   for (let i = 0; i < 3; i++) {
-  //     const image = new Image();
-  //     image.src = PracticeData[i].practiceImage;
-  //   }
-  // }, []);
+  useEffect(() => {
+    for (let i = 0; i < 3; i++) {
+      const image = new Image();
+      image.src = PracticeData[i].practiceImage;
+    }
+  }, []);
 
-  // // Preload next two images when the current practice changes
-  // useEffect(() => {
-  //   const nextIndex1 = (currentPracticeIndex + 1) % PracticeData.length;
-  //   const nextIndex2 = (currentPracticeIndex + 2) % PracticeData.length;
+  // Preload next two images when the current practice changes
+  useEffect(() => {
+    const nextIndex1 = (currentPracticeIndex + 1) % PracticeData.length;
+    const nextIndex2 = (currentPracticeIndex + 2) % PracticeData.length;
 
-  //   const image1 = new Image();
-  //   image1.src = PracticeData[nextIndex1].practiceImage;
+    const image1 = new Image();
+    image1.src = PracticeData[nextIndex1].practiceImage;
 
-  //   const image2 = new Image();
-  //   image2.src = PracticeData[nextIndex2].practiceImage;
-  // }, [currentPracticeIndex]);
+    const image2 = new Image();
+    image2.src = PracticeData[nextIndex2].practiceImage;
+  }, [currentPracticeIndex]);
 
   const nextPractice = () => {
     setCurrentPracticeIndex(
