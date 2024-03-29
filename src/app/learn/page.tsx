@@ -80,7 +80,7 @@ const why = [
   },
 ];
 
-export default function Landing() {
+export default function LearnPage() {
   return (
     <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-darkgreen sm:px-10 2xl:text-lg">
       <Navbar />
