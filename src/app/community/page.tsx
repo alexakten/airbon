@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Navbar from "../components/ui/Navbar";
 import Link from "next/link";
 import PracticeGrid from "../components/ui/PracticeGrid";
@@ -9,8 +10,11 @@ import PracticeCarousel from "../components/ui/PracticeCarousel";
 import ServiceCard from "../components/ui/ServiceCard";
 import WhyCard from "../components/ui/WhyCard";
 import Image from "next/image";
-import FarmerMap from "../components/ui/FarmerMap";
 import FarmerData from "../FarmerData";
+
+const FarmerMap = dynamic(() => import("../components/ui/FarmerMap"), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 

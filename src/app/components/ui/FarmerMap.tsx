@@ -1,37 +1,22 @@
 "use client";
-import React from "react";
-import dynamic from "next/dynamic";
+import React, { useState, useEffect } from "react";
+import dynamic from 'next/dynamic';
+
 import Link from "next/link";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Image from "next/image";
-
-const MapContainerNoSSR = dynamic(
-  () => import("react-leaflet").then((mod) => mod.MapContainer),
-  { ssr: false },
-);
-const TileLayerNoSSR = dynamic(
-  () => import("react-leaflet").then((mod) => mod.TileLayer),
-  { ssr: false },
-);
-const MarkerNoSSR = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Marker),
-  { ssr: false },
-);
-const PopupNoSSR = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Popup),
-  { ssr: false },
-);
-
-// Since L is not used server-side, it's safe to call it outside a useEffect or dynamic import
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-const defaultIcon = new L.Icon({
-  iconUrl: '/icons/MapIcon.svg',
-  iconRetinaUrl: '/icons/MapIcon.svg',
+const defaultIcon = L.icon({
+  iconUrl: "/icons/MapIcon.svg",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28],
+  shadowSize: [41, 41],
 });
+
 
 // Set the custom default icon as the default icon for all Leaflet markers
 L.Marker.prototype.options.icon = defaultIcon;
@@ -53,20 +38,17 @@ interface FarmerMapProps {
 
 const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
   return (
-    <MapContainerNoSSR
+    <MapContainer
       center={[51.505, -0.09]}
       zoom={3}
       minZoom={2}
       scrollWheelZoom={false}
       style={{ height: "40rem", width: "100%", borderRadius: "1rem" }}
     >
-      <TileLayerNoSSR url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {farmers.map((farmer) => (
-        <MarkerNoSSR
-          key={farmer.id}
-          position={[farmer.latitude, farmer.longitude]}
-        >
-          <PopupNoSSR>
+        <Marker key={farmer.id} position={[farmer.latitude, farmer.longitude]}>
+          <Popup>
             <div className="flex flex-col p-0">
               <div className="relative mt-2 h-36 w-56 overflow-hidden rounded-md bg-gray-200">
                 <Image
@@ -92,10 +74,10 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
                 </div>
               </div>
             </div>
-          </PopupNoSSR>
-        </MarkerNoSSR>
+          </Popup>
+        </Marker>
       ))}
-    </MapContainerNoSSR>
+    </MapContainer>
   );
 };
 
