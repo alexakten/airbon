@@ -59,14 +59,6 @@ export default function PracticePage() {
             <div className="col-span-2 rounded-lg border border-black p-4 md:col-span-1">
               <p className="mb-4 text-xl">Benefits</p>
               <p className="opacity-75">{practice.practiceBenefits}</p>
-              {/* <iframe
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                loading="lazy"
-                allowFullScreen
-                src={practice.practiceMapLink}
-              ></iframe> */}
             </div>
             <div className="col-span-2 flex flex-col justify-between rounded-lg border border-black p-4 md:col-span-1">
               <div>
