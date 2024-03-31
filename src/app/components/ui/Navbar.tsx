@@ -71,18 +71,18 @@ const Navbar: React.FC = () => {
       </div>
       <ul className="hidden items-center gap-10 sm:flex">
         <li>
-          <Link href="farmers/learn" className="hover:font-bold">
+          <Link href="/learn" className="hover:font-bold">
             Start learning
           </Link>
         </li>
         <li>
-          <Link href="farmers/tools" className="hover:font-bold">
+          <Link href="/tools" className="hover:font-bold">
             Our tools
           </Link>
         </li>
         <li>
           <Link
-            href="farmers/community"
+            href="/community"
             className="rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
           >
             Join community!

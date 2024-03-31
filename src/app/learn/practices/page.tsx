@@ -1,19 +1,19 @@
 import dynamic from "next/dynamic";
-import Navbar from "../../../components/ui/Navbar";
+import Navbar from "../../components/ui/Navbar";
 import Link from "next/link";
-import PracticeGrid from "../../../components/ui/PracticeGrid";
+import PracticeGrid from "../../components/ui/PracticeGrid";
 import { Inter } from "next/font/google";
-import FarmerGrid from "../../../components/ui/FarmerGrid";
-import PlanetIcon from "../../../components/assets/PlanetIcon";
-import ProjectCard from "../../../components/ui/ProjectCard";
-import PracticeCarousel from "../../../components/ui/PracticeCarousel";
-import ServiceCard from "../../../components/ui/ServiceCard";
-import WhyCard from "../../../components/ui/WhyCard";
+import FarmerGrid from "../../components/ui/FarmerGrid";
+import PlanetIcon from "../../components/assets/PlanetIcon";
+import ProjectCard from "../../components/ui/ProjectCard";
+import PracticeCarousel from "../../components/ui/PracticeCarousel";
+import ServiceCard from "../../components/ui/ServiceCard";
+import WhyCard from "../../components/ui/WhyCard";
 import Image from "next/image";
-const FarmerMap = dynamic(() => import("../../../components/ui/FarmerMap"), {
+const FarmerMap = dynamic(() => import("../../components/ui/FarmerMap"), {
   ssr: false,
 });
-import FarmerData from "../../../FarmerData";
+import FarmerData from "../../FarmerData";
 
 const inter = Inter({ subsets: ["latin"] });
 

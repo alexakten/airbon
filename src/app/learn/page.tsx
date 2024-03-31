@@ -1,19 +1,19 @@
 import dynamic from "next/dynamic";
-import Navbar from "../../components/ui/Navbar";
+import Navbar from "../components/ui/Navbar";
 import Link from "next/link";
-import PracticeGrid from "../../components/ui/PracticeGrid";
+import PracticeGrid from "../components/ui/PracticeGrid";
 import { Inter } from "next/font/google";
-import FarmerGrid from "../../components/ui/FarmerGrid";
-import PlanetIcon from "../../components/assets/PlanetIcon";
-import ProjectCard from "../../components/ui/ProjectCard";
-import PracticeCarousel from "../../components/ui/PracticeCarousel";
-import ServiceCard from "../../components/ui/ServiceCard";
-import WhyCard from "../../components/ui/WhyCard";
+import FarmerGrid from "../components/ui/FarmerGrid";
+import PlanetIcon from "../components/assets/PlanetIcon";
+import ProjectCard from "../components/ui/ProjectCard";
+import PracticeCarousel from "../components/ui/PracticeCarousel";
+import ServiceCard from "../components/ui/ServiceCard";
+import WhyCard from "../components/ui/WhyCard";
 import Image from "next/image";
 
-import FarmerData from "../../FarmerData";
+import FarmerData from "../FarmerData";
 
-const FarmerMap = dynamic(() => import("../../components/ui/FarmerMap"), {
+const FarmerMap = dynamic(() => import("../components/ui/FarmerMap"), {
   ssr: false,
 });
 
@@ -89,34 +89,6 @@ export default function LearnPage() {
   return (
     <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-darkgreen sm:px-10 2xl:text-lg">
       <Navbar />
-
-      <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
-        <div className="relative flex max-w-5xl flex-col items-center text-center">
-          <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tighter">
-            Go regenerative to <br className="hidden sm:block" /> rebalance our
-            planet!
-          </h1>
-          <div className="absolute -top-[80px] right-2 sm:-right-12 sm:-top-24">
-            <div className="h-20 w-20 sm:h-36 sm:w-36">
-              <Image
-                src="/icons/planet.svg"
-                width={120}
-                height={120}
-                alt="Planet icon"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <p className="mt-6 max-w-3xl text-xl">
-            Become a regenerative farmer to improve soil health, boost
-            biodiversity, and sequester carbon. Join our community to build a
-            sustainable future for our planet.
-          </p>
-          <button className="mt-7 rounded-xl bg-darkgreen px-6 py-3 text-lg text-white hover:bg-deepgreen">
-            Start learning!
-          </button>
-        </div>
-      </section>
 
       <section className="mt-36 w-full max-w-8xl">
         <PracticeCarousel />
