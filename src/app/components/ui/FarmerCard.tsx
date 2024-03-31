@@ -22,7 +22,7 @@ interface FarmerCardProps {
 
 export default function FarmerCard({ farmer }: FarmerCardProps) {
   return (
-    <Link href={`/farmers/community/farmers/${farmer.slug}`}>
+    <Link href={`/community/farmers/${farmer.slug}`}>
       <div className="group text-left">
         <div className="relative w-full  overflow-hidden rounded-xl bg-gray-200 pt-[100%]">
           <Image
