@@ -1,20 +1,20 @@
 import dynamic from "next/dynamic";
 
-import Navbar from "./components/ui/Navbar";
+import Navbar from "../components/ui/Navbar";
 import Link from "next/link";
-import PracticeGrid from "./components/ui/PracticeGrid";
+import PracticeGrid from "../components/ui/PracticeGrid";
 import { Inter } from "next/font/google";
-import FarmerGrid from "./components/ui/FarmerGrid";
-import PlanetIcon from "./components/assets/PlanetIcon";
-import ProjectCard from "./components/ui/ProjectCard";
-import PracticeCarousel from "./components/ui/PracticeCarousel";
-import ServiceCard from "./components/ui/ServiceCard";
-import WhyCard from "./components/ui/WhyCard";
+import FarmerGrid from "../components/ui/FarmerGrid";
+import PlanetIcon from "../components/assets/PlanetIcon";
+import ProjectCard from "../components/ui/ProjectCard";
+import PracticeCarousel from "../components/ui/PracticeCarousel";
+import ServiceCard from "../components/ui/ServiceCard";
+import WhyCard from "../components/ui/WhyCard";
 import Image from "next/image";
 
-import FarmerData from "./FarmerData";
+import FarmerData from "../FarmerData";
 
-const FarmerMap = dynamic(() => import("./components/ui/FarmerMap"), {
+const FarmerMap = dynamic(() => import("../components/ui/FarmerMap"), {
   ssr: false,
 });
 
@@ -23,26 +23,26 @@ const inter = Inter({ subsets: ["latin"] });
 const services = [
   {
     icon: "farmer.svg",
-    title: "Educate",
-    description: "We teach farmers about regenerative practices through courses and workshops.",
+    title: "Learn",
+    description: "Learn about regenerative agriculture and its benefits",
     buttonText: "Start learning",
   },
   {
     icon: "field.svg",
     title: "Plan",
-    description: "We provide tailored regenerative agriculture plans to help farmers get started.",
+    description: "Get a custom regenerative agriculture plan for your farm",
     buttonText: "Get custom plan",
   },
   {
     icon: "house.svg",
     title: "Monitor",
-    description: "We monitor soil health and carbon sequestration to verify and report progress.",
-    buttonText: "Coming soon",
+    description: "Monitor your soil health and carbon sequestration",
+    buttonText: "Monitor soil",
   },
   {
     icon: "earth.svg",
     title: "Community",
-    description: "We provide a community where farmers and experts can connect & share learnings.",
+    description: "Join our community of regenerative farmers.",
     buttonText: "Join community",
   },
 ];
@@ -86,7 +86,7 @@ const why = [
   },
 ];
 
-export default function MainLanding() {
+export default function Landing() {
   return (
     <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-darkgreen sm:px-10 2xl:text-lg">
       <Navbar />
@@ -94,8 +94,8 @@ export default function MainLanding() {
       <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
         <div className="relative flex max-w-5xl flex-col items-center text-center">
           <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tighter">
-            Rebalance our planet <br className="hidden sm:block" /> with
-            regenerative farming
+            Go regenerative to   <br className="hidden sm:block" />
+            rebalance our planet!
           </h1>
           <div className="absolute -top-[80px] right-2 sm:-right-12 sm:-top-24">
             <div className="h-20 w-20 sm:h-36 sm:w-36">
@@ -109,22 +109,12 @@ export default function MainLanding() {
             </div>
           </div>
           <p className="mt-6 max-w-3xl text-xl">
-            We help food companies turn their supply chain of farmers
-            sustainable using regenerative agriculture. Join our mission to
-            rebalance the planet!
+            Become a regenerative farmer to improve soil health, boost
+            biodiversity, and sequester carbon. Join our community to rebalance our planet.
           </p>
-          <div className="flex gap-4">
-            <Link href={"/farmers"}>
-              <button className="mt-7 rounded-xl bg-darkgreen px-6 py-3 text-lg text-white hover:bg-deepgreen">
-                For farmers <span className={inter.className}></span>
-              </button>
-            </Link>
-            <Link href={"/companies"}>
-              <button className="mt-7 rounded-xl bg-darkgreen px-6 py-3 text-lg text-white hover:bg-deepgreen">
-                For companies <span className={inter.className}></span>
-              </button>
-            </Link>
-          </div>
+          <button className="mt-7 rounded-xl bg-darkgreen px-6 py-3 text-lg text-white hover:bg-deepgreen">
+            Go regenerative!
+          </button>
         </div>
       </section>
 
@@ -145,7 +135,8 @@ export default function MainLanding() {
       <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
         <h2 className="text-4xl sm:text-6xl">Our services</h2>
         <p className="mt-4 max-w-xl text-lg">
-          We provide various tools to help farmers become regenerative.
+          We provide various tools to help farmers become regenerative depending
+          on where they are on their journey
         </p>
         <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (

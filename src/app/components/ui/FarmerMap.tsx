@@ -66,7 +66,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
                   <h5 className="mt-0.5 opacity-50">{farmer.size} hectares</h5>
                 </div>
                 <div>
-                  <Link href={`/community/farmers/${farmer.slug}`}>
+                  <Link href={`/farmers/community/farmers/${farmer.slug}`}>
                     <button className="rounded-md bg-darkgreen px-2 py-2 text-white hover:bg-deepgreen">
                       See farm
                     </button>
