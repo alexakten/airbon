@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-center justify-between overflow-hidden px-10 py-8">
+    <nav className="absolute top-0 z-50 flex w-full max-w-8xl items-center justify-between overflow-hidden px-3 sm:px-10 py-8">
       <div className="z-50 h-full">
         <Link href={"/"}>
           {/* <h2 className="text-3xl font-bold tracking-tight">Airbon</h2> */}
