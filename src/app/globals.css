@@ -13,26 +13,45 @@
 
 @font-face {
   font-family: 'Athletics';
-  src: url('/fonts/athletics/Athletics Bold.otf') format('truetype');
-  font-display: swap;
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Athletics';
   src: url('/fonts/athletics/Athletics Medium.otf') format('truetype');
   font-display: swap;
   font-weight: medium;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Athletics';
+  src: url('/fonts/athletics/Athletics Bold.otf') format('truetype');
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* @font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url("/fonts/neue-haas-grotesk/NHaasGroteskTXPro-55Rg.ttf") format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url("/fonts/neue-haas-grotesk/NHaasGroteskTXPro-65Md.ttf") format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+} */
+
 body {
   font-family: 'Athletics', sans-serif;
   background-color: #F9FCFA;
-  -webkit-font-smoothing: antialiased; /* For Chrome, Safari, and Opera */
-  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
   text-rendering: optimizeLegibility;
 }
+
+
 
 

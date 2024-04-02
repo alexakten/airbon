@@ -92,7 +92,7 @@ export default function CommunityPage() {
       <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
         <div className="relative flex max-w-5xl flex-col items-center text-center">
           <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tighter">
-            Growing community of <br className="hidden sm:block" /> regenerative
+            Join a community of <br className="hidden sm:block" /> regenerative
             farmers!
           </h1>
           <div className="absolute -top-[80px] right-2 sm:-right-12 sm:-top-24">
