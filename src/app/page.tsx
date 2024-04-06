@@ -289,8 +289,8 @@ export default function Home() {
           The next step for your supply chain sustainability
         </h2>
         <p className="mt-8 max-w-xl text-center text-lg tracking-tight opacity-100 md:text-xl">
-          Start building resilience into your supply chain today to mitigate the
-          effects of climate change and destructive farming practices.
+          Mitigate the
+          effects of climate change and destructive farming practices. Start building resilience into your supply chain today.
         </p>
         <div className="mt-8">
           <ButtonPrimary />
