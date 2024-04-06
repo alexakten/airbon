@@ -59,7 +59,7 @@ const stepsFarmer = [
   },
   {
     tagText: "Step 4",
-    title: "Reward",
+    title: "Receive",
     description: "Get rewarded for your sustainabiilty efforts",
   },
 ];
