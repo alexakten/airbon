@@ -50,7 +50,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
         <Marker key={farmer.id} position={[farmer.latitude, farmer.longitude]}>
           <Popup>
             <div className="flex flex-col p-0">
-              <div className="relative mt-2 h-36 w-56 overflow-hidden rounded-md bg-gray-200">
+              <div className="relative mt-2 h-36 w-56 overflow-hidden rounded-md bg-zinc-100">
                 <Image
                   className="object-cover"
                   src={farmer.image}

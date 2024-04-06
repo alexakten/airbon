@@ -14,26 +14,26 @@ export default function Dashboard() {
 
   return (
     <main className="grid h-[100vh] w-screen grid-cols-8">
-      <div className="col-span-2 flex flex-col items-start bg-zinc-100 px-8 py-6">
+      <div className="col-span-2 z-50 flex flex-col border border-zinc-100 shadow-md items-start bg-white px-8 py-6">
         <Logo />
         <div className="mt-8 flex w-full flex-col  items-start gap-2">
           <button
             onClick={() => setCurrentView("home")}
-            className={`w-full text-left rounded-md px-3 py-2 ${currentView === "home" ? "bg-zinc-200 font-medium text-zinc-950" : ""
+            className={`w-full text-left rounded-md px-3 py-2 ${currentView === "home" ? "bg-zinc-100 font-medium text-zinc-950" : ""
               }`}
           >
             Home
           </button>
           <button
             onClick={() => setCurrentView("farmers")}
-            className={`w-full text-left rounded-md px-3 py-2 ${currentView === "farmers" ? "bg-zinc-200 font-medium text-zinc-950" : ""
+            className={`w-full text-left rounded-md px-3 py-2 ${currentView === "farmers" ? "bg-zinc-100 font-medium text-zinc-950" : ""
               }`}
           >
             Farmers
           </button>
           <button
             onClick={() => setCurrentView("map")}
-            className={`w-full text-left rounded-md px-3 py-2 ${currentView === "map" ? "bg-zinc-200 font-medium text-zinc-950" : ""
+            className={`w-full text-left rounded-md px-3 py-2 ${currentView === "map" ? "bg-zinc-100 font-medium text-zinc-950" : ""
               }`}
           >
             Map
