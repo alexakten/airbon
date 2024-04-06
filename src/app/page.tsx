@@ -160,7 +160,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-            Improve soil structure to enhance water retention
+              Improve soil structure to enhance water retention
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-            Promote a diverse ecosystem
+              Promote a diverse ecosystem
             </p>
           </div>
 
@@ -273,7 +273,7 @@ export default function Home() {
         <ButtonPrimary />
 
         <div className="mt-16 w-full">
-          <FarmerMap farmers={FarmerData}  />
+          <FarmerMap farmers={FarmerData} />
         </div>
       </section>
 
