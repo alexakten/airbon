@@ -1,4 +1,5 @@
 // FarmerGrid.tsx
+"use client"
 import FarmerCard from "./FarmerCard";
 import FarmerData from "../../FarmerData"; // Adjust this path as needed
 

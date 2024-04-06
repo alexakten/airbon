@@ -45,7 +45,7 @@ const FarmerData = [
     image: "/images/farmers/farm-5.avif",
     location: "Stockholm, Sweden",
     size: 65,
-    slug: "anna-ivanova",
+    slug: "anna-andersson",
     latitude: 59.3293,
     longitude: 18.0686,
   },

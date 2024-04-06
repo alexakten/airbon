@@ -6,12 +6,18 @@ interface FarmerProfileProps {
   onDeselectFarmer: () => void; // Callback to deselect the farmer
 }
 
-const FarmerProfile: React.FC<FarmerProfileProps> = ({ farmer, onDeselectFarmer }) => {
+const FarmerProfile: React.FC<FarmerProfileProps> = ({
+  farmer,
+  onDeselectFarmer,
+}) => {
   if (!farmer) return null;
 
   return (
     <div>
-      <button onClick={onDeselectFarmer} className="font-medium"> &lt;- Back</button>
+      <button onClick={onDeselectFarmer} className="font-medium">
+        {" "}
+        &lt;- Back
+      </button>
 
       <Image
         src={farmer.image}
@@ -21,7 +27,7 @@ const FarmerProfile: React.FC<FarmerProfileProps> = ({ farmer, onDeselectFarmer 
         layout="responsive"
         className="mt-8 rounded-xl"
       />
-      <h1 className="mt-4 tracking-tight font-medium">{farmer.name}</h1>
+      <h1 className="mt-4 font-medium tracking-tight">{farmer.name}</h1>
       <p>{farmer.location}</p>
       <p>{farmer.size} hectares</p>
       {/* Add more details as needed */}
