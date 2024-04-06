@@ -160,7 +160,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Regenerative farming — boost soil health.
+            Improve soil structure to enhance water retention
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Regenerative farming — boost soil health.
+            Promote a diverse ecosystem
             </p>
           </div>
 
@@ -264,7 +264,7 @@ export default function Home() {
         </div> */}
       </section>
 
-      {/* Farmers Section */}
+      {/* Farmer Map Section */}
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <h2 className="mb-8 max-w-xl text-center text-3xl font-medium leading-[1.05] tracking-tight sm:text-5xl">
           Discover some of our regenerative farmers{" "}
