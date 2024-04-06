@@ -5,6 +5,8 @@ import ButtonPrimary from "./components/ui/ButtonPrimary";
 import StepCard from "./components/ui/StepCard";
 import PracticeCarousel from "./components/ui/PracticeCarousel";
 import FarmerGrid from "./components/ui/FarmerGrid";
+import FarmerMap from "./components/ui/FarmerMap";
+import FarmerData from "./FarmerData";
 
 const steps = [
   {
@@ -27,7 +29,7 @@ const steps = [
     tagText: "Step 4",
     title: "Reward",
     description:
-      "Reward farmers that implement regenerative methods.",
+      "Reward farmers that implement regenerative practices.",
   },
 ];
 
@@ -88,7 +90,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Regenerative farming — boost soil health.
+              Boost soil health and biodiversity.
             </p>
           </div>
 
@@ -104,7 +106,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Regenerative farming — boost soil health.
+              Sequester carbon and store it in the soil.
             </p>
           </div>
 
@@ -261,7 +263,7 @@ export default function Home() {
       {/* Farmers Section */}
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <h2 className="mb-8 max-w-xl text-center text-3xl font-medium leading-[1.05] tracking-tight sm:text-5xl">
-          Join a community of resilient farmers{" "}
+          Discover some of our regenerative farmers{" "}
         </h2>
 
         <ButtonPrimary />
@@ -269,6 +271,10 @@ export default function Home() {
         <div className="mt-16 w-full">
 
           <FarmerGrid cards={8} />
+        </div>
+        <div className="mt-16 w-full">
+
+          <FarmerMap farmers={FarmerData} />
         </div>
       </section>
 
@@ -278,8 +284,7 @@ export default function Home() {
           The next step for your supply chain sustainability
         </h2>
         <p className="mt-8 max-w-xl text-center text-lg tracking-tight opacity-100 md:text-xl">
-          Darwin is the first AI BDR that learns over time and answers your
-          prospects&apos; questions without human interference.
+          Start building resilience into your supply chain today to mitigate the effects of climate change and destructive farming practices.
         </p>
         <div className="mt-8">
           <ButtonPrimary />
