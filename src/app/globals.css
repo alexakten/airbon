@@ -3,47 +3,6 @@
 @tailwind utilities;
 
 
-/* @font-face {
-  font-family: 'Athletics';
-  src: url('/fonts/athletics/Athletics Regular.otf') format('truetype');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Athletics';
-  src: url('/fonts/athletics/Athletics Medium.otf') format('truetype');
-  font-display: swap;
-  font-weight: medium;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Athletics';
-  src: url('/fonts/athletics/Athletics Bold.otf') format('truetype');
-  font-display: swap;
-  font-weight: bold;
-  font-style: normal;
-} */
-
-
-/* @font-face {
-  font-family: 'Neue Haas Grotesk';
-  src: url("/fonts/neue-haas-grotesk/NHaasGroteskTXPro-55Rg.ttf") format('truetype');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neue Haas Grotesk';
-  src: url("/fonts/neue-haas-grotesk/NHaasGroteskTXPro-65Md.ttf") format('truetype');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-} */
-
 body {
   background-color: #F9FCFA;
   -webkit-font-smoothing: antialiased; 
