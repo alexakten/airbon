@@ -9,11 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        pink: "#FD30C0",
+        orange: "#FFA637",
+        cyan: "#2EFAAE",
+        lightblue: "#2DCBFF",
+        blue: "#3787FE",
         purple: "#AD86FF",
-        darkpurple: "#9B78E5",
         yellow: "#FFD686",
         green: "#5EEF7E",
-        blue: "#3787FE",
       },
       maxWidth: {
         "8xl": "1440px",
@@ -21,6 +24,6 @@ const config: Config = {
     },
   },
   plugins: [],
-  safelist: ["bg-purple", "bg-darkpurple", "bg-yellow", "bg-green", "bg-blue"],
+  safelist: ["bg-purple", "bg-darkpurple", "bg-yellow", "bg-green", "bg-blue", "bg-orange", "bg-cyan", "bg-pink", "bg-lightblue"],
 };
 export default config;

@@ -3,29 +3,31 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonPrimary from "./components/ui/ButtonPrimary";
 import StepCard from "./components/ui/StepCard";
+import PracticeCarousel from "./components/ui/PracticeCarousel";
+import FarmerGrid from "./components/ui/FarmerGrid";
 
 const steps = [
   {
     tagText: "Step 1",
     title: "Onboard",
-    description: "Get your farmers connected on our platform.",
+    description: "Get your farmers connected on the platform.",
   },
   {
     tagText: "Step 2",
-    title: "Educate",
-    description: "We teach farmers about regenerative practices.",
+    title: "Plan",
+    description: "Each farmer gets a tailored plan created by expert agronomists.",
   },
   {
     tagText: "Step 3",
-    title: "Plan",
-    description:
-      "Farmers create a tailored plan to transition to regenerative.",
-  },
-  {
-    tagText: "Step 4",
     title: "Monitor",
     description:
       "Monitor and verify the progress of your regenerative transition.",
+  },
+  {
+    tagText: "Step 4",
+    title: "Reward",
+    description:
+      "Reward farmers that implement regenerative methods.",
   },
 ];
 
@@ -41,7 +43,7 @@ export default function Home() {
           <div className="flex ">
             <p className="text-zinc-400">v.1 launching soon</p>
             <Link href={"mailto:alex.akten@outlook.com"}>
-              <button className="hover:text-blue group ml-2 border-l pl-2 font-medium">
+              <button className="group ml-2 border-l pl-2 font-medium hover:text-blue">
                 Book demo{" "}
                 <span className="inline-block translate-x-0 tracking-normal transition-transform duration-200 group-hover:translate-x-1">
                   -&gt;
@@ -60,7 +62,7 @@ export default function Home() {
         <h3 className="mt-8 max-w-2xl text-lg tracking-tight opacity-100 md:text-xl">
           We help food companies turn their supply chain of farmers
           regenerative.
-          <span className="font-medium"> Start building resilience </span> into
+          <span className="font-regular"> Start building resilience </span> into
           your supply chain today.
         </h3>
 
@@ -202,7 +204,7 @@ export default function Home() {
         <div className="mt-16 grid w-full grid-cols-1 gap-4 md:grid-cols-3">
           <div className="col-span-1">
             <StepCard
-              tagColor="purple"
+              tagColor="cyan"
               tagText="Research"
               title="Soil health"
               description="Revitalize your land by enriching the soil with vital nutrients and organic matter fostering a vibrant, healthy soil ecosystem."
@@ -219,7 +221,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
-              tagColor="green"
+              tagColor="orange"
               tagText="Timing"
               title="Carbon sequestration"
               description="Capture atmospheric carbon dioxide and store it in the soil, aiding in climate change mitigation."
@@ -227,7 +229,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
-              tagColor="yellow"
+              tagColor="purple"
               tagText="Research"
               title="Biodiversity"
               description="Promote a diverse ecosystem of plants, animals, and microorganisms for ecological balance."
@@ -235,7 +237,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
-              tagColor="blue"
+              tagColor="pink"
               tagText="Messaging"
               title="Economic benefits"
               description="Improve long-term economic sustainability for farmers through reduced input costs and healthier soils.
@@ -244,7 +246,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
-              tagColor="green"
+              tagColor="lightblue"
               tagText="Timing"
               title="Water conservation"
               description="Improve soil structure to enhance water retention and reduce the need for irrigation."
@@ -254,6 +256,20 @@ export default function Home() {
         {/* <div className="mt-20">
           <ButtonPrimary />
         </div> */}
+      </section>
+
+      {/* Farmers Section */}
+      <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
+        <h2 className="mb-8 max-w-xl text-center text-3xl font-medium leading-[1.05] tracking-tight sm:text-5xl">
+          Join a community of resilient farmers{" "}
+        </h2>
+
+        <ButtonPrimary />
+
+        <div className="mt-16 w-full">
+
+          <FarmerGrid cards={8} />
+        </div>
       </section>
 
       {/* Footer */}

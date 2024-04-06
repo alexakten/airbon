@@ -30,8 +30,8 @@ export default function FarmerCard({ farmer }: FarmerCardProps) {
             className="absolute left-0 top-0 h-full w-full rounded-t-lg"
           />
         </div>
-        <div className="pt-4">
-          <p className="font-semibold">{farmer.name}</p>
+        <div className="pt-2">
+          <p className="font-medium">{farmer.name}</p>
           <p className="text-sm opacity-50">{farmer.location}</p>
           <p className="text-sm opacity-50">{farmer.size} hectares </p>
         </div>

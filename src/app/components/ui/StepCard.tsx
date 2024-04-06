@@ -21,7 +21,7 @@ const StepCard: React.FC<StepCardProps> = ({
   hoverEffect = true,
 
 }) => {
-  const bgColorClass = tagColor && ["purple", "yellow", "green", "blue"].includes(tagColor)
+  const bgColorClass = tagColor && ["purple", "yellow", "green", "blue", "lightblue", "cyan", "orange", "pink"].includes(tagColor)
     ? `bg-${tagColor}`
     : "bg-default";
 

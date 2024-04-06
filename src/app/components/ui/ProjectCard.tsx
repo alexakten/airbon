@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageAlt,
 }) => {
   return (
-    <div className="relative h-[42rem] w-full overflow-hidden rounded-3xl bg-darkgreen px-10 py-12 text-lg text-lightgray">
+    <div className="relative h-[42rem] w-full tracking-tight overflow-hidden rounded-xl bg-zinc-100 px-10 py-12 text-lg text-white">
       <div className="absolute left-0 top-0 z-0 h-full w-full">
         {imageUrl && (
           <Image
@@ -45,8 +45,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="flex flex-col gap-6">
           {/* <p>{subTitle}</p> */}
-          <h3 className="text-4xl sm:text-6xl">{title}</h3>
-          <p className="max-w-md">{description}</p>
+          <h3 className="text-4xl sm:text-5xl tracking-tight">{title}</h3>
+          <p className="max-w-md tracking-tight">{description}</p>
           <div>
             <Link href={buttonLink}>
               <button className="rounded-xl border border-lightgray px-6 py-3 hover:bg-lightgray hover:text-darkgreen">
