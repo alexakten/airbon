@@ -157,7 +157,7 @@ export default function Home() {
         <p className="opacity-40">For companies</p>
         <h2 className="mt-6 max-w-3xl text-center text-3xl sm:text-5xl font-medium tracking-tight">
           Turn your supply chain regenerative.        </h2>
-        <div className="mt-6 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <StepCard
               showTag={false}
@@ -230,7 +230,7 @@ export default function Home() {
         <h2 className="mt-6 max-w-3xl text-center text-3xl sm:text-5xl font-medium tracking-tight">
           Go regenerative — fast.
         </h2>
-        <div className="mt-6 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-2 lg:grid-cols-4">
           {stepsFarmer.map((step, index) => (
             <StepCard
               showTag={false}
