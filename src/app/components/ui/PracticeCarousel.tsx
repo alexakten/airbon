@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import ProjectCard from "./ProjectCard"; // Adjust the import path as necessary
+import ProjectCard from "./PracticeCard"; // Adjust the import path as necessary
 import PracticeData from "@/app/PracticeData";
 
 const PracticeCarousel: React.FC = () => {
@@ -51,31 +51,30 @@ const PracticeCarousel: React.FC = () => {
         buttonText="Go regenerative"
         buttonLink={`/practices/${slug}`} // Using the slug for the button link
         tagIcon="path/to/your/icon.jpg" // You can update this based on your data or remove if not needed
-        tagText={"Sustainable practices"} // Provide a default text or remove if not applicable
+        tagText={"Regenerative practices"} // Provide a default text or remove if not applicable
         imageUrl={practiceImage}
         imageAlt={practiceName}
       />
-      <div className="mt-8 flex w-full items-center justify-between  px-2">
+      <div className="flex w-full items-center justify-between  px-2">
         <div className="flex gap-2">
           {PracticeData.map((_, index) => (
             <div
               key={index}
-              className={`h-2 w-2 rounded-full ${
-                currentPracticeIndex === index ? "bg-zinc-950" : "bg-zinc-200"
-              }`}
+              className={`h-2 w-2 rounded-full ${currentPracticeIndex === index ? "bg-zinc-950" : "bg-zinc-200"
+                }`}
             />
           ))}
         </div>
         <div className="flex gap-4">
           <button
             onClick={prevPractice}
-            className="border-full border-darkgreen hover:bg-bluegray size-12 rounded-full border text-xl"
+            className="border-full border-zinc-200 hover:bg-zinc-100 size-12 rounded-full border text-xl"
           >
             &lt;-
           </button>
           <button
             onClick={nextPractice}
-            className="border-full border-darkgreen hover:bg-bluegray size-12 rounded-full border text-xl"
+            className="border-full border-zinc-200 hover:bg-zinc-100 size-12 rounded-full border text-xl"
           >
             -&gt;
           </button>

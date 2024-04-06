@@ -1,53 +1,60 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
-
-const inter = Inter({ subsets: ["latin"] });
-
-// Define the Practice type
-type Practice = {
-  practiceID: string;
-  practiceName: string;
-  practiceImage: string;
-  practiceDescription: string;
-  practiceBenefits: string;
-  slug: string;
-};
+import ButtonPrimary from "./ButtonPrimary";
 
 interface PracticeCardProps {
-  practice: Practice; // Add this prop to your component
+  tagIcon: string;
+  tagText: string;
+  subTitle: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+  imageUrl: string;
+  imageAlt?: string;
 }
 
-export default function PracticeCard({ practice }: PracticeCardProps) {
+const PracticeCard: React.FC<PracticeCardProps> = ({
+  tagIcon,
+  tagText,
+  subTitle,
+  title,
+  description,
+  buttonText,
+  buttonLink,
+  imageUrl,
+  imageAlt,
+}) => {
   return (
-    <Link href={`farmers/learn/practices/${practice.slug}`}>
-      <div className="grid min-h-[400px] w-full grid-rows-2 overflow-hidden rounded-xl border border-black">
-        <div className="relative row-span-1 bg-gray-300">
+    <div className="grid w-full grid-cols-3 gap-4 overflow-hidden rounded-xl py-12 tracking-tight text-zinc-950">
+      <div className="relative z-0 h-[32rem] w-full col-span-2 overflow-hidden rounded-xl">
+        {imageUrl && (
           <Image
-            src={practice.practiceImage}
-            alt={practice.practiceName}
+            src={imageUrl}
+            alt={imageAlt || "Project image"}
             layout="fill"
             objectFit="cover"
-          ></Image>
-        </div>
-        <div className="row-span-1 flex flex-col p-4">
-          {/* <p className="text-sm opacity-50">{practice.practiceLocation}</p> */}
-          <h3 className="text-2xl">{practice.practiceName}</h3>
-          <p
-            className="line-clamp-3 h-full leading-normal pt-1 text-base opacity-75"
-          >
-            {practice.practiceDescription}
-          </p>
+          />
+        )}
+        {/* <div className="absolute left-0 top-0 h-full w-full sm:w-3/4 bg-gradient-to-r from-black/90 to-black/40 sm:to-transparent"></div> */}
+      </div>
 
-          <div className="flex h-full items-end justify-end">
-            <button className="transform transition-transform duration-200 ease-in-out hover:translate-x-1">
-              {" "}
-              Learn more
-              <span className={inter.className}> -&gt;</span>
-            </button>
-          </div>
+      <div className="relative z-10 flex h-full col-span-1 flex-col justify-between rounded-xl border border-zinc-100 p-6 shadow-md">
+        <div className="flex items-center gap-2">
+          <p className="opacity-40">{tagText}</p>
+        </div>
+        <div className="flex flex-col gap-6">
+          {/* <p>{subTitle}</p> */}
+          <h3 className="text-4xl font-medium tracking-tight sm:text-5xl">
+            {title}
+          </h3>
+          <p className="max-w-md tracking-tight opacity-50">{description}</p>
+          {/* <ButtonPrimary /> */}
         </div>
       </div>
-    </Link>
+    </div>
   );
-}
+};
+
+export default PracticeCard;

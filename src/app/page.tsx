@@ -39,6 +39,31 @@ const steps = [
   },
 ];
 
+const stepsFarmer = [
+  {
+    tagText: "Step 1",
+    title: "Onboard",
+    description: "Get your farmers connected on the platform.",
+  },
+  {
+    tagText: "Step 2",
+    title: "Plan",
+    description:
+      "Each farmer gets a tailored plan created by expert agronomists.",
+  },
+  {
+    tagText: "Step 3",
+    title: "Monitor",
+    description:
+      "Monitor and verify the progress of your regenerative transition.",
+  },
+  {
+    tagText: "Step 4",
+    title: "Reward",
+    description: "Reward farmers that implement regenerative practices.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center bg-white px-3 tracking-tight text-zinc-950 sm:px-8">
@@ -127,11 +152,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works Section */}
+      {/* How it works Companies Section */}
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
-        <h2 className="max-w-3xl text-center text-5xl font-medium tracking-tight">
-          Go regenerative — fast.
-        </h2>
+        <p className="opacity-40">For companies</p>
+        <h2 className="mt-6 max-w-3xl text-center text-5xl font-medium tracking-tight">
+          Turn your supply chain regenerative.        </h2>
         <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <StepCard
@@ -199,7 +224,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Section */}
+      {/* How it works Farmers Section */}
+      <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
+        <p className="opacity-40">For farmers</p>
+        <h2 className="mt-6 max-w-3xl text-center text-5xl font-medium tracking-tight">
+          Go regenerative — fast.
+        </h2>
+        <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+          {stepsFarmer.map((step, index) => (
+            <StepCard
+              showTag={true}
+              tagText={step.tagText}
+              showBorder={false}
+              key={index}
+              title={step.title}
+              description={step.description}
+              hoverEffect={false}
+            />
+          ))}
+        </div>
+
+        <div className="mt-20">
+          <ButtonPrimary />
+        </div>
+      </section>
+
+      {/* Regenerative practices Section */}
+      <section className="mt-48 flex  w-full max-w-6xl flex-col items-center ">
+       <PracticeCarousel />
+      </section>
+
+      {/* Benefits Section */}
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <h2 className="max-w-xl text-center text-3xl font-medium leading-[1.05] tracking-tight sm:text-5xl">
           The many benefits of regenerative agriculture{" "}
