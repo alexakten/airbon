@@ -27,11 +27,6 @@ const config: Config = {
       borderWidth: {
         DEFAULT: "1px", // Sets the default border width
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
     },
   },
   plugins: [],
