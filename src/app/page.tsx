@@ -1,214 +1,273 @@
-import dynamic from "next/dynamic";
-
-import Navbar from "./components/ui/Navbar";
-import Link from "next/link";
-import PracticeGrid from "./components/ui/PracticeGrid";
-import { Inter } from "next/font/google";
-import FarmerGrid from "./components/ui/FarmerGrid";
-import PlanetIcon from "./components/assets/PlanetIcon";
-import ProjectCard from "./components/ui/ProjectCard";
-import PracticeCarousel from "./components/ui/PracticeCarousel";
-import ServiceCard from "./components/ui/ServiceCard";
-import WhyCard from "./components/ui/WhyCard";
+import Navbar from "./components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
+import ButtonPrimary from "./components/ui/ButtonPrimary";
+import StepCard from "./components/ui/StepCard";
 
-import FarmerData from "./FarmerData";
-
-const FarmerMap = dynamic(() => import("./components/ui/FarmerMap"), {
-  ssr: false,
-});
-
-const inter = Inter({ subsets: ["latin"] });
-
-const services = [
+const steps = [
   {
-    icon: "farmer.svg",
+    tagText: "Step 1",
+    title: "Onboard",
+    description: "Get your farmers connected on our platform.",
+  },
+  {
+    tagText: "Step 2",
     title: "Educate",
-    description: "We teach farmers about regenerative practices through courses and workshops.",
-    buttonText: "Start learning",
+    description: "We teach farmers about regenerative practices.",
   },
   {
-    icon: "field.svg",
+    tagText: "Step 3",
     title: "Plan",
-    description: "We provide tailored regenerative agriculture plans to help farmers get started.",
-    buttonText: "Get custom plan",
+    description:
+      "Farmers create a tailored plan to transition to regenerative.",
   },
   {
-    icon: "house.svg",
+    tagText: "Step 4",
     title: "Monitor",
-    description: "We monitor soil health and carbon sequestration to verify and report progress.",
-    buttonText: "Coming soon",
-  },
-  {
-    icon: "earth.svg",
-    title: "Community",
-    description: "We provide a community where farmers and experts can connect & share learnings.",
-    buttonText: "Join community",
+    description:
+      "Monitor and verify the progress of your regenerative transition.",
   },
 ];
 
-const why = [
-  {
-    icon: "farmer.svg",
-    title: "Soil health",
-    description:
-      "Revitalize your land by enriching the soil with vital nutrients and organic matter fostering a vibrant, healthy soil ecosystem.",
-  },
-  {
-    icon: "field.svg",
-    title: "Resilience",
-    description:
-      "Create farming systems that withstand climate change and environmental challenges like and extreme weather. ",
-  },
-  {
-    icon: "house.svg",
-    title: "Carbon sequestration",
-    description:
-      "Capture atmospheric carbon dioxide and store it in the soil, aiding in climate change mitigation.",
-  },
-  {
-    icon: "earth.svg",
-    title: "Biodiversity",
-    description:
-      "Promote a diverse ecosystem of plants, animals, and microorganisms for ecological balance.",
-  },
-  {
-    icon: "farmer.svg",
-    title: "Economic benefits",
-    description:
-      "Improve long-term economic sustainability for farmers through reduced input costs and healthier soils.",
-  },
-  {
-    icon: "field.svg",
-    title: "Water conservation",
-    description:
-      "Improve soil structure to enhance water retention and reduce the need for irrigation.",
-  },
-];
-
-export default function MainLanding() {
+export default function Home() {
   return (
-    <main className="relative flex flex-col items-center bg-lightgray px-3 text-base text-darkgreen sm:px-10 2xl:text-lg">
+    <main className="flex flex-col items-center bg-white px-3 tracking-tight text-zinc-950 sm:px-8">
       <Navbar />
 
-      <section className="mt-56 flex max-w-8xl flex-col items-center justify-center">
-        <div className="relative flex max-w-5xl flex-col items-center text-center">
-          <h1 className="text-[clamp(36px,5.5vw,72px)] font-medium leading-[1.05] tracking-tighter">
-            Rebalance our planet <br className="hidden sm:block" /> with
-            regenerative farming
-          </h1>
-          <div className="absolute -top-[80px] right-2 sm:-right-12 sm:-top-24">
-            <div className="h-20 w-20 sm:h-36 sm:w-36">
+      {/* Hero Section */}
+      <section className="mt-52 flex w-full max-w-8xl flex-col items-center justify-center text-center">
+        {/* Notification Bar */}
+        <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm shadow-md">
+          <div className="flex ">
+            <p className="text-zinc-400">v.1 launching soon</p>
+            <Link href={"mailto:alex.akten@outlook.com"}>
+              <button className="hover:text-blue group ml-2 border-l pl-2 font-medium">
+                Book demo{" "}
+                <span className="inline-block translate-x-0 tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+                  -&gt;
+                </span>
+              </button>
+            </Link>
+          </div>
+        </div>
+
+        {/* H1 */}
+        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tighter">
+          Rebalance our planet <br /> with regenerative farming.
+        </h1>
+
+        {/* Subtext */}
+        <h3 className="mt-8 max-w-2xl text-lg tracking-tight opacity-100 md:text-xl">
+          We help food companies turn their supply chain of farmers
+          regenerative.
+          <span className="font-medium"> Start building resilience </span> into
+          your supply chain today.
+        </h3>
+
+        {/* Button */}
+        <div className="mt-8">
+          {" "}
+          <ButtonPrimary />{" "}
+        </div>
+      </section>
+
+      {/* Images Section */}
+      <section className="mt-32 flex w-full max-w-6xl flex-col items-center ">
+        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-6">
+          <div className="col-span-1 flex flex-col md:col-span-2">
+            <div className="relative z-10 h-[32rem] overflow-hidden rounded-xl bg-zinc-100">
               <Image
-                src="/icons/planet.svg"
-                width={120}
-                height={120}
-                alt="Planet icon"
-                layout="responsive"
+                src="/images/regenerative_farmer.avif"
+                alt="Regenerative Farming"
+                layout="fill"
+                objectFit="cover"
+                priority
+                className="scale-x-[1]"
               />
             </div>
+            <p className="mt-4 text-sm ">
+              Regenerative farming — boost soil health.
+            </p>
           </div>
-          <p className="mt-6 max-w-3xl text-xl">
-            We help food companies turn their supply chain of farmers
-            sustainable using regenerative agriculture. Join our mission to
-            rebalance the planet!
-          </p>
-          <div className="flex gap-4">
-            <Link href={"/farmers"}>
-              <button className="mt-7 rounded-xl bg-darkgreen px-6 py-3 text-lg text-white hover:bg-deepgreen">
-                For farmers <span className={inter.className}></span>
-              </button>
-            </Link>
-            <Link href={"/companies"}>
-              <button className="mt-7 rounded-xl bg-darkgreen px-6 py-3 text-lg text-white hover:bg-deepgreen">
-                For companies <span className={inter.className}></span>
-              </button>
-            </Link>
+
+          <div className="col-span-1 flex flex-col md:col-span-4">
+            <div className="relative z-10 h-[32rem] overflow-hidden rounded-xl bg-zinc-100">
+              <Image
+                src="/images/regenerative-methods/practice_3.avif"
+                alt="Regenerative Farming"
+                layout="fill"
+                objectFit="cover"
+                priority
+                className="scale-x-[1]"
+              />
+            </div>
+            <p className="mt-4 text-sm ">
+              Regenerative farming — boost soil health.
+            </p>
           </div>
+
+          {/* <div className="col-span-1 flex flex-col md:col-span-4">
+            <div className="relative h-[32rem] overflow-hidden rounded-xl bg-zinc-100">
+
+              <div className="absolute -bottom-6 -right-6 flex h-4/5 w-4/5 items-start rounded-3xl border-[12px] border-black px-8 py-10 shadow-md">
+              </div>
+            </div>
+            <p className="mt-4 text-sm">
+              Darwin takes care of outreach for you.
+            </p>
+          </div> */}
         </div>
       </section>
 
-      <section className="mt-36 w-full max-w-8xl">
-        <ProjectCard
-          imageUrl="/images/regenerative_farmer.avif"
-          imageAlt="Regenerative farmer"
-          tagIcon=""
-          tagText="Regenerative farming"
-          subTitle="Regenerative farmers"
-          title="Build resilience"
-          description="Regenerative farming is a holistic approach to farming that boosts soil health by augmenting organic matter, enriching microbial diversity, and improving water retention. This approach minimizes erosion, curtails the reliance on chemical inputs, and actively sequesters carbon."
-          buttonLink=""
-          buttonText="Get started"
-        />
-      </section>
-
-      <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="text-4xl sm:text-6xl">Our services</h2>
-        <p className="mt-4 max-w-xl text-lg">
-          We provide various tools to help farmers become regenerative.
-        </p>
-        <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              serviceIcon={service.icon}
-              serviceTitle={service.title}
-              serviceDescription={service.description}
-              serviceButtonText={service.buttonText} // Assuming you want a common button text
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="mt-36 w-full max-w-8xl">
-        <PracticeCarousel />
-      </section>
-
-      <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="max-w-xl text-4xl sm:text-6xl">
-          The many benefits of regenerative farming
+      {/* How it works Section */}
+      <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
+        <h2 className="max-w-3xl text-center text-5xl font-medium tracking-tight">
+          Go regenerative — fast.
         </h2>
-        <p className="mt-4 max-w-md text-lg">
-          Here&apos;s why you should start today!
-        </p>
-        <div className="mt-12 grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {why.map((item, index) => (
-            <WhyCard
+        <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+          {steps.map((step, index) => (
+            <StepCard
+              showTag={true}
+              tagText={step.tagText}
+              showBorder={false}
               key={index}
-              whyIcon={item.icon}
-              whyTitle={item.title}
-              whyDescription={item.description}
+              title={step.title}
+              description={step.description}
+              hoverEffect={false}
             />
           ))}
         </div>
+
+        <div className="mt-20">
+          <ButtonPrimary />
+        </div>
       </section>
 
-      <section className="mt-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="text-4xl sm:text-6xl">Join the community!</h2>
-        <p className="mt-4 max-w-xl text-lg">
-          Connect with others already on their regenerative journey!
-        </p>
-        <Link
-          href="community"
-          className="mb-16 mt-4 rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
-        >
-          Join community!
-        </Link>
-        <FarmerGrid cards={8} />
+      {/* Images Section */}
+      <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
+        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-6">
+          <div className="col-span-1 flex flex-col md:col-span-4">
+            <div className="relative z-10 h-[32rem] overflow-hidden rounded-xl bg-zinc-100">
+              <Image
+                src="/images/regenerative-methods/practice_1.avif"
+                alt="Regenerative Farming"
+                layout="fill"
+                objectFit="cover"
+                priority
+                className="scale-x-[1]"
+              />
+            </div>
+            <p className="mt-4 text-sm ">
+              Regenerative farming — boost soil health.
+            </p>
+          </div>
+
+          <div className="col-span-1 flex flex-col md:col-span-2">
+            <div className="relative z-10 h-[32rem] overflow-hidden rounded-xl bg-zinc-100">
+              <Image
+                src="/images/regenerative-methods/practice_9.avif"
+                alt="Regenerative Farming"
+                layout="fill"
+                objectFit="cover"
+                priority
+                className="scale-x-[1]"
+              />
+            </div>
+            <p className="mt-4 text-sm ">
+              Regenerative farming — boost soil health.
+            </p>
+          </div>
+
+          {/* <div className="col-span-1 flex flex-col md:col-span-4">
+            <div className="relative h-[32rem] overflow-hidden rounded-xl bg-zinc-100">
+
+              <div className="absolute -bottom-6 -right-6 flex h-4/5 w-4/5 items-start rounded-3xl border-[12px] border-black px-8 py-10 shadow-md">
+              </div>
+            </div>
+            <p className="mt-4 text-sm">
+              Darwin takes care of outreach for you.
+            </p>
+          </div> */}
+        </div>
       </section>
 
-      <section className="m-36 flex w-full max-w-8xl flex-col items-center text-center">
-        <h2 className="text-4xl sm:text-6xl">Discover farmers near you!</h2>
-        <p className="mt-4 max-w-xl text-lg">
-          Connect with others already on their regenerative journey!
+      {/* Why Section */}
+      <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
+        <h2 className="max-w-xl text-center text-3xl font-medium leading-[1.05] tracking-tight sm:text-5xl">
+          The many benefits of regenerative agriculture{" "}
+        </h2>
+        {/* <p className="mt-8 max-w-xs text-center text-xl tracking-tight opacity-100">
+          Getting your own AI agent has never been easier.
+        </p> */}
+        <div className="mt-16 grid w-full grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="col-span-1">
+            <StepCard
+              tagColor="purple"
+              tagText="Research"
+              title="Soil health"
+              description="Revitalize your land by enriching the soil with vital nutrients and organic matter fostering a vibrant, healthy soil ecosystem."
+            />
+          </div>
+          <div className="col-span-1">
+            <StepCard
+              tagColor="blue"
+              tagText="Messaging"
+              title="Resilience"
+              description="Create farming systems that withstand climate change and environmental challenges like and extreme weather.
+              "
+            />
+          </div>
+          <div className="col-span-1">
+            <StepCard
+              tagColor="green"
+              tagText="Timing"
+              title="Carbon sequestration"
+              description="Capture atmospheric carbon dioxide and store it in the soil, aiding in climate change mitigation."
+            />
+          </div>
+          <div className="col-span-1">
+            <StepCard
+              tagColor="yellow"
+              tagText="Research"
+              title="Biodiversity"
+              description="Promote a diverse ecosystem of plants, animals, and microorganisms for ecological balance."
+            />
+          </div>
+          <div className="col-span-1">
+            <StepCard
+              tagColor="blue"
+              tagText="Messaging"
+              title="Economic benefits"
+              description="Improve long-term economic sustainability for farmers through reduced input costs and healthier soils.
+              "
+            />
+          </div>
+          <div className="col-span-1">
+            <StepCard
+              tagColor="green"
+              tagText="Timing"
+              title="Water conservation"
+              description="Improve soil structure to enhance water retention and reduce the need for irrigation."
+            />
+          </div>
+        </div>
+        {/* <div className="mt-20">
+          <ButtonPrimary />
+        </div> */}
+      </section>
+
+      {/* Footer */}
+      <section className="m-48 flex w-full max-w-6xl flex-col items-center rounded-xl bg-zinc-100 p-32 ">
+        <h2 className="max-w-xl text-center text-3xl font-medium  tracking-tight sm:text-5xl">
+          The next step for your supply chain sustainability
+        </h2>
+        <p className="mt-8 max-w-xl text-center text-lg tracking-tight opacity-100 md:text-xl">
+          Darwin is the first AI BDR that learns over time and answers your
+          prospects&apos; questions without human interference.
         </p>
-        <Link
-          href="community"
-          className="mb-16 mt-4 rounded-xl bg-darkgreen px-4 py-3 text-white hover:bg-deepgreen"
-        >
-          Join community!
-        </Link>
-        <FarmerMap farmers={FarmerData} />
+        <div className="mt-8">
+          <ButtonPrimary />
+        </div>
       </section>
     </main>
   );

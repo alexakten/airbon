@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        darkgreen: "#384238",
-        deepgreen: "#222822",
-        darkorange: "#D6730F",
-        deeporange: "#AD5B0A",
-        bluegray: "#EFF5F1",
-        lightgray: "#F9FCFA",
+        olive: "#5C5443",
+        tan: "#F1EFE6",
+        orange: "#EA642B",
+        purple: "#AD86FF",
+        darkpurple: "#9B78E5",
+        yellow: "#FFD686",
+        green: "#5EEF7E",
+        blue: "#3787FE",
       },
       fontSize: {
         base: "1rem",
@@ -35,6 +37,7 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: ["bg-purple", "bg-darkpurple", "bg-yellow", "bg-green", "bg-blue"],
 };
 
 export default config;
