@@ -17,7 +17,8 @@ const steps = [
   {
     tagText: "Step 2",
     title: "Plan",
-    description: "Each farmer gets a tailored plan created by expert agronomists.",
+    description:
+      "Each farmer gets a tailored plan created by expert agronomists.",
   },
   {
     tagText: "Step 3",
@@ -28,8 +29,7 @@ const steps = [
   {
     tagText: "Step 4",
     title: "Reward",
-    description:
-      "Reward farmers that implement regenerative practices.",
+    description: "Reward farmers that implement regenerative practices.",
   },
 ];
 
@@ -43,9 +43,9 @@ export default function Home() {
         {/* Notification Bar */}
         <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm shadow-md">
           <div className="flex ">
-            <p className="text-zinc-400">v.1 launching soon</p>
+            <p className="text-zinc-400">Beta launching soon</p>
             <Link href={"mailto:alex.akten@outlook.com"}>
-              <button className="group ml-2 border-l pl-2 tracking-tight font-medium hover:text-blue">
+              <button className="group ml-2 border-l pl-2 font-medium tracking-tight hover:text-blue">
                 Book demo{" "}
                 <span className="inline-block translate-x-0 tracking-normal transition-transform duration-200 group-hover:translate-x-1">
                   -&gt;
@@ -89,9 +89,7 @@ export default function Home() {
                 className="scale-x-[1]"
               />
             </div>
-            <p className="mt-4 text-sm ">
-              Boost soil health and biodiversity.
-            </p>
+            <p className="mt-4 text-sm ">Boost soil health and biodiversity.</p>
           </div>
 
           <div className="col-span-1 flex flex-col md:col-span-4">
@@ -106,7 +104,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Sequester carbon and store it in the soil.
+              Sequester carbon and store it underground.
             </p>
           </div>
 
@@ -206,6 +204,7 @@ export default function Home() {
         <div className="mt-16 grid w-full grid-cols-1 gap-4 md:grid-cols-3">
           <div className="col-span-1">
             <StepCard
+              showTag={false}
               tagColor="cyan"
               tagText="Research"
               title="Soil health"
@@ -214,6 +213,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
+              showTag={false}
               tagColor="blue"
               tagText="Messaging"
               title="Resilience"
@@ -223,6 +223,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
+              showTag={false}
               tagColor="orange"
               tagText="Timing"
               title="Carbon sequestration"
@@ -231,6 +232,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
+              showTag={false}
               tagColor="purple"
               tagText="Research"
               title="Biodiversity"
@@ -239,6 +241,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
+              showTag={false}
               tagColor="pink"
               tagText="Messaging"
               title="Economic benefits"
@@ -248,6 +251,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <StepCard
+              showTag={false}
               tagColor="lightblue"
               tagText="Timing"
               title="Water conservation"
@@ -269,11 +273,9 @@ export default function Home() {
         <ButtonPrimary />
 
         <div className="mt-16 w-full">
-
           <FarmerGrid cards={8} />
         </div>
         <div className="mt-16 w-full">
-
           <FarmerMap farmers={FarmerData} />
         </div>
       </section>
@@ -284,7 +286,8 @@ export default function Home() {
           The next step for your supply chain sustainability
         </h2>
         <p className="mt-8 max-w-xl text-center text-lg tracking-tight opacity-100 md:text-xl">
-          Start building resilience into your supply chain today to mitigate the effects of climate change and destructive farming practices.
+          Start building resilience into your supply chain today to mitigate the
+          effects of climate change and destructive farming practices.
         </p>
         <div className="mt-8">
           <ButtonPrimary />
