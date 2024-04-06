@@ -60,7 +60,7 @@ const stepsFarmer = [
   {
     tagText: "Step 4",
     title: "Receive",
-    description: "Get rewarded for your sustainabiilty efforts",
+    description: "Get rewarded for your sustainability efforts.",
   },
 ];
 
