@@ -273,7 +273,7 @@ export default function Home() {
         <ButtonPrimary />
 
         <div className="mt-16 w-full">
-          <FarmerGrid cards={8} />
+          <FarmerGrid cards={8} onSelectFarmer={() => "test"} />
         </div>
         <div className="mt-16 w-full">
           <FarmerMap farmers={FarmerData} />
