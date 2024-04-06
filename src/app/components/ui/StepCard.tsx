@@ -25,13 +25,13 @@ const StepCard: React.FC<StepCardProps> = ({
     ? `bg-${tagColor}`
     : "bg-default";
 
-  const borderClass = showBorder ? "border border-zinc-100 p-6 shadow-md" : "";
+  const borderClass = showBorder ? "border max-w-none border-zinc-100 p-6 shadow-md" : "";
   const hoverClass = hoverEffect ? "hover:-translate-y-2" : "";
 
 
   return (
     <div
-      className={`bg-white h-full ${borderClass} justify-between text-center max-w-xs md:max-w-none md:text-left items-center md:items-start flex flex-col  w-full rounded-xl transform transition duration-300 ease-in-out ${hoverClass}`}
+      className={`bg-white h-full max-w-xs ${borderClass} justify-between text-center  md:max-w-none md:text-left items-center md:items-start flex flex-col  w-full rounded-xl transform transition duration-300 ease-in-out ${hoverClass}`}
     >
       <div className="flex items-center gap-2">
         {showTag && tagText && (
