@@ -5,7 +5,6 @@ import Link from "next/link";
 import PracticeGrid from "./components/ui/PracticeGrid";
 import { Inter } from "next/font/google";
 import FarmerGrid from "./components/ui/FarmerGrid";
-import PlanetIcon from "./components/assets/PlanetIcon";
 import ProjectCard from "./components/ui/ProjectCard";
 import PracticeCarousel from "./components/ui/PracticeCarousel";
 import ServiceCard from "./components/ui/ServiceCard";
