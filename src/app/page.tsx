@@ -339,7 +339,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <section className="m-48 flex w-full max-w-6xl flex-col items-center rounded-xl bg-zinc-100 p-32 ">
+      <section className="m-48 flex w-full max-w-6xl flex-col items-center rounded-xl ">
         <h2 className="max-w-xl text-center text-3xl font-medium  tracking-tight sm:text-5xl">
           The next step for your supply chain sustainability
         </h2>
