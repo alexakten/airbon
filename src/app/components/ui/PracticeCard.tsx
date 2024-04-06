@@ -27,8 +27,8 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
   imageAlt,
 }) => {
   return (
-    <div className="grid w-full grid-cols-3 gap-4 overflow-hidden rounded-xl py-12 tracking-tight text-zinc-950">
-      <div className="relative z-0 h-[32rem] w-full col-span-2 overflow-hidden rounded-xl">
+    <div className="grid w-full grid-cols-1 gap-4 overflow-hidden rounded-xl py-12 tracking-tight text-zinc-950 md:grid-cols-3">
+      <div className="relative z-0 col-span-1 md:col-span-2 h-[32rem] w-full overflow-hidden rounded-xl">
         {imageUrl && (
           <Image
             src={imageUrl}
@@ -40,11 +40,11 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
         {/* <div className="absolute left-0 top-0 h-full w-full sm:w-3/4 bg-gradient-to-r from-black/90 to-black/40 sm:to-transparent"></div> */}
       </div>
 
-      <div className="relative z-10 flex h-full col-span-1 flex-col justify-between rounded-xl border border-zinc-100 p-6 shadow-md">
+      <div className="relative z-10 col-span-1 flex h-full w-full flex-col justify-between rounded-xl border border-zinc-100 p-6 shadow-md">
         <div className="flex items-center gap-2">
           <p className="opacity-40">{tagText}</p>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="mt-8 flex flex-col gap-6 md:mt-0">
           {/* <p>{subTitle}</p> */}
           <h3 className="text-4xl font-medium tracking-tight sm:text-5xl">
             {title}
