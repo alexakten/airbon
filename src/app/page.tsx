@@ -43,7 +43,7 @@ export default function Home() {
           <div className="flex ">
             <p className="text-zinc-400">v.1 launching soon</p>
             <Link href={"mailto:alex.akten@outlook.com"}>
-              <button className="group ml-2 border-l pl-2 font-medium hover:text-blue">
+              <button className="group ml-2 border-l pl-2 tracking-tight font-medium hover:text-blue">
                 Book demo{" "}
                 <span className="inline-block translate-x-0 tracking-normal transition-transform duration-200 group-hover:translate-x-1">
                   -&gt;
