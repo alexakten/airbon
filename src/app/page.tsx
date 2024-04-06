@@ -42,25 +42,25 @@ const steps = [
 const stepsFarmer = [
   {
     tagText: "Step 1",
-    title: "Onboard",
-    description: "Get your farmers connected on the platform.",
+    title: "Join",
+    description: "Connect your farm to the platform.",
   },
   {
     tagText: "Step 2",
-    title: "Plan",
+    title: "Learn",
     description:
-      "Each farmer gets a tailored plan created by expert agronomists.",
+      "Get expert guidance from a local agronomist.",
   },
   {
     tagText: "Step 3",
-    title: "Monitor",
+    title: "Implement",
     description:
-      "Monitor and verify the progress of your regenerative transition.",
+      "Implement regenerative practices on your farm.",
   },
   {
     tagText: "Step 4",
     title: "Reward",
-    description: "Reward farmers that implement regenerative practices.",
+    description: "Get rewarded for your sustainabiilty efforts",
   },
 ];
 
@@ -157,10 +157,10 @@ export default function Home() {
         <p className="opacity-40">For companies</p>
         <h2 className="mt-6 max-w-3xl text-center text-5xl font-medium tracking-tight">
           Turn your supply chain regenerative.        </h2>
-        <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <StepCard
-              showTag={true}
+              showTag={false}
               tagText={step.tagText}
               showBorder={false}
               key={index}
@@ -230,10 +230,10 @@ export default function Home() {
         <h2 className="mt-6 max-w-3xl text-center text-5xl font-medium tracking-tight">
           Go regenerative — fast.
         </h2>
-        <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
           {stepsFarmer.map((step, index) => (
             <StepCard
-              showTag={true}
+              showTag={false}
               tagText={step.tagText}
               showBorder={false}
               key={index}
