@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 z-50 flex w-full items-start justify-between bg-white px-8 pb-3 pt-6">
+    <nav className="fixed top-0 z-50 flex w-full items-start justify-between bg-white px-3 sm:px-8 pb-3 pt-6">
       <Link href={"/"}>
         <Logo />
       </Link>
