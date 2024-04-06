@@ -46,7 +46,7 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
         </div>
         <div className="mt-8 flex flex-col gap-6 md:mt-0">
           {/* <p>{subTitle}</p> */}
-          <h3 className="text-4xl font-medium tracking-tight sm:text-5xl">
+          <h3 className="text-3xl font-medium tracking-tight sm:text-5xl">
             {title}
           </h3>
           <p className="max-w-md tracking-tight opacity-50">{description}</p>
