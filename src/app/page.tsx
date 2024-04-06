@@ -166,7 +166,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Improve soil structure to enhance water retention
+              Improve soil structure to enhance water retention.
             </p>
           </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
               />
             </div>
             <p className="mt-4 text-sm ">
-              Promote a diverse ecosystem
+              Promote a diverse ecosystem.
             </p>
           </div>
 
