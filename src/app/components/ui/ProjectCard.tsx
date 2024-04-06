@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
-import ForestIcon from "../assets/ForestIcon";
 
 interface ProjectCardProps {
   tagIcon: string;
@@ -42,7 +41,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       <div className="relative z-10 flex h-full flex-col justify-between">
         <div className="flex items-center gap-2">
-          <ForestIcon />
           <p>{tagText}</p>
         </div>
         <div className="flex flex-col gap-6">
