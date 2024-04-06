@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import FarmerGrid from '@/app/components/ui/FarmerGrid';
-import FarmerMap from '@/app/components/ui/FarmerMap';
+
 import FarmerProfile from '../components/FarmerProfile';
 import FarmerData from '../../FarmerData'; // Adjust the import path as necessary
 import { Farmer } from '../../../../types';
+import dynamic from 'next/dynamic';
+
+const FarmerMap = dynamic(() => import('../../components/ui/FarmerMap'), {
+  ssr: false, // Disable server-side rendering if necessary
+  loading: () => <p>Loading map...</p>, // Optional loading component
+});
 
 const HomeView = () => {
   const [selectedFarmer, setSelectedFarmer] = useState<Farmer | null>(null);

@@ -5,8 +5,14 @@ import ButtonPrimary from "./components/ui/ButtonPrimary";
 import StepCard from "./components/ui/StepCard";
 import PracticeCarousel from "./components/ui/PracticeCarousel";
 import FarmerGrid from "./components/ui/FarmerGrid";
-import FarmerMap from "./components/ui/FarmerMap";
 import FarmerData from "./FarmerData";
+import dynamic from 'next/dynamic';
+
+const FarmerMap = dynamic(() => import('./components/ui/FarmerMap'), {
+  ssr: false, // Disable server-side rendering if necessary
+  loading: () => <p>Loading map...</p>, // Optional loading component
+});
+
 
 const steps = [
   {
