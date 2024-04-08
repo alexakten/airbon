@@ -342,7 +342,7 @@ export default function Home() {
         <h2 className="max-w-xl text-center text-3xl font-medium  tracking-tight sm:text-5xl">
           The next step for your supply chain sustainability
         </h2>
-        <p className="mt-8 max-w-xl text-center text-lg tracking-tight opacity-100 md:text-xl">
+        <p className="mt-8 max-w-xl text-center text-base tracking-tight opacity-100 md:text-xl">
           Mitigate the
           effects of climate change and destructive farming practices. Start building resilience into your supply chain today.
         </p>
