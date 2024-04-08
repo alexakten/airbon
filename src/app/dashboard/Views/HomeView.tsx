@@ -41,12 +41,13 @@ const HomeView = () => {
       ) : (
         <>
           <div>
-            <h1 className="text-3xl tracking-tight font-medium">Good morning, Alex</h1>
-            <p className="mt-2 opacity-40">
-              Here is an overview of your suppliers:
-            </p>
+            <h1 className="text-3xl tracking-tight font-medium">Overview</h1>
+            {/* <p className="mt-2 tracking-tight opacity-40">
+              Welcome back, Alex
+            </p> */}
           </div>
-          <div className="mt-16 grid grid-cols-3 gap-6">
+
+          <div className="mt-8 grid grid-cols-3 gap-6">
             <StatsCard
               tagText="Total Hectares"
               title={`${totalHectares} Hectares`}
@@ -57,9 +58,11 @@ const HomeView = () => {
             />
             <StatsCard tagText="Biggest Farmer" title={biggestFarmer.name} />
           </div>
+
           <div className="mt-16">
             <FarmerGrid cards={8} onSelectFarmer={handleSelectFarmer} />
           </div>
+
           <div className="mt-16">
             <FarmerMap farmers={FarmerData} />
           </div>
