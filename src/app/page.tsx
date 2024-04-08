@@ -92,9 +92,8 @@ export default function Home() {
         </h1>
 
         {/* Subtext */}
-        <h3 className="mt-8 max-w-2xl text-lg tracking-tight opacity-100 md:text-xl">
-          We help food companies turn their supply chain of farmers
-          regenerative.
+        <h3 className="mt-8 max-w-2xl text-base tracking-tight opacity-100 md:text-xl">
+          Airbon helps food companies make their farmer supply chains regenerative —
           <span className="font-regular"> Start building resilience </span> into
           your supply chain today.
         </h3>
@@ -251,7 +250,7 @@ export default function Home() {
 
       {/* Regenerative practices Section */}
       <section className="mt-48 flex  w-full max-w-6xl flex-col items-center ">
-       <PracticeCarousel />
+        <PracticeCarousel />
       </section>
 
       {/* Benefits Section */}
