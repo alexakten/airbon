@@ -93,7 +93,7 @@ export default function Home() {
 
         {/* Subtext */}
         <h3 className="mt-8 max-w-2xl text-base tracking-tight opacity-100 md:text-xl">
-          Airbon helps food companies make their farmer supply chains regenerative —
+          Airbon helps food companies turn their farmer supply chains regenerative —
           <span className="font-regular"> Start building resilience </span> into
           your supply chain today.
         </h3>

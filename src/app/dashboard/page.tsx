@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import HomeView from "./Views/HomeView";
-import FarmersView from "./Views/FarmersView";
+import FarmsView from "./Views/FarmsView";
 import Logo from "../components/ui/Logo";
 
-type ViewType = "home" | "farmers" | "map";
+type ViewType = "home" | "farms" | "map";
 
 export default function Dashboard() {
   const [currentView, setCurrentView] = useState<ViewType>("home");
@@ -25,13 +25,13 @@ export default function Dashboard() {
             Home
           </button>
           <button
-            onClick={() => setCurrentView("farmers")}
-            className={`w-full  rounded-md px-3 py-2 text-left hover:bg-zinc-100 ${currentView === "farmers"
+            onClick={() => setCurrentView("farms")}
+            className={`w-full  rounded-md px-3 py-2 text-left hover:bg-zinc-100 ${currentView === "farms"
                 ? "bg-zinc-100 font-medium text-zinc-950"
                 : "text-zinc-500"
               }`}
           >
-            Farmers
+            Farms
           </button>
           <button
             onClick={() => setCurrentView("map")}
@@ -46,7 +46,7 @@ export default function Dashboard() {
       </div>
       <div className="col-span-7 overflow-y-auto bg-white p-8">
         {currentView === "home" && <HomeView />}
-        {currentView === "farmers" && <FarmersView />}
+        {currentView === "farms" && <FarmsView />}
       </div>
     </main>
   );

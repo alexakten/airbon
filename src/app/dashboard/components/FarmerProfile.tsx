@@ -1,5 +1,11 @@
 import { Farmer } from "../../../../types"; // Adjust the import path as necessary
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const FarmerMap = dynamic(() => import("../../components/ui/FarmerMap"), {
+  ssr: false, // Disable server-side rendering if necessary
+  loading: () => <p>Loading map...</p>, // Optional loading component
+});
 
 interface FarmerProfileProps {
   farmer: Farmer;
@@ -27,10 +33,21 @@ const FarmerProfile: React.FC<FarmerProfileProps> = ({
         layout="responsive"
         className="mt-8 rounded-xl"
       />
-      <h1 className="mt-4 font-medium tracking-tight">{farmer.name}</h1>
+      <h1 className="mt-4 text-2xl font-medium tracking-tight">
+        {farmer.name}
+      </h1>
       <p>{farmer.location}</p>
       <p>{farmer.size} hectares</p>
-      {/* Add more details as needed */}
+
+      <div className="mt-16">
+        <FarmerMap farmers={[farmer]} />
+      </div>
+
+      <div className="mt-16">
+        <h1 className="mt-4 text-2xl font-medium tracking-tight">
+          {farmer.name}
+        </h1>
+      </div>
     </div>
   );
 };

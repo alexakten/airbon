@@ -11,7 +11,7 @@ const FarmerMap = dynamic(() => import('../../components/ui/FarmerMap'), {
   loading: () => <p>Loading map...</p>, // Optional loading component
 });
 
-const HomeView = () => {
+const FarmerView = () => {
   const [selectedFarmer, setSelectedFarmer] = useState<Farmer | null>(null);
 
   const handleSelectFarmer = (farmer: Farmer) => {
@@ -28,6 +28,10 @@ const HomeView = () => {
         <FarmerProfile farmer={selectedFarmer} onDeselectFarmer={handleDeselectFarmer} />
       ) : (
         <>
+          <div className='mb-8'>
+            <h1 className="text-3xl tracking-tight font-medium">Farms</h1>
+
+          </div>
           <FarmerGrid cards={8} onSelectFarmer={handleSelectFarmer} />
           <div className="mt-16">
             <FarmerMap farmers={FarmerData} />
@@ -38,4 +42,4 @@ const HomeView = () => {
   );
 };
 
-export default HomeView;
+export default FarmerView;

@@ -42,9 +42,7 @@ const HomeView = () => {
         <>
           <div>
             <h1 className="text-3xl tracking-tight font-medium">Overview</h1>
-            {/* <p className="mt-2 tracking-tight opacity-40">
-              Welcome back, Alex
-            </p> */}
+
           </div>
 
           <div className="mt-8 grid grid-cols-3 gap-6">
