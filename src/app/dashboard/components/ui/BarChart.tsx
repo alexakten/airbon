@@ -13,7 +13,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const BarChart: React.FC<BarChartProps> = ({ totalHectares, regenerativeHectares }) => {
   const data = {
-    labels: ['Total Hectares', 'Regenerative Hectares'],
+    labels: ['Total Ha', 'Regenerative Ha'],
     datasets: [
       {
         label: 'Hectares',

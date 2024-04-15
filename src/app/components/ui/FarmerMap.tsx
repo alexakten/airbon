@@ -43,7 +43,7 @@ const FarmerMap: React.FC<FarmerMapProps> = ({ farmers }) => {
       zoom={3}
       minZoom={2}
       scrollWheelZoom={false}
-      className="rounded-xl z-10 w-full h-[40rem]"
+      className="rounded-xl z-10 w-full h-full"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {farmers.map((farmer) => (

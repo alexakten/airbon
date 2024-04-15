@@ -52,10 +52,10 @@ const HomeCompany = () => {
           <div className="mt-8 grid grid-cols-3 gap-6">
             <StatsCard
               tagText="Land Distribution"
-              title={`Total Hectares: ${totalHectares}`}>
+              title={`Total Land: ${totalHectares} Ha`}>
               <BarChart totalHectares={totalHectares} regenerativeHectares={totalRegenerativeHectares} />
             </StatsCard>
-            <StatsCard tagText="Regenerative Percentage" title={`${regenerativePercentage}%`}>
+            <StatsCard tagText="Regenerative Land Percentage" title={`${regenerativePercentage}% regenerative`}>
               <CircleDiagram percentage={regenerativePercentage} />
             </StatsCard>
             <StatsCard

@@ -332,7 +332,7 @@ export default function Home() {
 
         <ButtonPrimary />
 
-        <div className="mt-16 w-full">
+        <div className="mt-16 h-[40rem] w-full">
           <FarmerMap farmers={FarmerData} />
         </div>
       </section>

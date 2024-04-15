@@ -19,7 +19,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
         <p className="opacity-40 text-sm">{tagText}</p>
       </div>
       <div className="mt-12">
-        <h3 className="text-2xl font-medium">{title}</h3>
+        <h3 className="text-xl font-medium">{title}</h3>
       </div>
       {children && (
         <div className="mt-4 flex justify-center w-full"> {/* Container for the children */}

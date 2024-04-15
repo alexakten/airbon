@@ -8,4 +8,5 @@ export type Farmer = {
   latitude: number;
   longitude: number;
   slug: string;
+  regenerative: number;
 };
