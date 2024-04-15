@@ -23,8 +23,8 @@ type ViewType =
 type UserType = "company" | "farmer";
 
 export default function Dashboard() {
-  const [currentView, setCurrentView] = useState<ViewType>("homeFarmer");
-  const [currentUserType, setCurrentUserType] = useState<UserType>("farmer");
+  const [currentView, setCurrentView] = useState<ViewType>("homeCompany");
+  const [currentUserType, setCurrentUserType] = useState<UserType>("company");
 
   useEffect(() => {
     // Update the currentView based on the currentUserType
@@ -49,7 +49,7 @@ export default function Dashboard() {
         {currentView === "learnFarmer" && <LearnFarmer />}
         {currentView === "communityFarmer" && <CommunityFarmer />}
       </div>
-      <div className="absolute z-[100] top-6 text-xs font-medium right-6 rounded-full bg-indigo-100 px-4 py-2 ">Note: This is an early demo, a very rough first draft</div>
+      <div className="absolute z-[100] top-6 text-xs font-medium right-6 rounded-full bg-indigo-100 px-4 py-2 ">Note: This is a very early demo</div>
     </main>
   );
 }
