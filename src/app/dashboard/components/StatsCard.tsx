@@ -27,7 +27,7 @@ const StatsCard: React.FC<StatsCardProps> = ({
       </div>
       {/* <p className="text-sm">{tagText}</p> */}
       <div className="mt-12">
-        <h3 className="text-lg font-medium">{title}</h3>
+        <h3 className="text-2xl font-medium">{title}</h3>
       </div>
     </div>
   );

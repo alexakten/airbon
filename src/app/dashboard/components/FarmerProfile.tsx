@@ -44,9 +44,9 @@ const FarmerProfile: React.FC<FarmerProfileProps> = ({
       </div>
 
       <div className="mt-16">
-        <h1 className="mt-4 text-2xl font-medium tracking-tight">
+        {/* <h1 className="mt-4 text-2xl font-medium tracking-tight">
           {farmer.name}
-        </h1>
+        </h1> */}
       </div>
     </div>
   );

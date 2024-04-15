@@ -5,6 +5,7 @@ const FarmerData = [
     image: "/images/farmers/farm-1.avif", // Consider if you need to adjust this for the map
     location: "Iowa, USA", // Consider if you need to adjust this for the map
     size: 120, // Consider if you need to adjust this for the map
+    regenerative: 80,
     slug: "john-doe", // Consider if you need to adjust this for the map
     latitude: 41.878, // Extracted from Coordinates
     longitude: -93.0977, // Extracted from Coordinates
@@ -15,6 +16,7 @@ const FarmerData = [
     image: "/images/farmers/farm-2.avif",
     location: "Alberta, Canada",
     size: 95,
+    regenerative: 37,
     slug: "jane-smith",
     latitude: 53.9333,
     longitude: -116.5765,
@@ -25,6 +27,7 @@ const FarmerData = [
     image: "/images/farmers/farm-3.avif",
     location: "São Paulo, Brazil",
     size: 150,
+    regenerative: 150,
     slug: "pedro-martinez",
     latitude: -23.5505,
     longitude: -46.6333,
@@ -35,6 +38,7 @@ const FarmerData = [
     image: "/images/farmers/farm-4.avif",
     location: "Shandong, China",
     size: 80,
+    regenerative: 12,
     slug: "liu-wei",
     latitude: 36.6685,
     longitude: 116.9974,
@@ -45,6 +49,7 @@ const FarmerData = [
     image: "/images/farmers/farm-5.avif",
     location: "Stockholm, Sweden",
     size: 65,
+    regenerative: 50,
     slug: "anna-andersson",
     latitude: 59.3293,
     longitude: 18.0686,
@@ -55,6 +60,7 @@ const FarmerData = [
     image: "/images/farmers/farm-6.avif",
     location: "Texas, USA",
     size: 200,
+    regenerative: 180,
     slug: "chris-johnson",
     latitude: 31.9686,
     longitude: -99.9018,
@@ -65,6 +71,7 @@ const FarmerData = [
     image: "/images/farmers/farm-7.avif",
     location: "Tuscany, Italy",
     size: 50,
+    regenerative: 50,
     slug: "emilia-rossi",
     latitude: 43.7696,
     longitude: 11.2558,
@@ -75,6 +82,7 @@ const FarmerData = [
     image: "/images/farmers/farm-8.avif",
     location: "Accra, Ghana",
     size: 110,
+    regenerative: 68,
     slug: "kwame-nkrumah",
     latitude: 5.6037,
     longitude: -0.187,
