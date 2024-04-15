@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import StatsCard from "../../components/StatsCard";
 import CircleDiagram from "../../components/ui/CircleDiagram";
 import BarChart from "../../components/ui/BarChart";
+import LineGraph from "../../components/ui/LineGraph";
 
 
 const FarmerMap = dynamic(() => import("../../../components/ui/FarmerMap"), {
@@ -35,6 +36,9 @@ const HomeCompany = () => {
     prev.size > current.size ? prev : current,
   );
 
+  const monthlySpendData = [20000, 20500, 18000, 15000, 19000, 21000, 20000, 18000, 17000, 19000, 19500, 18000];
+
+
   return (
     <div>
       {selectedFarmer ? (
@@ -59,9 +63,11 @@ const HomeCompany = () => {
               <CircleDiagram percentage={regenerativePercentage} />
             </StatsCard>
             <StatsCard
-              tagText="Total Farmers"
-              title={`${amountOfFarmers}`}
-            />
+              tagText="Monthly Spend"
+              title="Monthly Spend to Farmers"
+            >
+              <LineGraph monthlySpend={monthlySpendData} />
+            </StatsCard>
           </div>
 
           <div className="mt-16">
