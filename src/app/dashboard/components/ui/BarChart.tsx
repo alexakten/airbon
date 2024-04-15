@@ -39,6 +39,9 @@ const BarChart: React.FC<BarChartProps> = ({ totalHectares, regenerativeHectares
     },
     responsive: true,
     plugins: {
+      legend: {
+        display: false // Ensures that the legend does not appear
+      },
       title: {
         display: false,
         text: 'Farm Land Overview',
