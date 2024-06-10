@@ -10,7 +10,7 @@ export default function Navbar() {
       </Link>
       {/* Buttons */}
       <div className="flex gap-4">
-        <Link href={"/dashboard"}>
+        <Link href={"mailto:alex.akten@outlook.com"}>
           <button className="rounded-md px-3 py-2 text-sm hover:bg-zinc-100">
             Try demo
           </button>
