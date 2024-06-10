@@ -72,7 +72,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="mt-32 sm:mt-52 flex w-full max-w-8xl flex-col items-center justify-center text-center">
         {/* Notification Bar */}
-        <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm shadow-md">
+        <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm shadow-sm">
           <div className="flex ">
             <p className="text-zinc-400">Beta launching soon</p>
             <Link href={"mailto:alex.akten@outlook.com"}>
