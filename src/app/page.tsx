@@ -88,7 +88,7 @@ export default function Home() {
 
         {/* H1 */}
         <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tighter">
-          Rebalance our planet <br /> with regenerative farming.
+          Rebalance our planet <br /> with regenerative farming
         </h1>
 
         {/* Subtext */}
@@ -155,7 +155,7 @@ export default function Home() {
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <p className="opacity-40">For companies</p>
         <h2 className="mt-6 max-w-3xl text-center text-3xl sm:text-5xl font-medium tracking-tight">
-          Turn your supply chain regenerative.        </h2>
+          Turn your supply chain regenerative        </h2>
         <div className="mt-6 grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <StepCard
@@ -227,7 +227,7 @@ export default function Home() {
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <p className="opacity-40">For farmers</p>
         <h2 className="mt-6 max-w-3xl text-center text-3xl sm:text-5xl font-medium tracking-tight">
-          Go regenerative — fast.
+          Go regenerative — fast
         </h2>
         <div className="mt-6 grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-2 lg:grid-cols-4">
           {stepsFarmer.map((step, index) => (
