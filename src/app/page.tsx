@@ -63,7 +63,7 @@ const stepsFarmer = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center bg-white px-3 tracking-normal text-zinc-950 sm:px-8">
+    <main className="flex flex-col items-center bg-white px-3 tracking-tight text-zinc-950 sm:px-8">
       <Navbar />
 
       {/* Hero Section */}
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         {/* H1 */}
-        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tight">
+        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tighter">
           Rebalance our planet <br /> with regenerative farming
         </h1>
 
