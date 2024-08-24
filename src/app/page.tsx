@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         {/* H1 */}
-        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tighter">
+        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,64px)] font-[450] leading-[1.05] tracking-tighter">
           Rebalance our planet <br /> with regenerative farming
         </h1>
 
