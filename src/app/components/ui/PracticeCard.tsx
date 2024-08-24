@@ -40,7 +40,7 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
         {/* <div className="absolute left-0 top-0 h-full w-full sm:w-3/4 bg-gradient-to-r from-black/90 to-black/40 sm:to-transparent"></div> */}
       </div>
 
-      <div className="relative z-10 col-span-1 flex h-full w-full flex-col justify-between rounded-xl border border-zinc-100 p-6 shadow-md">
+      <div className="relative z-10 col-span-1 flex h-full w-full flex-col justify-between rounded-xl border border-zinc-100 p-6">
         <div className="flex items-center gap-2">
           <p className="opacity-40">{tagText}</p>
         </div>

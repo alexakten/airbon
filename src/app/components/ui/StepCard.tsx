@@ -25,7 +25,7 @@ const StepCard: React.FC<StepCardProps> = ({
     ? `bg-${tagColor}`
     : "bg-default";
 
-  const borderClass = showBorder ? "border border-zinc-100 p-6 shadow-md text-left" : "text-center max-w-[280px]";
+  const borderClass = showBorder ? "border border-zinc-100 p-6 shadow-sm text-left" : "text-center max-w-[280px]";
   const hoverClass = hoverEffect ? "hover:-translate-y-2" : "";
 
 
