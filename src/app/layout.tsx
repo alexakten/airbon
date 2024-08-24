@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--inter-font", // This defines a CSS variable
+  display: "swap",
 });
 
 import "./globals.css";
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={inter.variable}
+        className={inter.className}
         style={{ fontFeatureSettings: "'ss01' 1" }}
       >
         {children}
