@@ -67,7 +67,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="mt-32 flex w-full max-w-8xl flex-col items-center justify-center text-center sm:mt-52">
+      <section className="mt-32 flex w-full max-w-8xl flex-col items-center justify-center text-center sm:mt-48">
         {/* Notification Bar */}
         <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm">
           <div className="flex ">
