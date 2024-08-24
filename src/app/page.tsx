@@ -66,19 +66,19 @@ const stepsFarmer = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center bg-white px-3 tracking-tight text-zinc-950 sm:px-8">
+    <main className="flex flex-col items-center bg-white px-3 tracking-normal text-zinc-950 sm:px-8">
       <Navbar />
 
       {/* Hero Section */}
       <section className="mt-32 sm:mt-52 flex w-full max-w-8xl flex-col items-center justify-center text-center">
         {/* Notification Bar */}
-        <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm shadow-sm">
+        <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm">
           <div className="flex ">
             <p className="text-zinc-400">Beta launching soon</p>
             <Link href={"mailto:alex.akten@outlook.com"}>
               <button className="group ml-2 border-l pl-2 font-medium tracking-tight hover:text-blue">
                 Book demo{" "}
-                <span className="inline-block translate-x-0 tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+                <span className="inline-block translate-x-0 tracking transition-transform duration-200 group-hover:translate-x-1">
                   -&gt;
                 </span>
               </button>
@@ -87,12 +87,12 @@ export default function Home() {
         </div>
 
         {/* H1 */}
-        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tighter">
+        <h1 className="mt-6 max-w-5xl text-[clamp(36px,5.5vw,72px)] font-[450] leading-[1.05] tracking-tight">
           Rebalance our planet <br /> with regenerative farming
         </h1>
 
         {/* Subtext */}
-        <h3 className="mt-8 max-w-2xl text-base tracking-tight opacity-100 md:text-xl">
+        <h3 className="mt-8 max-w-2xl text-base opacity-100 md:text-xl">
           Airbon helps food companies turn their farmer supply chains regenerative —
           <span className="font-regular"> Start building resilience </span> into
           your supply chain today.
@@ -325,7 +325,7 @@ export default function Home() {
       </section>
 
       {/* Farmer Map Section */}
-      <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
+      {/* <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <h2 className="mb-8 max-w-xl text-center text-3xl font-medium leading-[1.05] tracking-tight sm:text-5xl">
           Discover some of our regenerative farmers{" "}
         </h2>
@@ -335,7 +335,7 @@ export default function Home() {
         <div className="mt-16 h-[40rem] w-full">
           <FarmerMap farmers={FarmerData} />
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <section className="m-48 flex w-full max-w-6xl flex-col items-center rounded-xl ">

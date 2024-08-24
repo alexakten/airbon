@@ -3,7 +3,10 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--inter-font", // This defines a CSS variable
+});
 
 import "./globals.css";
 
@@ -19,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={inter.variable}
+        style={{ fontFeatureSettings: "'ss01' 1" }}
+      >
         {children}
         <Analytics />
         <SpeedInsights />
