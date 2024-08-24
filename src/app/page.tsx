@@ -6,13 +6,12 @@ import StepCard from "./components/ui/StepCard";
 import PracticeCarousel from "./components/ui/PracticeCarousel";
 import FarmerGrid from "./components/ui/FarmerGrid";
 import FarmerData from "./FarmerData";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const FarmerMap = dynamic(() => import('./components/ui/FarmerMap'), {
+const FarmerMap = dynamic(() => import("./components/ui/FarmerMap"), {
   ssr: false, // Disable server-side rendering if necessary
   loading: () => <p>Loading map...</p>, // Optional loading component
 });
-
 
 const steps = [
   {
@@ -48,14 +47,12 @@ const stepsFarmer = [
   {
     tagText: "Step 2",
     title: "Learn",
-    description:
-      "Get expert guidance from a local agronomist.",
+    description: "Get expert guidance from a local agronomist.",
   },
   {
     tagText: "Step 3",
     title: "Implement",
-    description:
-      "Implement regenerative practices on your farm.",
+    description: "Implement regenerative practices on your farm.",
   },
   {
     tagText: "Step 4",
@@ -70,16 +67,30 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="mt-32 sm:mt-52 flex w-full max-w-8xl flex-col items-center justify-center text-center">
+      <section className="mt-32 flex w-full max-w-8xl flex-col items-center justify-center text-center sm:mt-52">
         {/* Notification Bar */}
         <div className="flex items-center gap-2 rounded-full border border-zinc-100 bg-white px-6 py-1 text-sm">
           <div className="flex ">
             <p className="text-zinc-400">Beta launching soon</p>
             <Link href={"mailto:alex.akten@outlook.com"}>
-              <button className="group ml-2 border-l pl-2 font-medium tracking-tight hover:text-blue">
+              <button className="group ml-2 flex gap-1 items-center border-l pl-2 font-medium tracking-normal hover:text-blue">
                 Book demo{" "}
-                <span className="inline-block translate-x-0 tracking transition-transform duration-200 group-hover:translate-x-1">
-                  -&gt;
+                <span className="inline-block translate-x-0 tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="feather feather-arrow-right"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
                 </span>
               </button>
             </Link>
@@ -93,7 +104,8 @@ export default function Home() {
 
         {/* Subtext */}
         <h3 className="mt-8 max-w-2xl text-base opacity-100 md:text-xl">
-          Airbon helps food companies turn their farmer supply chains regenerative —
+          Airbon helps food companies turn their farmer supply chains
+          regenerative —
           <span className="font-regular"> Start building resilience </span> into
           your supply chain today.
         </h3>
@@ -154,8 +166,9 @@ export default function Home() {
       {/* How it works Companies Section */}
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <p className="opacity-40">For companies</p>
-        <h2 className="mt-6 max-w-3xl text-center text-3xl sm:text-5xl font-medium tracking-tight">
-          Turn your supply chain regenerative        </h2>
+        <h2 className="mt-6 max-w-3xl text-center text-3xl font-medium tracking-tight sm:text-5xl">
+          Turn your supply chain regenerative{" "}
+        </h2>
         <div className="mt-6 grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <StepCard
@@ -205,9 +218,7 @@ export default function Home() {
                 className="scale-x-[1]"
               />
             </div>
-            <p className="mt-4 text-sm ">
-              Promote a diverse ecosystem.
-            </p>
+            <p className="mt-4 text-sm ">Promote a diverse ecosystem.</p>
           </div>
 
           {/* <div className="col-span-1 flex flex-col md:col-span-4">
@@ -226,7 +237,7 @@ export default function Home() {
       {/* How it works Farmers Section */}
       <section className="mt-48 flex w-full max-w-6xl flex-col items-center ">
         <p className="opacity-40">For farmers</p>
-        <h2 className="mt-6 max-w-3xl text-center text-3xl sm:text-5xl font-medium tracking-tight">
+        <h2 className="mt-6 max-w-3xl text-center text-3xl font-medium tracking-tight sm:text-5xl">
           Go regenerative — fast
         </h2>
         <div className="mt-6 grid grid-cols-1 gap-8 sm:gap-16 md:grid-cols-2 lg:grid-cols-4">
@@ -343,8 +354,8 @@ export default function Home() {
           The next step for your supply chain sustainability
         </h2>
         <p className="mt-8 max-w-xl text-center text-base tracking-tight opacity-100 md:text-xl">
-          Mitigate the
-          effects of climate change and destructive farming practices. Start building resilience into your supply chain today.
+          Mitigate the effects of climate change and destructive farming
+          practices. Start building resilience into your supply chain today.
         </p>
         <div className="mt-8">
           <ButtonPrimary />
