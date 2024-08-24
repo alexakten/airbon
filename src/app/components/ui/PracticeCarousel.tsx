@@ -60,23 +60,52 @@ const PracticeCarousel: React.FC = () => {
           {PracticeData.map((_, index) => (
             <div
               key={index}
-              className={`h-2 w-2 rounded-full ${currentPracticeIndex === index ? "bg-zinc-950" : "bg-zinc-200"
-                }`}
+              className={`h-2 w-2 rounded-full ${
+                currentPracticeIndex === index ? "bg-zinc-950" : "bg-zinc-200"
+              }`}
             />
           ))}
         </div>
         <div className="flex gap-4">
           <button
             onClick={prevPractice}
-            className="border-full border-zinc-200 hover:bg-zinc-100 size-12 rounded-full border text-xl"
+            className="border-full flex size-12 items-center justify-center rounded-full border border-zinc-200 text-xl hover:bg-zinc-100"
           >
-            &lt;-
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="feather feather-arrow-left"
+            >
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
           </button>
           <button
             onClick={nextPractice}
-            className="border-full border-zinc-200 hover:bg-zinc-100 size-12 rounded-full border text-xl"
+            className="border-full flex size-12 items-center justify-center rounded-full border border-zinc-200 text-xl hover:bg-zinc-100"
           >
-            -&gt;
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="feather feather-arrow-right"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
           </button>
         </div>
       </div>
